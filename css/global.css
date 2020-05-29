@@ -1,3 +1,96 @@
+ body{
+   height: 100%;
+   width: 100%;
+ }
+ 
+ html{
+  min-height: 100%;
+  height: 100%;
+   width: 100%;
+}
+main{
+  min-height: 100%;
+  height: 100%;
+   width: 100%;
+}
+
+ .flex{
+   display:inline-flex;
+ }
+
+ /* Container holding the image and the text */
+.containerI {
+  position: relative;
+  display: inline-block;
+  margin:10px;
+  
+}
+
+.dailyRecipe{
+  width: 90%;
+  height: 90%;
+  max-width: 90%;
+  border-radius: 10%;
+
+}
+.arrow{
+  position: absolute;
+  top:10px;
+  right: 5%;
+  top: 40%;
+  width: 10%;
+  max-width:10%;
+}
+
+.arrowL{
+  position: absolute;
+  top:10px;
+  left: -5%;
+  top: 40%;
+  width: 10%;
+  max-width:10%;
+  transform: scaleX(-1);
+}
+ /* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  background-color: rgba(00, 00, 00, 0.5);
+  min-height:70%;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ .menuItemBg{
+   background-color:#E4C59B ;
+   border-radius:50%;
+   border:none;
+ }
+ .menuItemAlign{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+ }
+ .menuItemSize{
+    height:160px;
+    width:160px;
+   margin-top:50px;
+     flex-grow: 0;
+     flex-shrink: 0;
+ }
+ .menuItemSizeBIG{
+  height:200px;
+  width:200px;
+   flex-grow: 0;
+   flex-shrink: 0;
+}
+
+ .menuPic{
+   height:100px;
+   width:100px;
+ }
+ 
  /* The side navigation menu */
  .sidenav {
     height: 100%; /* 100% Full-height */
@@ -51,3 +144,7 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   } 
+
+  .yellowColor{
+    background-color: #FFE3AA;
+  }
