@@ -18,6 +18,50 @@ main{
    display:inline-flex;
  }
 
+ /* Container holding the image and the text */
+.containerI {
+  position: relative;
+  display: inline-block;
+  margin:10px;
+  
+}
+
+.dailyRecipe{
+  width: 90%;
+  height: 90%;
+  max-width: 90%;
+  border-radius: 10%;
+
+}
+.arrow{
+  position: absolute;
+  top:10px;
+  right: 5%;
+  top: 40%;
+  width: 10%;
+  max-width:10%;
+}
+
+.arrowL{
+  position: absolute;
+  top:10px;
+  left: -5%;
+  top: 40%;
+  width: 10%;
+  max-width:10%;
+  transform: scaleX(-1);
+}
+ /* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  background-color: rgba(00, 00, 00, 0.5);
+  min-height:70%;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
  .menuItemBg{
    background-color:#E4C59B ;
    border-radius:50%;
