@@ -43,21 +43,18 @@
                 },
                 "açúcar": {
                     "tipo": "tempero",
-                    "propriedades": [
-                        "trigo",
-                        "sem fermento"
-                    ],
-                    "quantidade": 1000,
-                    "texto": "1 kg de farinha de trigo sem fermento"
+                    "propriedades": ["acucar"],
+                    "quantidade": 200,
+                    "texto": "1 chávena de açúcar"
                 },
                 "sal": {
-                    "tipo": "farinha",
+                    "tipo": "tempero",
                     "propriedades": [
-                        "trigo",
-                        "sem fermento"
+                        "sal"
+                        
                     ],
-                    "quantidade": 1000,
-                    "texto": "1 kg de farinha de trigo sem fermento"
+                    "quantidade": 10,
+                    "texto": "1/2 colher (sopa) de sal"
                 }
             },
             "Preparação": {

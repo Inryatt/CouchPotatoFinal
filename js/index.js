@@ -2,7 +2,16 @@
 var dieta =false;
 var vegetariano = true;
 let alimentos =[];
-  
+
+$.getJSON( "recipes.json", function( data ) {
+  var items = [];
+  $.each( data, function( key, val ) {
+    items.push(  key + " : " + val  );
+  });
+  console.log(items);
+ 
+ 
+});
 
 
 $('#simveg').on('click change', function() {
