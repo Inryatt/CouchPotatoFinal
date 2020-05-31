@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    
+    <style> 
+    .main{
+        background: url('https://ibb.co/JBq7p6q') repeat ;
+    }
+   input::placeholder {
+  font-size: small;
+}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.first{
+    width:20%;
+}
+.second{
+    width:25%;
+}
+.third{
+    width:55%;
+}
+table, th, td {
+  text-align: center;
+  padding: 15px;
+  font-size: large;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+.right {
+  position: absolute;
+  right: 25px;
+  width: 100%;
+
+  
+}
+</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link href='https://fonts.googleapis.com/css?family=Overpass Mono' rel='stylesheet'>
+</head>
+  
+  <body class="body">
+    <div id="mySidenav" class="sidenav">
+      <a style="position: absolute; right:0px;  ;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="accordion" id="accordionExample">
+
+        <div>
+          <a style="background-image: url('assets/CouchPotato/LOGO_FIXEDSIZE.png'); width: 191.25px;
+          height: 57px; background-size: contain; background-repeat:no-repeat; align-content:center ; margin-left:30px;margin-bottom:50px" ></a>
+        </div>
+        <div style="border-radius: 10%" class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Tua Conta
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div  class="card-body">
+              <ul  style="border-radius: 20%" class="list-group">
+                <li class="list-group-item">Inventário</li>
+                <li class="list-group-item">Calendário </li>
+                <li class="list-group-item">Preferências</li>
+                <li class="list-group-item">Lista de Compras</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div  style="border-radius: 10%" class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Sugestões
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+
+
+        <div style="border-radius: 10%" class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Compras
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  
+    <!-- Use any element to open the sidenav -->
+    <img onclick="openNav()" src="assets/icons/menu.png" style="height: 30px; width: 30px;">
+  
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div class="main" id="main" >
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    Vegetariano
+                </td>
+                <td>
+                    Dieta
+                </td>
+                <td>
+                    Alimentos a evitar (10 máx)
+                </td>
+            </tr>
+            <tr style="background-color: #ffdeb0;">
+                <td class="first">
+                    <form action="" method="post">
+                        <input type="radio" id="simveg" name="veg" value="sim" />
+                        <label for="simveg">Sim&nbsp&nbsp</label>
+                        <input type="radio" id="naoveg" name="veg" value="nao" />
+                        <label for="naoveg"> Nao
+                    </form> 
+                </td>
+                <td class="second">
+                    <form action="" method="post">
+                        <input type="radio" id="simdiet" name="diet" value="sim" />
+                        <label for="simdiet">Sim&nbsp&nbsp</label>
+                        <input type="radio" id="naodiet" name="diet" value="nao" />
+                        <label for="naodiet"> Nao
+                    </form> 
+                    
+                </td>
+                <td class="third">
+                        <button style="border-radius: 50px ; background-color: tomato;">Adicionar</button>
+                        <button style="border-radius: 50px ; background-color: lightseagreen;">Remover</button>
+                </td>
+            </tr>
+            <tr style="background-color: #ffdeb0;">
+                <td class="first">
+
+                </td>
+                <td class="second" >
+                    <form action="/action_page.php" style="background-color:#ffefd9;border-radius: 50px ; padding: 40px;">
+                        <label style="font-size:medium;"for="cal">Calorias (kcal) :</label>
+                        <input style="border-radius: 50px; width: 70px;"  type="number" id="cal" name="cal"><br><br>
+                        <label style="font-size:medium;" for="acucar">Açucar (gr) :</label>
+                        <input style="border-radius: 50px; width: 70px;" type="number" id="acucar" name="acucar"><br><br>
+                    </form>
+                </td>
+                <td class="third">
+                    <ul class="center" style="background-color:#ffefd9;border-radius: 50px;height: 340px ;text-align:left; padding: 50px;">
+                        <li id="ing1"  hidden ></li>
+                        <li id="ing2"  hidden ></li>
+                        <li id="ing3"  hidden ></li>
+                        <li id="ing4"  hidden ></li>
+                        <li id="ing5"  hidden ></li>
+                        <li id="ing6"  hidden ></li>
+                        <li id="ing7"  hidden ></li>
+                        <li id="ing8"  hidden ></li>
+                        <li id="ing9"  hidden ></li>
+                        <li id="ing10"  hidden ></li>
+                       
+                        
+
+                    </ul>
+
+                </td>
+            </tr>
+            <tr style="background-color: #ffdeb0;">
+                <td>
+                    <img style="width: 250px;height: 224px;;" src="https://www.nicepng.com/png/full/65-657231_kawaii-tumblr-food-png-cute-food-with-faces.png"/>
+                </td>
+                <td>
+                    
+                </td>
+                <td><!-- Esta td só aparece quando clicamos em adicionar; o que for escrito tem que aparecer la lista -->
+                    <img src="https://cdn140.picsart.com/267270504000211.png?r1024x1024" style="width:90px;height:68px"/>
+                    <input style="border-radius: 50px; " placeholder="O que deseja adicionar?" type="text" id="search" name="search"><br><br>
+                </td>
+            </tr>
+        </table>
+        
+   
+    
+        
+        <div style="width:100%;padding: 20px;">
+            <p style="border-radius: 50%; width: 50px;height:50px; background-color: #ffc847;font-size:xx-large;text-align: center;color: white; ;" onclick="javascript:history.back()">&#x219c</p>
+        </div>
+       
+    </div>  
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+    
+    <script src="js/index.js"></script>
+  </body> 
+</html>

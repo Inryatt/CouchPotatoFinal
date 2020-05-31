@@ -2,7 +2,32 @@
 
 <html>
   <head>
-      
+    <style> 
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.first{
+    width:30%;
+}
+.second{
+    width:70%;
+}
+table, th, td {
+  border: 2px solid black;
+  padding: 15px;
+  font-size: medium;
+}
+.right {
+  position: absolute;
+  right: 25px;
+  width: 100%;
+
+  
+}
+</style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
   </head>
@@ -19,7 +44,7 @@
         <div style="border-radius: 10%" class="card">
           <div class="card-header" id="headingOne">
             <h2 class="mb-0">
-              <button onclick="location.href='Perfil.html'"class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Tua Conta
               </button>
             </h2>
@@ -77,9 +102,88 @@
   
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
+<div >
+    <img class="right"src="https://static.thenounproject.com/png/2035327-200.png" style="width: 70px;height:70px"/>
+        <img class="center" src="https://cdn130.picsart.com/268646784010211.png?type=webp&to=min&r=640" style="width: 60px;height:60px;">
+    <p class="center" style="width: 80px;height:50px;font-weight: bold;">Tua conta</p>
+</div>
+<div style="background-color:#ffe5c7">
+<table style="width: 100%;">
+    <tr>
+        <td class="first">
+            Nome
+        </td>
+        <td class="second">
+             Maria
+        </td>
+        
+    </tr>
+    <tr>
+        <td class="first">
+            Data de nascimento
+        </td>
+        <td class="second">
+             21/02/2001
+        </td>
+    </tr>
+    <tr>
+        <td class="first">
+            Número de telefone
+        </td>
+        <td class="second">
+             965816325
+        </td>
+    </tr>
+    <tr>
+        <td class="first">
+           Cidade de residencia
+        </td>
+        <td class="second">
+            Aveiro
+        </td>
+    </tr>
+    <tr>
+        <td class="first">
+            E-mail
+        </td>
+        <td class="second">
+            mariaandrade@hotmail.com
+        </td>
+    </tr>
+    <tr>
+        <td class="first">
+            Nº Cartão cliente
+        </td>
+        <td class="second">
+            255684962
+        </td>
+    </tr>
+    <tr>
+        <td class="first">
+           Cartão de débito
+        </td>
+        <td class="second">
+            659*******
+        </td>
+    </tr>
 
+</table>
+</div>
+    <div style="text-align: right;width: 100%; font-size: x-large;">
+        <img src="https://images.vexels.com/media/users/3/151115/isolated/preview/9c228499ab81c8118ea10e8dc9ca39ee-machine-gear-stroke-doodle-by-vexels.png" class="right" style="width: 45px;height:45px;">
+    </br>
+
+<p> Editar
+</p>
+    </div>
+   
+    <div style="width:100%">
+        <button onclick="location.href='preferencias.html'" class="center" style="width: 10%; background-color: lightsalmon; border-radius: 50px ;"> Modificar preferências </button>
+    </div>
     
-
+    <div style="width:100%">
+      <p style="border-radius: 50%; width: 50px;height:50px; background-color: #ffc847;font-size:xx-large;text-align: center;color: white; ;" onclick="javascript:history.back()">&#x219c</p>
+      </div>
 
     </div>  
     <!-- jQuery library -->
