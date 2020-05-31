@@ -1,258 +1,305 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
-  <head>
-     <style>
-   body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif;text-align: center; }
-.w3-bar-block .w3-bar-item {padding:20px}
-.card-img-top {
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
-}
 
+<head>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Karma", sans-serif;
+      text-align: center;
+    }
 
+    .w3-bar-block .w3-bar-item {
+      padding: 20px
+    }
 
+    .card-img-top {
+      width: 100%;
+      height: 15vw;
+      object-fit: cover;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-    </style> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  
-  <body >
-    <div id="mySidenav" class="sidenav">
-      <a style="position: absolute; right:0px;  ;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="accordion" id="accordionExample">
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a style="position: absolute; right:0px;  ;" href="javascript:void(0)" class="closebtn"
+      onclick="closeNav()">&times;</a>
+    <div class="accordion" id="accordionExample">
 
-        <div>
-          <a style="background-image: url('assets/CouchPotato/LOGO_FIXEDSIZE.png'); width: 191.25px;
-          height: 57px; background-size: contain; background-repeat:no-repeat; align-content:center ; margin-left:30px;margin-bottom:50px" ></a>
-        </div>
-        <div style="border-radius: 10%" class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Tua Conta
-              </button>
-            </h2>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div  class="card-body">
-              <ul  style="border-radius: 20%" class="list-group">
-                <li class="list-group-item">Inventário</li>
-                <li class="list-group-item">Calendário </li>
-                <li class="list-group-item">Preferências</li>
-                <li class="list-group-item">Lista de Compras</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-
-        <div  style="border-radius: 10%" class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Sugestões
-              </button>
-            </h2>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
+      <div>
+        <a
+          style="background-image: url('assets/CouchPotato/LOGO_FIXEDSIZE.png'); width: 191.25px;
+          height: 57px; background-size: contain; background-repeat:no-repeat; align-content:center ; margin-left:30px;margin-bottom:50px"></a>
+      </div>
+      <div style="border-radius: 10%" class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Tua Conta
+            </button>
+          </h2>
         </div>
 
-
-        <div style="border-radius: 10%" class="card">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Compras
-              </button>
-            </h2>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul style="border-radius: 20%" class="list-group">
+              <li class="list-group-item">Inventário</li>
+              <li class="list-group-item">Calendário </li>
+              <li class="list-group-item">Preferências</li>
+              <li class="list-group-item">Lista de Compras</li>
+            </ul>
           </div>
         </div>
+      </div>
 
+
+      <div style="border-radius: 10%" class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Sugestões
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+
+
+      <div style="border-radius: 10%" class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Compras
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Use any element to open the sidenav -->
+  <img onclick="openNav()" src="assets/icons/menu.png" style="height: 30px; width: 30px;">
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    <div class="modal fade text-center" id="theModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">Receita</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="flex-row menuItemAlign"> <span id="recipeName"></span></div>
+          </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+
+
+
+        </div>
       </div>
     </div>
-  
-    <!-- Use any element to open the sidenav -->
-    <img onclick="openNav()" src="assets/icons/menu.png" style="height: 30px; width: 30px;">
-  
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-    <div id="main">
-      <div class="modal fade text-center" id="theModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-             
-            <div class="modal-header">
-              <h5 class="modal-title">Receita</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="flex-row menuItemAlign"> <span id="recipeName"></span></div>
-            </div>
-            <div class="modal-footer">
-              
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-    
-       
 
-          </div>
-        </div>
-      </div>
-
-      <!-- !PAGE CONTENT! -->
-      <div style="height: 100px;padding: 20px;">
-        <h1>
-        <img src="https://i.pinimg.com/originals/f5/35/77/f535774ddf57aa98193b3008c3bc81da.png" style="width: 50px;height: 50px;"/>
+    <!-- !PAGE CONTENT! -->
+    <div style="height: 100px;padding: 20px;">
+      <h1>
+        <img src="https://i.pinimg.com/originals/f5/35/77/f535774ddf57aa98193b3008c3bc81da.png"
+          style="width: 50px;height: 50px;" />
         Livro de Receitas
-        <img src="https://i.pinimg.com/originals/f5/35/77/f535774ddf57aa98193b3008c3bc81da.png" style="width: 50px;height: 50px;"/>
-          </h1>
-      </div>
-      <div class="w3-main w3-content w3-padding" style="max-width:85%;margin-top:10px">
-        <!-- First Photo Grid-->
-        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-          <div class="card-deck row">
-            <div class="col">
+        <img src="https://i.pinimg.com/originals/f5/35/77/f535774ddf57aa98193b3008c3bc81da.png"
+          style="width: 50px;height: 50px;" />
+      </h1>
+    </div>
+    <div class="w3-main w3-content w3-padding" style="max-width:85%;margin-top:10px">
+      <!-- First Photo Grid-->
+      <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+        <div class="card-deck row">
+          <div class="col">
 
-              <div class="card" style="width: 18rem; " id="recipeCard" data-toggle="modal" data-name="paocaseiro" data-target="#theModal" href="recipeModal.html">
-                <img class="card-img-top" src="https://amopaocaseiro.com.br/wp-content/uploads/2020/04/receita-de-pao-frances-caseiro-IMG_4360-840x560.jpg" alt="Pao">
-                <div class="card-body">
-                  <h4 class="card-title">Pão caseiro</h4>
-                  <p class="card-text">&#x1F550 4 horas</p>
-                  <p class="card-text">6 pães de 90 g</p>      
-                </div>
+            <div class="card" style="width: 18rem; " id="recipeCard" data-toggle="modal" data-name="paocaseiro"
+              data-target="#theModal" href="recipeModal.html">
+              <img class="card-img-top"
+                src="https://amopaocaseiro.com.br/wp-content/uploads/2020/04/receita-de-pao-frances-caseiro-IMG_4360-840x560.jpg"
+                alt="Pao">
+              <div class="card-body">
+                <h4 class="card-title">Pão caseiro</h4>
+                <p class="card-text">&#x1F550 4 horas</p>
+                <p class="card-text">6 pães de 90 g</p>
               </div>
             </div>
-            <div class="col">
+          </div>
+          <div class="col">
             <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://scm-assets.constant.co/scm/unilever/f4b5026fe1dd6b46672ba349cfbb04e4/8f60d715-0a14-43e1-af12-f9b276dc791f.jpg" alt="Carbonara" >
-            <div class="card-body">
-              <h4 class="card-title">Massa Carbonara</h4>
-            <p class="card-text">&#x1F550 20 minutos</p>
-            <p class="card-text">6 porções</p>
-             </div>
-             </div></div>
-             <div class="col">
+              <img class="card-img-top"
+                src="https://scm-assets.constant.co/scm/unilever/f4b5026fe1dd6b46672ba349cfbb04e4/8f60d715-0a14-43e1-af12-f9b276dc791f.jpg"
+                alt="Carbonara">
+              <div class="card-body">
+                <h4 class="card-title">Massa Carbonara</h4>
+                <p class="card-text">&#x1F550 20 minutos</p>
+                <p class="card-text">6 porções</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
 
             <div class="card" style="width: 18rem">
-              <img class="card-img-top" src="https://i0.wp.com/ncultura.pt/wp-content/uploads/2020/03/Bacalhau-assado-no-forno-com-batatas-e-crosta-de-broa.jpg?fit=650%2C433&ssl=1" alt="Bacalhau">
+              <img class="card-img-top"
+                src="https://i0.wp.com/ncultura.pt/wp-content/uploads/2020/03/Bacalhau-assado-no-forno-com-batatas-e-crosta-de-broa.jpg?fit=650%2C433&ssl=1"
+                alt="Bacalhau">
               <div class="card-body">
                 <h4 class="card-title">Bacalhau no forno</h4>
                 <p class="card-text">&#x1F550 55 minutos</p>
-                <p class="card-text">2 porções</p>             
+                <p class="card-text">2 porções</p>
               </div>
             </div>
-             </div>
-             <div class="col">
+          </div>
+          <div class="col">
 
             <div class="card" style="width: 18rem">
-            <img class="card-img-top" src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-salada-mista-2.jpg" alt="Salada" >
-            <div class="card-body">
-              <h4 class="card-title">Salada de tomates</h4>
-              <p class="card-text"> &#x1F550 20 minutos</p>
-              <p class="card-text">4 porções </p>
-             </div>
+              <img class="card-img-top"
+                src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-salada-mista-2.jpg" alt="Salada">
+              <div class="card-body">
+                <h4 class="card-title">Salada de tomates</h4>
+                <p class="card-text"> &#x1F550 20 minutos</p>
+                <p class="card-text">4 porções </p>
+              </div>
             </div>
-             
-          </div>
+
           </div>
         </div>
-          <!-- Second Photo Grid-->
-          <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-            <div class="card-deck row">
-              <div class="col">
-  
-                <div class="card" style="width: 18rem; ">
-                  <img class="card-img-top" src="https://i.pinimg.com/originals/c9/69/4f/c9694ff417d4d2494c84f31a553795fe.jpg" alt="Dumplings">
-                  <div class="card-body">
-                    <h4 class="card-title">Dumplings de vegetais</h4>
-                    <p class="card-text">&#x1F550 1 hora</p>
-                    <p class="card-text">40 doses</p>      
-                  </div>
-                </div>
+      </div>
+      <!-- Second Photo Grid-->
+      <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+        <div class="card-deck row">
+          <div class="col">
+
+            <div class="card" style="width: 18rem; ">
+              <img class="card-img-top"
+                src="https://i.pinimg.com/originals/c9/69/4f/c9694ff417d4d2494c84f31a553795fe.jpg" alt="Dumplings">
+              <div class="card-body">
+                <h4 class="card-title">Dumplings de vegetais</h4>
+                <p class="card-text">&#x1F550 1 hora</p>
+                <p class="card-text">40 doses</p>
               </div>
-              <div class="col">
-              <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="https://www.cozinharsemstress.pt/cozinhar/wp-content/uploads/2015/06/A-001-2006.jpg" alt="Vaca estufada" >
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top"
+                src="https://www.cozinharsemstress.pt/cozinhar/wp-content/uploads/2015/06/A-001-2006.jpg"
+                alt="Vaca estufada">
               <div class="card-body">
                 <h4 class="card-title">Guisado de vaca</h4>
-              <p class="card-text">&#x1F550 40 minutos</p>
-              <p class="card-text">4 porções</p>
-               </div>
-               </div></div>
-               <div class="col">
-  
-              <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="https://www.pingodoce.pt/wp-content/uploads/2016/07/lasanhadelegumes617.jpg" alt="Lasanha veg">
-                <div class="card-body">
-                  <h4 class="card-title">Lasanha vegetariana</h4>
-                  <p class="card-text">&#x1F550 1 hora </p>
-                  <p class="card-text">4 porções</p>             
-                </div>
+                <p class="card-text">&#x1F550 40 minutos</p>
+                <p class="card-text">4 porções</p>
               </div>
-               </div>
-               <div class="col">
-  
-              <div class="card" style="width: 18rem">
-              <img class="card-img-top" src="https://i0.statig.com.br/bancodeimagens/60/8i/1o/608i1ok6qsdptta89j94ygzoa.jpg" alt="Strogonoff" >
+            </div>
+          </div>
+          <div class="col">
+
+            <div class="card" style="width: 18rem">
+              <img class="card-img-top"
+                src="https://www.pingodoce.pt/wp-content/uploads/2016/07/lasanhadelegumes617.jpg" alt="Lasanha veg">
+              <div class="card-body">
+                <h4 class="card-title">Lasanha vegetariana</h4>
+                <p class="card-text">&#x1F550 1 hora </p>
+                <p class="card-text">4 porções</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+
+            <div class="card" style="width: 18rem">
+              <img class="card-img-top"
+                src="https://i0.statig.com.br/bancodeimagens/60/8i/1o/608i1ok6qsdptta89j94ygzoa.jpg" alt="Strogonoff">
               <div class="card-body">
                 <h4 class="card-title">Strogonoff</h4>
                 <p class="card-text"> &#x1F550 45 minutos</p>
                 <p class="card-text">8 porções </p>
-               </div>
               </div>
-               
             </div>
-            </div>
+
           </div>
+        </div>
       </div>
-        
-     
- 
-
- 
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-50" style="height: 50px">
-    <div class="w3-bar">
-      
-      <a href="recipebook.html" class="w3-bar-item w3-black w3-button" style="font-size: large; color:lightsalmon;">1</a>
-      <a href="recipebook2.html" class="w3-bar-item w3-button w3-hover-lightsalmon" style="font-size: large; color:lightsalmon;">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-lightsalmon" style="font-size: large; color:lightsalmon;">3</a>
-      <a href="recipebook2.html" class="w3-bar-item w3-button w3-hover-lightsalmon"style="font-size: large ; color:lightsalmon;">»</a>
     </div>
+
+
+
+
+
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-50" style="height: 50px">
+      <div class="w3-bar">
+
+        <a href="recipebook.html" class="w3-bar-item w3-black w3-button"
+          style="font-size: large; color:lightsalmon;">1</a>
+        <a href="recipebook2.html" class="w3-bar-item w3-button w3-hover-lightsalmon"
+          style="font-size: large; color:lightsalmon;">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-lightsalmon"
+          style="font-size: large; color:lightsalmon;">3</a>
+        <a href="recipebook2.html" class="w3-bar-item w3-button w3-hover-lightsalmon"
+          style="font-size: large ; color:lightsalmon;">»</a>
+      </div>
+    </div>
+
+
+
+
+
   </div>
-  
+  <!-- jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    
+  <script src="js/index.js" type="text/javascript"></script>
+  <script src="js/recipes.json" type="text/javascript"></script>
+</body>
 
-
-    </div>  
-    <!-- jQuery library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> 
-    
-    <script src="js/index.js" type="text/javascript"></script>
-    <script src="js/recipes.json" type="text/javascript"></script>
-  </body> 
 </html>
