@@ -1,0 +1,16 @@
+{"receitas":
+    {
+    "paocaseiro" : 
+    {
+        "name" : "Pão Caseiro",
+        "autor" : "João Mateus",
+        "time" : "1 hora",
+        "dificuldade" : 1,
+        "Ingredientes":{},
+        "Preparação":{},
+        "isVeg":true,
+        "kCal":500
+
+    }
+}
+}
