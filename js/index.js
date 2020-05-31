@@ -4,7 +4,7 @@ var vegetariano = true;
 let alimentos =[];
 
 var receitas={
-  receitas: {
+  
     paocaseiro: {
       name: 'Pão Caseiro',
       autor: 'João Mateus',
@@ -43,7 +43,7 @@ var receitas={
           quantidade: 45,
           texto: '45g de fermento biológico fresco'
         },
-        'açúcar': {
+        açúcar: {
           tipo: 'tempero',
           propriedades: [
             'acucar'
@@ -60,7 +60,7 @@ var receitas={
           texto: '1/2 colher (sopa) de sal'
         }
       },
-      'Preparação': {
+      Preparação: {
         '1': '1. Bata todos os ingredientes juntos menos o sal e a farinha.',
         '2': '2. Num recipiente largo, meta a sua mistura e adicione metade da farinha, mexendo com uma colher de pau.',
         '3': '3. Guarde uma chávena de farinha e adicione a restante e o sal à mistura.',
@@ -74,8 +74,9 @@ var receitas={
       },
       isVeg: true,
       kCal: 500
-    }
-  }
+    
+  },
+  outrareceita:{}
 }
 //this is huge
 //console.log(receitas); test stuff
@@ -114,11 +115,24 @@ function closeNav() {
 
 $('#theModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('name') // Extract info from data-* attributes
+  var name = button.data('name') // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this)
-  modal.find('#recipeName').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
+  console.log(Object.keys(receitas));
+  for(var property in Object.keys(receitas)){
+    console.log(property);
+    if(receitas[property]==name){
+      alert(beep);
+      var details = receitas(property) ;
+    var author = details[autor];
+    var diff = details[dificuldade];
+    var ingredientes = details[Ingredientes];
+    }
+   
+  }
+  modal.find('#recipeName').text(name);
+  modal.find('#recipeName').text(name);
+
 })
 
