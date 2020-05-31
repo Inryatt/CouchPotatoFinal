@@ -3,6 +3,13 @@
 <html>
   <head>
     <style> 
+    input::placeholder {
+  color:black;
+}
+  input{
+    background-color:#ffe5c7;border:1px solid #ffe5c7 ;
+    
+  }
     .center {
   display: block;
   margin-left: auto;
@@ -17,7 +24,7 @@
 }
 table, th, td {
   border: 2px solid black;
-  padding: 15px;
+  padding: 10px;
   font-size: medium;
 }
 .right {
@@ -108,73 +115,73 @@ table, th, td {
     <p class="center" style="width: 80px;height:50px;font-weight: bold;">Tua conta</p>
 </div>
 <div style="background-color:#ffe5c7">
+  <form>
 <table style="width: 100%;">
     <tr>
         <td class="first">
-            Nome
+          <label style="font-size:medium;"for="nome">Nome :</label>
         </td>
         <td class="second">
-             Maria
-        </td>
-        
-    </tr>
-    <tr>
-        <td class="first">
-            Data de nascimento
-        </td>
-        <td class="second">
-             21/02/2001
+          <input style="width: 100%;" placeholder="Nome" type="text" id="nome" name="nome"><br><br>
         </td>
     </tr>
     <tr>
         <td class="first">
-            Número de telefone
+          <label style="font-size:medium;"for="dn">Data de nascimento :</label>
         </td>
         <td class="second">
-             965816325
+            <input style="width: 100%;" placeholder="Data de nascimento" type="date" id="dn" name="dn"><br><br>
         </td>
     </tr>
     <tr>
         <td class="first">
-           Cidade de residencia
+          <label style="font-size:medium;"for="nt">Número de telefone :</label>
         </td>
         <td class="second">
-            Aveiro
+          <input style="width: 100%;" placeholder="Número de telefone" type="number" id="nt" name="nt"><br><br>
         </td>
     </tr>
     <tr>
         <td class="first">
-            E-mail
+          <label style="font-size:medium;"for="cr">Cidade de residência :</label>
         </td>
         <td class="second">
-            mariaandrade@hotmail.com
+            <input style="width: 100%;" placeholder="Cidade de residência" type="text" id="cr" name="cr"><br><br>
         </td>
     </tr>
     <tr>
         <td class="first">
-            Nº Cartão cliente
+          <label style="font-size:medium;"for="email">E-mail :</label>
         </td>
         <td class="second">
-            255684962
+            <input style="width: 100%;" placeholder="E-mail" type="email" id="email" name="email"><br><br>
         </td>
     </tr>
     <tr>
         <td class="first">
-           Cartão de débito
+          <label style="font-size:medium;"for="ccli">Cartão cliente :</label>
         </td>
         <td class="second">
-            659*******
+            <input style="width: 100%;" placeholder="Número cartão cliente" type="number" id="ccli" name="ccli"><br><br>
+        </td>
+    </tr>
+    <tr>
+        <td class="first">
+          <label style="font-size:medium;"for="cc">Cartão de débito:</label>
+        </td>
+        <td class="second">
+            <form>
+              <input style="width: 60%; " placeholder="Número cartão de débito" type="number" id="cc" name="cc">
+              <input style="width: 30%;" placeholder="Número CVV" type="number" id="cccvv" name="cccvv">
+            </form>
         </td>
     </tr>
 
 </table>
+</form>
 </div>
-    <div style="text-align: right;width: 100%; font-size: x-large;">
-        <img src="https://images.vexels.com/media/users/3/151115/isolated/preview/9c228499ab81c8118ea10e8dc9ca39ee-machine-gear-stroke-doodle-by-vexels.png" class="right" style="width: 45px;height:45px;">
-    </br>
-
-<p> Editar
-</p>
+    <div>
+      <p></p>
     </div>
    
     <div style="width:100%">
