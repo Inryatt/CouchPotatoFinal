@@ -100,6 +100,25 @@ $('#naodiet').on('click change', function() {
 });
 
 
+function makeUL(array) {
+  // Create the list element:
+  var list = document.createElement('ul');
+
+  for (var i = 0; i < array.length; i++) {
+      // Create the list item:
+      var item = document.createElement('li');
+
+      // Set its contents:
+      item.appendChild(document.createTextNode(array[i]));
+
+      // Add it to the list:
+      list.appendChild(item);
+  }
+
+  // Finally, return the constructed list:
+  return list;
+}
+
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
@@ -120,14 +139,26 @@ $('#theModal').on('show.bs.modal', function (event) {
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this)
   console.log(Object.keys(receitas));
-  for(var property in Object.keys(receitas)){
+  var details;
+  $("#ingredientes").empty();
+  for(var property in receitas){
     console.log(property);
-    if(receitas[property]==name){
-      alert(beep);
-      var details = receitas(property) ;
-    var author = details[autor];
-    var diff = details[dificuldade];
-    var ingredientes = details[Ingredientes];
+    if(property==name){
+     // alert('beep');
+       details = receitas[property] ;
+      console.log(details);
+    var autor = details['autor'];
+    console.log(autor);
+    var diff = details['dificuldade'];
+    var ingredientes = details['Ingredientes'];
+    for(var item in ingredientes){
+      console.log(ingredientes[item]['texto']);
+      $("#ingredientes").append("<li>" + ingredientes[item]['texto'] + "</li>");
+      console.log("aaaa");
+    }
+    //console.log(autor+" , "+diff +" ," + JSON.stringify(ingredientes));
+
+
     }
    
   }
@@ -136,3 +167,6 @@ $('#theModal').on('show.bs.modal', function (event) {
 
 })
 
+$('#theModal').on('hide.bs.modal', function (event) {
+  $('#ingredientes').removeClass('show');
+});
