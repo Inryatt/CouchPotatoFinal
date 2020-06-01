@@ -84,72 +84,380 @@ var receitas={
     portions: '3 pessoas',
     dificuldade: 1,
     Ingredientes: {
-      farinhaTrigo: {
-        tipo: 'farinha',
-        propriedades: [
-          'trigo',
-          'sem fermento'
-        ],
-        quantidade: 1000,
-        texto: '1 kg de farinha de trigo sem fermento'
+      azeite: {
+        tipo: 'azeite',
+        propriedades:['virgem'],
+        quantidade: 33,
+        texto:'2 colheres de sopa de azeite virgem',
       },
-      leite: {
-        tipo: 'leite',
-        propriedades: [
-          'morno'
-        ],
-        quantidade: 400,
-        texto: '400ml de leite morno'
+      bacon: {
+        tipo: 'carne',
+        propriedades:['porco'],
+        quantidade: 200,
+        texto:'200 g de bacon'
       },
       ovo: {
         tipo: 'farinha',
         propriedades: [],
         quantidade: 2,
-        texto: '2 ovos (remova a película ou pele da gema)'
+        texto: '2 ovos'
       },
-      fermento: {
-        tipo: 'farinha',
+      natas: {
+        tipo: 'laticinios',
         propriedades: [
-          'biológico',
-          'fresco'
         ],
-        quantidade: 45,
-        texto: '45g de fermento biológico fresco'
-      },
-      açúcar: {
-        tipo: 'tempero',
-        propriedades: [
-          'acucar'
-        ],
-        quantidade: 200,
-        texto: '1 chávena de açúcar'
+        quantidade: 80,
+        texto: '80 ml de natas'
       },
       sal: {
         tipo: 'tempero',
         propriedades: [
           'sal'
         ],
-        quantidade: 10,
-        texto: '1/2 colher (sopa) de sal'
+        quantidade: 5,
+        texto: '1 colher de chá de sal'
+      },
+      esparguete: {
+        tipo: 'massa',
+        propriedades:['esparguete'],
+        quantidade: 300,
+        texto:'300 g de esparguete',
+      },
+      parmesao: {
+        tipo:'laticinios',
+        propriedades:['queijo','parmesão'],
+        quantidade: 50,
+        texto: '50 gramas de parmesão ralado',
+      },
+      pimentaPreta:{
+        tipo: 'condimentos',
+        propriedades:['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto:'pimenta preta qb'
       }
     },
     Preparação: {
-      '1': '1. Bata todos os ingredientes juntos menos o sal e a farinha.',
-      '2': '2. Num recipiente largo, meta a sua mistura e adicione metade da farinha, mexendo com uma colher de pau.',
-      '3': '3. Guarde uma chávena de farinha e adicione a restante e o sal à mistura.',
-      '4': '4. Neste momento ligue seu forno em fogo baixo (e desligue-o após 5 minutos).',
-      '5': '5. Enfarinhe uma superfície e sove a massa com carinho até que ela desgrude das mãos.',
-      '6': '6. Divida a massa em duas partes iguais e abra cada uma com um rolo, enfarinhando a superfície novamente.',
-      '7': '7. Leve os pães ao forno que você aqueceu por 5 minutos e desligou.',
-      '8': '8. Deixe-os descansar, para que cresçam, estimulados pelo calor morno durante 20 a 30 minutos.',
-      '9': '9. Mesmo que a massa não tenha crescido após esse tempo, ligue o forno em temperatura média (180º C) e deixe ela assar por uns 30, 40 ou 45 minutos (depende do seu forno).',
-      '10': '10. Deixe esfriar dentro ou fora do forno.'
+      '1': '1. Coloque o azeite numa frigideira e frite o bacon.',
+      '2': '2. Bata os ovos, acrescente as natas e tempere com o sal.',
+      '3': '3. Junte ao bacon e deixe cozinhar durante 3 minutos em lume brando até engrossar ligeiramente e reserve.',
+      '4': '4. Num tacho coza o esparguete em água abundante com uma pitada de sal até que fique al dente, aproximadamente 8 minutos.',
+      '5': '5. Escorra o esparguete e adicione-o à frigideira juntamente com 2 colheres de sopa da água da cozedura da massa, envolvendo bem.',
+      '6': '6. Sirva de imediato polvilhado com o queijo parmesão ralado e pimenta preta a gosto.',
+      
     },
-    isVeg: true,
+    isVeg: false,
     kCal: 500
 
   },
-  outrareceita:{}
+  hamburguergrao:{
+    name: 'Hamburguer de grão de bico e linhaça ',
+    autor:'New in town',
+    time: '20 minutos',
+    portions: '1 pessoa',
+    dificuldade:1,
+    Ingredientes:{
+      graodebico:{
+        tipo:'feijão',
+        propriedades:['grão de bico','cozido'],
+        quantidade: 300,
+        texto:'300 gr de grão de bico cozido',
+      },
+      sementeslinhaça:{
+        tipo: 'sementes',
+        propriedades:['linhaça','moída'],
+        quantidade: 20,
+        texto:'20 gr de sementes de linhaça moída',
+      },
+      salsa:{
+        tipo:'condimentos',
+        propriedades:['salsa'],
+        quantidade: 15,
+        texto:'1 colher de sopa de salsa',
+      },
+      ovo: {
+        tipo: 'farinha',
+        propriedades: [],
+        quantidade: 1,
+        texto: '1 ovo'
+      },
+      cenoura:{
+        tipo:'vegetal',
+        propriedades:['cenoura','média'],
+        quantidade: 1,
+        texto:'1 cenoura média',
+      },
+      pimentaPreta:{
+        tipo:'condimentos',
+        propriedades:['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto:'pimenta preta qb',
+      },
+      
+
+    },
+    Preparação:{
+      '1': '1. Coza o ovo e depois de cozido descasque e corte em pequenos pedaços.',
+      '2': '2. Numa taça grande, junte o feijão frade, a cebola, alho, salsa e misture.',
+      '3': '3. Adicione o atum, previamente temperado com sal, pimenta e azeite. ',
+      '4': '4. Misture.',
+      '5': '5. Leve ao frigorífico e sirva a salada fresca.',
+    },
+    isVeg: true,
+    kCal: 230,
+  },
+  saladafeijao:{
+    name: 'Salada de feijão frade e atum',
+    autor: 'New in town',
+    time:'25 minutos',
+    portions:'2 pessoas',
+    dificuldade:2,
+    Ingredientes:{
+      atum:{
+        tipo:'conservas',
+        propriedades:['atum natural'],
+        quantidade:200,
+        texto:'1 lata de atum natural',
+      },
+      feijaofrade:{
+        tipo:'feijão',
+        propriedades:['frade'],
+        quantidade:200,
+        texto:'200 gr de feijão frade',
+      },
+      ovo: {
+        tipo: 'farinha',
+        propriedades: [],
+        quantidade: 1,
+        texto: '1 ovo'
+      },
+      pimentaPreta:{
+        tipo:'condimentos',
+        propriedades:['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto:'pimenta preta qb',
+      },sal:{
+        tipo: 'tempero',
+        propriedades: ['sal'],
+        quantidade: 0,
+        texto: 'sal qb',
+      },
+      cebola:{
+        tipo:'vegetal',
+        propriedades:['cebola'],
+        quantidade:1,
+        texto:'1 cebola',
+      },
+      alho:{
+        tipo:'condimentos',
+        propriedades:['dente de alho','alho'],
+        quantidade:1,
+        texto:'1 dente de alho',
+      },
+      salsa:{
+        tipo:'condimentos',
+        propriedades:['salsa'],
+        quantidade:10,
+        texto:'2 colheres de chá de salsa'
+      },
+
+    },
+    isVeg: false,
+    kCal: 258,
+  },
+  omolete:{
+    name:'Omolete de legumes',
+    autor:'New in Town',
+    time:'30 minutos',
+    portions:'1 pessoa',
+    dificuldade:1,
+    Ingredientes:{
+      ovo:{
+        tipo: 'farinha',
+        propriedades: [],
+        quantidade: 2,
+        texto: '2 ovos'
+      },
+      claras:{
+        tipo:'farinha',
+        propriedades:['ovo','claras'],
+        quantidade:100,
+        texto:'100 gr de claras de ovos',
+      },
+      tomate:{
+        tipo:'vegetal',
+        propriedades:['tomate'],
+        quantidade:1,
+        texto:'1 tomate',
+      },
+      pimento:{
+        tipo:'vegetal',
+        propriedades:['pimento'],
+        quantidade:2,
+        texto:'2 pimentos pequenos',
+      },
+    },
+    Preparação:{
+      '1':'1. Bater os ovos com as claras.',
+      '2':'2. Cortar os legumes em cubos e juntar aos ovos.',
+      '3':'3. Colocar a mistura numa frigideira anti-aderente em lume brando por dez minutos.'
+    },
+    isVeg: false,
+    kCal: 210,
+  },
+  tomatesrecheados:{
+    name:'Tomates recheados com atum e cogumelos',
+    autor:'New in Town',
+    time:'15 minutos',
+    dificuldade:1,
+    portions:'1 pessoa',
+    Ingredientes:{
+      atum:{
+        tipo:'conservas',
+        propriedades:['atum natural'],
+        quantidade:200,
+        texto:'1 lata de atum natural',
+      },
+      tomate:{
+        tipo:'vegetal',
+        propriedades:['tomate','maduro'],
+        quantidade:2,
+        texto:'2 tomates maduros',
+      },
+      cogumelos:{
+        tipo:'vegetal',
+        propriedades:['cogumelos'],
+        quantidade:70,
+        texto:'70 gr de cogumelos',
+      },
+      pimento:{
+        tipo:'vegetal',
+        propriedades:['pimento','verde'],
+        quantidade:2,
+        texto:'2 pimentos verdes',
+      },
+      cebola:{
+        tipo:'vegetal',
+        propriedades:['cebola'],
+        quantidade:1,
+        texto:'1 cebola',
+      },
+      alho:{
+        tipo:'condimentos',
+        propriedades:['dente de alho','alho'],
+        quantidade:2,
+        texto:'2 dentes de alho',
+      },
+      azeite: {
+        tipo: 'azeite',
+        propriedades:['virgem'],
+        quantidade: 5,
+        texto:'1 colher de chá de azeite',
+      },
+      oregaos:{
+        tipo:'condimentos',
+        propriedades:['oregaos'],
+        quantidade:0,
+        texto:'óregãos qb',
+      },
+      pimentaPreta:{
+        tipo:'condimentos',
+        propriedades:['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto:'pimenta preta qb',
+      },
+      sal:{
+        tipo: 'tempero',
+        propriedades: ['sal'],
+        quantidade: 0,
+        texto: 'sal qb',
+      },
+
+    },
+    Preparação:{
+      '1': '1. Numa taça, misture o atum, os cogumelos, a cebola, os pimentos e tempere com azeite, sal, pimenta e óregãos.',
+      '2': '2. Corte o topo dos tomates.',
+      '3': '3. Leve ao forno. ',
+    },
+    isVeg:false,
+    kCal:210,
+  },
+  saladaespargos:{
+    name:'Salada de queijo fresco e espargos',
+    autor:'New in Town',
+    time:'5 minutos',
+    dificuldade:1,
+    portions:'1 pessoa',
+    Ingredientes:{
+      queijo:{
+        tipo:'laticinios',
+        propriedades:['queijo','fresco','amargo'],
+        quantidade:1,
+        texto:'1 queijo fresco amargo',
+      },
+      espargos:{
+        tipo:'vegetal',
+        propriedades:['espargos'],
+        quantidade:150,
+        texto:'150 gr de espargos',
+      },
+      alface:{
+        tipo:'vegetal',
+        propriedades:['alface'],
+        quantidade:100,
+        texto:'100 gr de alface',
+      },
+      rucula:{
+        tipo:'vegetal',
+        propriedades:['rúcula'],
+        quantidade:50,
+        texto:'50 gr de rúcula',
+      },
+      tomate:{
+        tipo:'vegetal',
+        propriedades:['tomate','cherry'],
+        quantidade:5,
+        texto:'5 tomates cherry',
+      },
+      amendoa:{
+        tipo:'fruto seco',
+        propriedades:['amendoa'],
+        quantidade:5,
+        texto:'5 amêndoas',
+      },
+      azeite: {
+        tipo: 'azeite',
+        propriedades:['virgem'],
+        quantidade: 5,
+        texto:'1 colher de chá de azeite',
+      },
+
+
+    },
+    Preparação:{
+      '1': '1. Coza os espargos e depois corte-os aos cubinhos. ',
+      '2':'2. Corte o queijo fresco em cubos.',
+      '3':'3. Numa taça grande, coloque o alface, a rúcula, o queijo fresco, os espargos, o tomate e adicione o molho (azeite, vinagre e amêndoas).',
+      '4':'4. Misture.',
+    },
+    isVeg:true,
+    kCal:185,
+  },
+  outrareceita:{
+    name:'',
+    autor:'',
+    time:'',
+    dificuldade:1,
+    portions:'',
+    Ingredientes:{},
+    Preparação:{
+      '1': '1. ',
+      '2':'2. ',
+      '3':'3. ',
+      '4':'4. ',
+    },
+    isVeg:false,
+    kCal:0,
+  }
 }
 //this is huge
 //console.log(receitas); test stuff
