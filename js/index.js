@@ -30,7 +30,7 @@ var receitas={
           texto: '400ml de leite morno'
         },
         ovo: {
-          tipo: 'farinha',
+          tipo: 'ovo',
           propriedades: [],
           quantidade: 2,
           texto: '2 ovos (remova a película ou pele da gema)'
@@ -97,7 +97,7 @@ var receitas={
         texto:'200 g de bacon'
       },
       ovo: {
-        tipo: 'farinha',
+        tipo: 'ovo',
         propriedades: [],
         quantidade: 2,
         texto: '2 ovos'
@@ -175,7 +175,7 @@ var receitas={
         texto:'1 colher de sopa de salsa',
       },
       ovo: {
-        tipo: 'farinha',
+        tipo: 'ovo',
         propriedades: [],
         quantidade: 1,
         texto: '1 ovo'
@@ -225,7 +225,7 @@ var receitas={
         texto:'200 gr de feijão frade',
       },
       ovo: {
-        tipo: 'farinha',
+        tipo: 'ovo',
         propriedades: [],
         quantidade: 1,
         texto: '1 ovo'
@@ -272,13 +272,13 @@ var receitas={
     dificuldade:1,
     Ingredientes:{
       ovo:{
-        tipo: 'farinha',
+        tipo: 'ovo',
         propriedades: [],
         quantidade: 2,
         texto: '2 ovos'
       },
       claras:{
-        tipo:'farinha',
+        tipo:'ovo',
         propriedades:['ovo','claras'],
         quantidade:100,
         texto:'100 gr de claras de ovos',
@@ -442,6 +442,222 @@ var receitas={
     isVeg:true,
     kCal:185,
   },
+  carilfrangocourgete:{
+    name:'Caril de frango com courgete',
+    autor:'New in Town',
+    time:'20 minutos',
+    dificuldade:2,
+    portions:'2 pessoas',
+    Ingredientes:{
+      frango:{
+        tipo:'carne',
+        propriedades:['frango','peito'],
+        quantidade:400,
+        texto:'400 gr de peito de frango',
+      },
+      courgete:{
+        tipo:'legume',
+        propriedades:['courgete'],
+        quantidade:4,
+        texto:'4 courgetes médias',
+      },
+      alho:{
+        tipo:'condimentos',
+        propriedades:['dente de alho','alho'],
+        quantidade:4,
+        texto:'4 dentes de alho',
+      },
+      louro:{
+        tipo:'condimento',
+        propriedades:['louro','folha'],
+        quantidade:1,
+        texto:'1 folha de louro',
+      },
+      malaguetas:{
+        tipo:'condimentos',
+        propriedades:['malaguetas vermelhas'],
+        quantidade:2,
+        texto:'2 malaguetas vermelhas',
+      },
+      caril:{
+        tipo:'condimentos',
+        propriedades:['caril','pó'],
+        quantidade: 30,
+        texto:'2 colheres de sopa de caril em pó',
+      },
+      pimentaPreta:{
+        tipo:'condimentos',
+        propriedades:['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto:'pimenta preta qb',
+      },
+      sal:{
+        tipo: 'tempero',
+        propriedades: ['sal'],
+        quantidade: 0,
+        texto: 'sal qb',
+      },
+    },
+    Preparação:{
+      '1': '1. Colocar numa frigideira um fio de azeite para saltear o alho, o louro, a malagueta. ',
+      '2':'2. Tempere o frango com sal e pimenta.',
+      '3':'3. Junte o frango na frigideira e deixe cozinhar por 5 minutos',
+      '4':'4. Acrescente a courgette cortada em cubos pequenos e o caril em pó.',
+      '5':'5. Aguarde 10 minutos.',
+    },
+    isVeg:false,
+    kCal:280,
+  },
+  couveflorfrango:{
+    name:'Couve flor com frango',
+    autor:'New in Town',
+    time:'20 minutos',
+    dificuldade:1,
+    portions:'1 pessoa ',
+    Ingredientes:{
+      frango:{
+        tipo:'carne',
+        propriedades:['frango','peito'],
+        quantidade:200,
+        texto:'200 gr de peito de frango',
+      },
+      couveflor:{
+        tipo:'legume',
+        propriedades:['couve-flor'],
+        quantidade:1,
+        texto:'1 chávena de chá de couve-flor',
+      },
+      molhosoja:{
+        tipo:'condimentos',
+        propriedades:['molho','soja'],
+        quantidade:16,
+        texto:'1 colher de sopa de molho de soja',
+      },
+      azeite: {
+        tipo: 'azeite',
+        propriedades:['virgem'],
+        quantidade: 16,
+        texto:'1 colheres de sopa de azeite virgem',
+      },
+      pimentaPreta:{
+        tipo:'condimentos',
+        propriedades:['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto:'pimenta preta qb',
+      },
+      pimento:{
+        tipo:'vegetal',
+        propriedades:['pimento','vermelho'],
+        quantidade:20,
+        texto:'20 gr pimentos vermelhos',
+      },
+      courgete:{
+        tipo:'legume',
+        propriedades:['courgete'],
+        quantidade:1,
+        texto:'1 courgetes',
+      },
+      cogumelos:{
+        tipo:'vegetal',
+        propriedades:['cogumelos'],
+        quantidade:1,
+        texto:'1 chávena de cogumelos',
+      },
+      gengibre:{
+        tipo:'legume',
+        propriedades:['gengibre'],
+        quantidade:1,
+        texto:'1 colher de chá de gengibre',
+      },
+      alho:{
+        tipo:'condimentos',
+        propriedades:['dente de alho','alho'],
+        quantidade:4,
+        texto:'4 dentes de alho',
+      },
+      cenoura:{
+        tipo:'vegetal',
+        propriedades:['cenoura','média'],
+        quantidade: 1,
+        texto:'1 cenoura média',
+      },
+      feijaoverde:{
+        tipo:'feijão',
+        propriedades:['feijão-verde'],
+        quantidade: 1,
+        texto:'1 chávena de feijão verde',
+      }, 
+    },
+    Preparação:{
+      '1': '1. Preparar todos os ingredientes (excepto a courgete), (lavar, cortar em pequenos pedaços) e colocar numa frigideira anti-aderente.',
+      '2':'2. Acrescentar os temperos (sal, pimenta).',
+      '3':'3. Picar o peito de frango e adicionar à mistura.',
+      '4':'4. Cortar a courgete em pedaços e juntar aos legumes.',
+      '5':'5. Deixar cozinhar por 15 minutos.',
+    },
+    isVeg:false,
+    kCal:320
+  },
+  beringelarecheada:{
+    name:'Beringela recheada',
+    autor:'New in Town',
+    time:'25 minutos',
+    dificuldade:4,
+    portions:'1 pessoa',
+    Ingredientes:{
+      beringela:{
+        tipo:'legume',
+        propriedades:['beringela'],
+        quantidade:100,
+        texto:'100 gr de beringela',
+      },
+      cogumelos:{
+        tipo:'vegetal',
+        propriedades:['cogumelos'],
+        quantidade:100,
+        texto:'100 gr de cogumelos',
+      },
+      queijo:{
+        tipo:'laticinios',
+        propriedades:['requeijão','light'],
+        quantidade:100,
+        texto:'100g de requeijão light',
+      },
+      perú:{
+        tipo:'carne',
+        propriedades:['bife','perú'],
+        quantidade:100,
+        texto:'100gr bife de perú',
+      },
+      oregaos:{
+        tipo:'condimentos',
+        propriedades:['oregaos'],
+        quantidade:5,
+        texto:'1 colher de chá de óregãos',
+      },
+      pimentaPreta:{
+        tipo:'condimentos',
+        propriedades:['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto:'pimenta preta qb',
+      },
+
+
+    },
+    Preparação:{
+      '1': '1. Comece por cortar a beringela ao meio e retire a polpa.',
+      '2':'2.  De seguida tempere com sal e pimenta.',
+      '3':'3. Coloque no microondas por dois minutos.',
+      '4':'4. À parte, grelhe os bifes de perú, previamente temperados com sumo de limão e ervas aromáticas e uma pitada de sal. ',
+      '5':'5. Corte aos cubinhos.',
+      '6':'6. Numa frigideira com um fio de azeite, coloque a beringela e a polpa de beringela e, de seguida, coloque os bifes de perú.',
+      '7':'7. No recheio, opte por juntar o requeijão light e misture tudo.',
+      '8':'8. Leve ao forno por 10 minutos'
+    },
+    isVeg:false,
+    kCal:170,
+  },
+
   outrareceita:{
     name:'',
     autor:'',
