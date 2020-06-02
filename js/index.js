@@ -59,7 +59,7 @@ var receitas={
           ],
           quantidade: 10,
           texto: '1/2 colher (sopa) de sal'
-        }
+        },
       },
       Preparação: {
         '1': '1. Bata todos os ingredientes juntos menos o sal e a farinha.',
@@ -134,7 +134,7 @@ var receitas={
         propriedades:['pimenta', 'primenta preta'],
         quantidade: 0,
         texto:'pimenta preta qb'
-      }
+      },
     },
     Preparação: {
       '1': '1. Coloque o azeite numa frigideira e frite o bacon.',
@@ -787,6 +787,228 @@ var receitas={
     isVeg:true,
     kCal:0,
   },
+  peixinhos:{  name:'Peixinhos da horta',
+  autor:'Pingo Doce',
+  time:'30 minutos',
+  dificuldade:2,
+  portions:'4 pessoas',
+  Ingredientes:{
+    feijaoverde:{
+      tipo:'feijão',
+      propriedades:['feijão-verde'],
+      quantidade: 400,
+      texto:'400 gr de feijão verde',
+    },
+    sal: {
+      tipo: 'tempero',
+      propriedades: [
+        'sal'
+      ],
+      quantidade: 8,
+      texto: '1 colher de chá e meia de sal'
+    },
+    farinha:{
+      tipo:'farinha',
+      propriedades:['farinha de milho'],
+      quantidade:130,
+      texto:'130 gr de farinha de milho'
+    },
+    alho:{
+      tipo:'condimentos',
+      propriedades:['pó','alho em pó'],
+      quantidade:5,
+      texto:'1 colher de chá de alho em pó',
+    },
+    pimentaPreta:{
+      tipo: 'condimentos',
+      propriedades:['pimenta', 'primenta preta'],
+      quantidade: 0,
+      texto:'pimenta preta qb'
+    },
+    ovo: {
+      tipo: 'ovo',
+      propriedades: [],
+      quantidade: 1,
+      texto: '1 ovo grande'
+    },
+    agua:{
+      tipo:'agua',
+      propriedades:['H2o'],
+      quantidade:150,
+      texto:'150ml de água',
+    },
+    azeite: {
+      tipo: 'azeite',
+      propriedades:[],
+      quantidade: 700,
+      texto:'700 ml de azeite',
+    },
+
+
+  },
+  Preparação:{
+    '1':'1. Lave o feijão-verde e elimine as pontas.',
+    '2':'2. Corte as vagens ao meio e volte a cortar cada metade em duas partes iguais, no sentido do comprimento.',
+    '3':'3. Coza o feijão-verde durante 5 minutos em água a ferver, temperada com 1 colher de chá de sal.',
+    '4':'4. Numa taça, misture a farinha de milho com o restante sal, o alho em pó e uma pitada de pimenta moída na altura. ',
+    '5':'5. Junte o ovo, já batido, e cerca de 150 ml de água, mexendo muito bem com um garfo até obter um polme liso.',
+    '6':'6. Escorra o feijão-verde cozido, espalhe-o sobre um pano de cozinha, enxaguando-o bem.',
+    '7':'7. Passe-o pelo polme preparado.',
+    '8':'8. Numa frigideira aqueça o azeite e frite o feijão até dourar. ',
+    '9':'9. Escorra muito bem sobre papel absorvente.',
+  },
+  isVeg:true,
+  kCal:277,
+},
+pizzaveg:{
+  name:'Pizza com burrata e pesto',
+    autor:'Pingo Doce',
+    time:'30 minutos',
+    dificuldade:1,
+    portions:'6 pessoas',
+    Ingredientes:{
+      massapizza:{
+        tipo:'massa',
+        propriedades:['massa de pizza','refrigerada'],
+        quantidade:2,
+        texto:'2 massa de pizza refrigerada',
+      },
+      molhopesto:{
+        tipo:'molho',
+        propriedades:['molho pesto'],
+        quantidade:45,
+        texto:'3 colheres de sopa de molho pesto',
+      },
+      burrata:{
+        tipo:'laticinios',
+        propriedades:['queijo','burrata'],
+        quantidade:2,
+        texto:'2 embalagens de burrata fresca',
+      },
+      rucula:{
+        tipo:'vegetal',
+        propriedades:['rúcula'],
+        quantidade:1,
+        texto:'1 embalagem de rúcula',
+      },
+      pinhoes:{
+        tipo:'fruto seco',
+        propriedades:['pinhoes','torrados'],
+        quantidade:30,
+        texto:'2 colheres de sopa de pinhões torrados'
+      },
+      azeite: {
+        tipo: 'azeite',
+        propriedades:[],
+        quantidade: 33,
+        texto:'2 colheres de sopa de azeite',
+      },
+      salgrosso:{
+        tipo:'tempero',
+        propriedades:['sal','sal grosso'],
+        quantidade:5,
+        texto:'1 colher de chá de sal grosso',
+      },  
+      pimentaPreta:{
+        tipo: 'condimentos',
+        propriedades:['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto:'pimenta preta qb'
+      },
+    },
+    Preparação:{
+      '1':'1. Abra as massas de pizza, junte-as e forme uma bola grande.',
+      '2':'2. Estique a massa numa bancada enfarinhada, com a ajuda de um rolo da massa, dando-lhe uma forma oval.',
+      '3':'3. Regue a massa com 1 colher de sopa de azeite, polvilhe com o sal e espalhe o pesto.',
+      '4':'4. Leve ao forno, pré-aquecido a 190 °C, cerca de 12 minutos.',
+      '5':'5. Retire a base do forno.  ',
+      '6':'6. Espalhe por cima as burratas e cubra com a rúcula e com os pinhões torrados.',
+      '7':'7. Regue com o restante azeite, pimenta e sirva de imediato.',
+    },
+    isVeg:true,
+    kCal:456,
+},
+quinoa:{
+  name:'Quinoa salteada com ovo e abacate',
+    autor:'Pingo Doce',
+    time:'30 minutos',
+    dificuldade:1,
+    portions:'4 pessoas',
+    Ingredientes:{
+      quinoa:{
+        tipo:'???',
+        propriedades:['quinoa branca'],
+        quantidade:200,
+        texto:'200 gr de quinoa branca',
+      },
+      ovo: {
+        tipo: 'ovo',
+        propriedades: [],
+        quantidade: 4,
+        texto: '4 ovos médios'
+      },
+      legumes:{
+        tipo:'legumes',
+        propriedades:'embalagem',
+        quantidade:1,
+        texto:'1 embalagem de mistura de legumes'
+      },
+      abacate:{
+        tipo:'fruta',
+        propriedades:['abacate'],
+        quantidade:2,
+        texto:'2 abacates',
+      },
+      coentros:{
+        tipo:'condimentos',
+        propriedades:['coentros'],
+        quantidade:0,
+        texto:'coentros qb',
+      },
+      sal: {
+        tipo: 'tempero',
+        propriedades: [
+          'sal'
+        ],
+        quantidade: 10,
+        texto: '2 colheres de chá de sal'
+      },
+      azeite: {
+        tipo: 'azeite',
+        propriedades:[],
+        quantidade: 33,
+        texto:'2 colheres de sopa de azeite',
+      },
+      alho:{
+        tipo:'condimentos',
+        propriedades:['dente de alho','alho'],
+        quantidade:2,
+        texto:'2 dentes de alho',
+      },
+      pimentaPreta:{
+        tipo: 'condimentos',
+        propriedades:['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto:'pimenta preta qb'
+      },
+
+
+
+
+    },
+    Preparação:{
+      '1':'1. Cozinhe a quinoa, conforme as instruções da embalagem, com metade do sal.',
+      '2':'2. Aqueça meia colher de azeite numa frigideira anti-aderente e estrele os ovos um a um e reserve.',
+      '3':'3. Na mesma frigideira, aqueça o restante azeite.',
+      '4':'4. Junte os dentes de alho, previamente descascados, e cozinhe durante 2 minutos.',
+      '5':'5. Junte a mistura de legumes e deixe cozinhar mais 4 minutos, juntando o restante sal.',
+      '6':'6. Adicione a quinoa reservada e tempere com pimenta.',
+      '7':'7. Sirva em pratos com o abacate cortado em fatias e o ovo estrelado.',
+      '8':'8.Polvilhe com coentros.',
+    },
+    isVeg:true,
+    kCal:476,
+},
   outrareceita:{
     name:'',
     autor:'',
@@ -795,10 +1017,13 @@ var receitas={
     portions:'',
     Ingredientes:{},
     Preparação:{
-      '1': '1. ',
+      '1':'1. ',
       '2':'2. ',
       '3':'3. ',
       '4':'4. ',
+      '5':'5. ',
+      '6':'6. ',
+      '7':'7. ',
     },
     isVeg:false,
     kCal:0,
