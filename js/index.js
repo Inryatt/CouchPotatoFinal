@@ -1009,6 +1009,80 @@ quinoa:{
     isVeg:true,
     kCal:476,
 },
+tortellini:{
+  name:'Tortellini de espinafres e ovo',
+autor:'Pingo Doce',
+time:'20 minutos',
+dificuldade:1,
+portions:'4 pessoas',
+Ingredientes:{
+  tomate:{
+    tipo:'vegetal',
+    propriedades:['tomate','seco'],
+    quantidade:40,
+    texto:'40 gr de tomate seco',
+  },
+  ovo: {
+    tipo: 'ovo',
+    propriedades: [],
+    quantidade: 2,
+    texto: '2 ovos grandes'
+  },
+  espinafres:{
+    tipo:'legume',
+    propriedades:['embalagem','espinafre'],
+    quantidade:1,
+    texto:'1 embalagem de espinafres',
+  },
+  ricotaespinafre:{
+    tipo:'mistura',
+    propriedades:['ricotta','espinafres'],
+    quantidade:1,
+    texto:'1 embalagem de tortellini de ricota e espinafres',
+  },
+  miolonoz:{
+    time:'fruto seco',
+    propriedades:['noz','miolo noz'],
+    quantidade:60,
+    texto:'60 gr de miolo de noz',
+  },
+  sal: {
+    tipo: 'tempero',
+    propriedades: [
+      'sal'
+    ],
+    quantidade: 10,
+    texto: '1/2 colher (sopa) de sal'
+  },
+  pimentaPreta:{
+    tipo: 'condimentos',
+    propriedades:['pimenta', 'primenta preta'],
+    quantidade: 0,
+    texto:'pimenta preta qb'
+  },
+  azeite: {
+    tipo: 'azeite',
+    propriedades:['virgem'],
+    quantidade: 30,
+    texto:'1 colhere e meia de sopa de azeite virgem',
+  },
+},
+Preparação:{
+  '1':'1. Leve ao lume um tacho com a água e a colher de sobremesa de sal e deixe ferver.',
+  '2':'2. Pique o tomate seco em pedaços e reserve. ',
+  '3':'3. Parta os ovos para uma taça, tempere-os com o restante sal e um pouco de pimenta e bata-os com um garfo até estarem desfeitos e reserve.',
+  '4':'4. Deite cerca de uma colher de chá de azeite numa frigideira antiaderente (+– 16 cm de diâmetro) e disponha aí os ovos batidos. ',
+  '5':'5. Salpique com cerca de metade do tomate seco picado e deixe cozer até conseguir virar o crepe de ovo com uma espátula.',
+  '6':'6. Vire, cozinhe mais um minuto, retire do lume e corte em tiras e reserve.',
+  '7':'7. Coza a massa durante o tempo indicado na embalagem.',
+  '8':'8. Aqueça o restante azeite numa frigideira larga antiaderente, adicione os espinafres e salteie-os em lume médio a forte até murcharem.',
+  '9':'9. Retire a massa do lume e escorra-a, reservando duas a três colheres de água, que deverá adicionar aos espinafres. ',
+  '10':'10. Junte o restante tomate seco, mexa e coloque tudo no recipiente de servir.',
+  '11':'11. Salpique com as tiras de ovo e as nozes grosseiramente partidas e tempere com um pouco de pimenta.',
+  '12':'12. Sirva de imediato.'
+},
+isVeg:true,
+kCal:376,},
   outrareceita:{
     name:'',
     autor:'',
