@@ -22,7 +22,7 @@ var receitas = {
         texto: '1 kg de farinha de trigo sem fermento'
       },
       leite: {
-        tipo: 'leite',
+        tipo: 'laticinios',
         propriedades: [
           'morno'
         ],
@@ -746,13 +746,13 @@ var receitas = {
         tipo: 'laticinios',
         propriedades: ['queijo', 'mozzarella'],
         quantidade: 100,
-        texto: '100 g queijo mozzarella ralado',
+        texto: '100 gr queijo mozzarella ralado',
       },
       parmesão: {
         tipo: 'laticinios',
         propriedades: ['queijo', 'parmesão'],
         quantidade: 100,
-        texto: '100 g queijo parmesão ralado',
+        texto: '100 gr queijo parmesão ralado',
       },
       oregaos: {
         tipo: 'condimentos',
@@ -1084,6 +1084,279 @@ var receitas = {
     },
     isVeg: true,
     kCal: 376,
+  },
+  croquetes:{ 
+    name: 'Croquetes de arroz de tomate',
+  autor: 'Pingo Doce',
+  time: '30 minutos',
+  dificuldade: 3,
+  portions: '8 croquetes',
+  Ingredientes: {
+    arroz:{tipo:'arroz',
+    propriedades:['sobras'],
+    quantidade:200,
+    texto:'200 gr de sobras de arroz de tomate frio',
+  },
+  ovo: {
+    tipo: 'ovo',
+    propriedades: [],
+    quantidade: 3,
+    texto: '3 ovos médios'
+  },
+  queijo: {
+    tipo: 'laticinios',
+    propriedades: ['queijo', 'ralado'],
+    quantidade: 80,
+    texto: '80 gramas de queijo ralado',
+  },
+salsa:{
+  tipo:'condimento',
+  propriedades:['salsa'],
+  quantidade:15,
+  texto:'1 colher de sopa de salsa picada'
+},
+pimentaPreta: {
+  tipo: 'condimentos',
+  propriedades: ['pimenta', 'primenta preta'],
+  quantidade: 0,
+  texto: 'pimenta preta qb'
+},
+mozzarella: {
+  tipo: 'laticinios',
+  propriedades: ['queijo', 'mozzarella'],
+  quantidade: 1,
+  texto: '1 mozzarella fresca aos cubos',
+},
+oleo:{
+  tipo:'oleo',
+  propriedades:'',
+  quantidade:500,
+  texto:'500 ml de óleo (para fritar)',
+},
+manjericao: {
+  tipo: 'condimentos',
+  propriedades: ['manjericao'],
+  quantidade: 0,
+  texto: 'manjericão qb',
+},
+farinha:{
+tipo: 'farinha',
+propriedades: [],
+quantidade: 0,
+texto: 'meia chávena de farinha'
+},
+paoralado:{
+  tipo:'farinha',
+  propriedades:'pao ralado',
+  quantidade:200,
+  texto:'200 gr de pão ralado',
+},
+},
+    
+  Preparação: {
+    '1': '1. Junte numa taça o arroz, o ovo, o queijo ralado, a salsa e pimenta a gosto.',
+    '2': '2. Misture tudo.',
+    '3': '3. Para a cobertura, coloque em 3 taças diferentes a farinha, noutra os ovos batidos e na última o pão ralado.',
+    '4': '4. Espalhe um pouco da mistura de arroz nas mãos e coloque no centro um quadrado de mozzarella.',
+    '5': '5. Feche formando uma bola.',
+    '6': '6. Passe a bola pela farinha, em seguida pelo ovo e por fim pelo pão ralado.',
+    '7': '7. Continue este processo até o arroz acabar. ',
+    '8': '8. Numa frigideira, aqueça o óleo e frite as bolas de arroz.',
+    '9': '9. Sirva-as quentes e decore com folhas de manjericão.',},
+    isVeg: true,
+    kCal: 365,
+  },
+  caril:{
+    name: '',
+    autor: 'Pingo Doce',
+    time: '1 hora',
+    dificuldade: 1,
+    portions: '4 pessoas',
+    Ingredientes: {
+      lentilhas:{
+        tipo:'legume',
+        propriedades:['lentilhas'],
+        quantidade:200,
+        texto:'200 gr de lentilhas verdes',
+      },
+      oleococo:{
+        tipo:'oleo',
+        propriedades:['oleo de coco', 'coco'],
+        quantidade:2,
+        texto:'2 colheres de sopa de óleo de coco',
+      },
+      cebola: {
+        tipo: 'vegetal',
+        propriedades: ['cebola'],
+        quantidade: 1,
+        texto: '1 cebola picada',
+      },
+      alho: {
+        tipo: 'condimentos',
+        propriedades: ['dente de alho', 'alho'],
+        quantidade: 4,
+        texto: '4 dentes de alho picado',
+      },
+      gengibre: {
+        tipo: 'legume',
+        propriedades: ['gengibre'],
+        quantidade: 2,
+        texto: '2 colheres de sopa de gengibre picado',
+      },
+      caril: {
+        tipo: 'condimentos',
+        propriedades: ['caril', 'pó'],
+        quantidade: 15,
+        texto: '1 colher de sopa de caril em pó',
+      },
+      leitecoco: {
+        tipo: 'laticinios',
+        propriedades: [
+          'leite de coco','coco'
+        ],
+        quantidade: 200,
+        texto: '200ml de leite de coco'
+      },
+      pimento: {
+        tipo: 'vegetal',
+        propriedades: ['pimento verde'],
+        quantidade: 2,
+        texto: 'meio pimento verde em puré',
+      },
+      tomate: {
+        tipo: 'vegetal',
+        propriedades: ['tomate'],
+        quantidade: 1,
+        texto: '1 lata de tomate em pedaços',
+      },
+      sal: {
+        tipo: 'tempero',
+        propriedades: [
+          'sal'
+        ],
+        quantidade: 0,
+        texto: 'sal qb'
+      },
+      coentros: {
+        tipo: 'condimentos',
+        propriedades: ['coentros'],
+        quantidade: 0,
+        texto: 'coentros qb',
+      },
+      basmati:{
+        tipo:'arroz',
+        propriedades:'Basmati',
+        quantidade:350,
+        texto:'350 gr de arroz Basmati feito',
+      },
+
+    },
+    Preparação: {
+      '1': '1. Coloque as lentilhas de molho durante 30 minutos.',
+      '2': '2. Aqueça o óleo de coco num tacho, junte-lhe a cebola, o alho e o gengibre e deixe cozinhar em lume brando 3 minutos.',
+      '3': '3. Junte o caril e misture.',
+      '4': '4. Adicione as lentilhas, o leite de coco, o pimento verde triturado em puré e o tomate.',
+      '5': '5. Tempere com o sal e deixe cozinhar em lume brando cerca de 15 minutos.',
+      '6': '6. Sirva com os coentros picados e o arroz basmati.',
+    },
+    isVeg: true,
+    kCal: 309,
+  },
+  saladatomatemozzarella:{
+    name: 'Salada de tomate com mozzarella',
+    autor: 'Pingo Doce',
+    time: '25 minutos',
+    dificuldade: 3,
+    portions: '4 pessoas',
+    Ingredientes: {
+      pinhoes: {
+        tipo: 'fruto seco',
+        propriedades: ['pinhoes', 'miolo'],
+        quantidade: 20,
+        texto: '20 gr de miolo de pinhão',
+      },
+      tomatecherryvermelho: {
+        tipo: 'vegetal',
+        propriedades: ['tomate','cherry','vermelho'],
+        quantidade: 250,
+        texto: '250 gr de tomate cherry vermelho',
+      },
+      tomatecherryamarelo: {
+        tipo: 'vegetal',
+        propriedades: ['tomate','cherry','amarelo'],
+        quantidade: 250,
+        texto: '250 gr de tomate cherry amarelo',
+      },
+      abacate: {
+        tipo: 'fruta',
+        propriedades: ['abacate'],
+        quantidade: 1,
+        texto: '1 abacate',
+      },
+      limao:{
+        tipo:'fruto',
+        propriedades:['limão'],
+        quantidade:0,
+        texto:'meio limão',
+      },
+      manjericao: {
+        tipo: 'condimentos',
+        propriedades: ['manjericao'],
+        quantidade: 50,
+        texto: '50 gr de manjericão fresco',
+      },
+      mel:{
+        tipo:'condimento',
+        propriedades:['mel','doce'],
+        quantidade:1,
+        texto:'1 colher de sopa de mel',
+      },
+      azeite: {
+        tipo: 'azeite',
+        propriedades: [],
+        quantidade: 33,
+        texto: '2 colheres de sopa de azeite',
+      },
+      vinagre:{
+        tipo:'molho',
+        propriedades:['vinagre','balsamico'],
+        quantidade:33,
+        texto:'2 colheres de sobremesa de vinagre balsâmico'
+      },
+      sal: {
+        tipo: 'tempero',
+        propriedades: [
+          'sal'
+        ],
+        quantidade: 10,
+        texto: '1 colher de chá de sal'
+      },
+      pimentaPreta: {
+        tipo: 'condimentos',
+        propriedades: ['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto: 'pimenta preta qb'
+      },
+      mozzarella: {
+        tipo: 'laticinios',
+        propriedades: ['queijo', 'mozzarella'],
+        quantidade: 250,
+        texto: '250 gr queijo mozzarela',
+      },
+    },
+    Preparação: {
+      '1': '1. Numa frigideira anti-aderente aloure os pinhões, agitando a frigideira frequentemente.',
+      '2': '2. Ao mesmo tempo, lave o tomate e corte-o ao meio e reserve.',
+      '3': '3. Abra os abacates ao meio, elimine os caroços e retire a casca.',
+      '4': '4. Regue a polpa com um pouco de sumo de limão, corte em pedaços e junte ao tomate.',
+      '5': '5. Reserve as folhas mais bonitas do manjericão, corte as restantes em tiras e misture com os legumes e o abacate.',
+      '6': '6. Aqueça o mel levemente no microondas, junte-lhe o azeite, o vinagre balsâmico e o sal.',
+      '7': '7. Tempere com pimenta moída na altura, misture tudo muito bem e deite sobre os legumes.',
+      '8': '8. Mexa delicadamente e coloque num prato de servir.',
+      '9': '9. Por cima espalhe as mozzarellas míni, bem escorridas, salpique com os pinhões tostados e com as folhas de manjericão reservadas.',
+    },
+    isVeg: true,
+    kCal: 348,
   },
   outrareceita: {
     name: '',
