@@ -19,8 +19,10 @@
       padding: 20px
     }
 
-    
-    .btn-grad {background-image: linear-gradient(to right, rgb(216, 174, 36) 0%, #F09819 51%)}
+
+    .btn-grad {
+      background-image: linear-gradient(to right, rgb(216, 174, 36) 0%, #F09819 51%)
+    }
 
 
     .card-img-top {
@@ -123,34 +125,40 @@
 
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
-    <div class="modal fade text-center" id="theModal" >
+    <div class="modal fade text-center" id="theModal">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
 
           <div class="modal-header">
-            <img src="https://i.pinimg.com/originals/99/7c/90/997c901be018004a07d66ae4920fd3a6.png" style="width: 50px; height: 50px;">
-            <h5 class="modal-title" id="recipeName"></h5>            
+            <img src="https://i.pinimg.com/originals/99/7c/90/997c901be018004a07d66ae4920fd3a6.png"
+              style="width: 50px; height: 50px;">
+            <h5 class="modal-title" id="recipeName"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="flex-row menuItemAlign">
-              
+
               <div style="width: 25%;text-align: left;">Autor:<span id="recipeAutor"></span></div>
               <div style="width: 25%;text-align: center;">Dificuldade:<span id="recipeDif"></span></div>
               <div style="width: 25%;text-align: right;">&#x1F550:<span id="recipeTime"></span></div>
               <div style="width: 25%;text-align: right;"><span id="recipePor"></span></div>
-              
 
-              </div>
-              <br><div class="container">
-            <button class="btn-grad"id="recipeIngred" style="float: left;border-radius: 10px;" data-toggle="collapse" href="#ingredientes" role="button">Ingredientes </button><span class="showmore"></span></a> 
-            <br><br>
-            <div class="collapse" style="text-align: left;" id="ingredientes">
-              <ul></ul>
+
             </div>
-          </div>
+            <br>
+            <div class="container">
+              <button class="btn-grad" id="recipeIngred" style="float: left;border-radius: 10px;" data-toggle="collapse"
+                href="#ingredientes" role="button">Ingredientes </button><span class="showmore"></span></a>
+              <br><br>
+              <div class="collapse" style="text-align: left;" id="ingredientes">
+                <ul></ul>
+              </div>
+            </div>
+            <div class="container">
+              <div id="receitaEtapas" style="text-align: left; margin:1em;"></div>
+            </div>
           </div>
           <div class="modal-footer">
 
@@ -193,7 +201,7 @@
           </div>
           <div class="col flex">
             <div class="card" style="width: 18rem;" id="recipeCard" data-toggle="modal" data-name="carbonara"
-            data-target="#theModal" href="recipeModal.html">
+              data-target="#theModal" href="recipeModal.html">
               <img class="card-img-top"
                 src="https://scm-assets.constant.co/scm/unilever/f4b5026fe1dd6b46672ba349cfbb04e4/8f60d715-0a14-43e1-af12-f9b276dc791f.jpg"
                 alt="Carbonara">
@@ -207,7 +215,7 @@
           <div class="col flex">
 
             <div class="card" style="width: 18rem" id="recipeCard" data-toggle="modal" data-name="bacalhau"
-            data-target="#theModal" href="recipeModal.html">
+              data-target="#theModal" href="recipeModal.html">
               <img class="card-img-top"
                 src="https://i0.wp.com/ncultura.pt/wp-content/uploads/2020/03/Bacalhau-assado-no-forno-com-batatas-e-crosta-de-broa.jpg?fit=650%2C433&ssl=1"
                 alt="Bacalhau">
@@ -221,7 +229,7 @@
           <div class="col flex">
 
             <div class="card" style="width: 18rem" id="recipeCard" data-toggle="modal" data-name="salada"
-            data-target="#theModal" href="recipeModal.html">
+              data-target="#theModal" href="recipeModal.html">
               <img class="card-img-top"
                 src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-salada-mista-2.jpg" alt="Salada">
               <div class="card-body">
@@ -240,7 +248,7 @@
           <div class="col">
 
             <div class="card" style="width: 18rem; " id="recipeCard" data-toggle="modal" data-name="dumplings"
-            data-target="#theModal" href="recipeModal.html">
+              data-target="#theModal" href="recipeModal.html">
               <img class="card-img-top"
                 src="https://i.pinimg.com/originals/c9/69/4f/c9694ff417d4d2494c84f31a553795fe.jpg" alt="Dumplings">
               <div class="card-body">
@@ -252,7 +260,7 @@
           </div>
           <div class="col">
             <div class="card" style="width: 18rem;" id="recipeCard" data-toggle="modal" data-name="guisado"
-            data-target="#theModal" href="recipeModal.html">
+              data-target="#theModal" href="recipeModal.html">
               <img class="card-img-top"
                 src="https://www.cozinharsemstress.pt/cozinhar/wp-content/uploads/2015/06/A-001-2006.jpg"
                 alt="Vaca estufada">
@@ -266,7 +274,7 @@
           <div class="col">
 
             <div class="card" style="width: 18rem" id="recipeCard" data-toggle="modal" data-name="lasanhaveg"
-            data-target="#theModal" href="recipeModal.html">
+              data-target="#theModal" href="recipeModal.html">
               <img class="card-img-top"
                 src="https://www.pingodoce.pt/wp-content/uploads/2016/07/lasanhadelegumes617.jpg" alt="Lasanha veg">
               <div class="card-body">
@@ -279,7 +287,7 @@
           <div class="col">
 
             <div class="card" style="width: 18rem" id="recipeCard" data-toggle="modal" data-name="strogonoff"
-            data-target="#theModal" href="recipeModal.html">
+              data-target="#theModal" href="recipeModal.html">
               <img class="card-img-top"
                 src="https://i0.statig.com.br/bancodeimagens/60/8i/1o/608i1ok6qsdptta89j94ygzoa.jpg" alt="Strogonoff">
               <div class="card-body">
@@ -307,7 +315,7 @@
           style="font-size: large; color:lightsalmon;">1</a>
         <a href="recipebook2.html" class="w3-bar-item w3-button w3-hover-lightsalmon"
           style="font-size: large; color:lightsalmon;">2</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-lightsalmon"
+        <a href="recipebook3.html" class="w3-bar-item w3-button w3-hover-lightsalmon"
           style="font-size: large; color:lightsalmon;">3</a>
         <a href="recipebook2.html" class="w3-bar-item w3-button w3-hover-lightsalmon"
           style="font-size: large ; color:lightsalmon;">»</a>
