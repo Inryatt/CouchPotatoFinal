@@ -12,7 +12,7 @@ var receitas = {
     portions: '6 pães',
     dificuldade: 1,
     Ingredientes: {
-      farinhaTrigo: {
+      farinhatrigo: {
         tipo: 'farinha',
         propriedades: [
           'trigo',
@@ -44,7 +44,7 @@ var receitas = {
         quantidade: 45,
         texto: '45g de fermento biológico fresco'
       },
-      açúcar: {
+      acucar: {
         tipo: 'tempero',
         propriedades: [
           'acucar'
@@ -129,7 +129,7 @@ var receitas = {
         quantidade: 50,
         texto: '50 gramas de parmesão ralado',
       },
-      pimentaPreta: {
+      pimentapreta: {
         tipo: 'condimentos',
         propriedades: ['pimenta', 'primenta preta'],
         quantidade: 0,
@@ -162,7 +162,7 @@ var receitas = {
         quantidade: 300,
         texto: '300 gr de grão de bico cozido',
       },
-      sementeslinhaça: {
+      sementeslinhaca: {
         tipo: 'sementes',
         propriedades: ['linhaça', 'moída'],
         quantidade: 20,
@@ -623,7 +623,7 @@ var receitas = {
         quantidade: 100,
         texto: '100g de requeijão light',
       },
-      perú: {
+      peru: {
         tipo: 'carne',
         propriedades: ['bife', 'perú'],
         quantidade: 100,
@@ -748,7 +748,7 @@ var receitas = {
         quantidade: 100,
         texto: '100 gr queijo mozzarella ralado',
       },
-      parmesão: {
+      parmesao: {
         tipo: 'laticinios',
         propriedades: ['queijo', 'parmesão'],
         quantidade: 100,
@@ -808,7 +808,7 @@ var receitas = {
         quantidade: 8,
         texto: '1 colher de chá e meia de sal'
       },
-      farinha: {
+      farinhamilho: {
         tipo: 'farinha',
         propriedades: ['farinha de milho'],
         quantidade: 130,
@@ -1085,105 +1085,107 @@ var receitas = {
     isVeg: true,
     kCal: 376,
   },
-  croquetes:{ 
+  croquetes: {
     name: 'Croquetes de arroz de tomate',
-  autor: 'Pingo Doce',
-  time: '30 minutos',
-  dificuldade: 3,
-  portions: '8 croquetes',
-  Ingredientes: {
-    arroz:{tipo:'arroz',
-    propriedades:['sobras'],
-    quantidade:200,
-    texto:'200 gr de sobras de arroz de tomate frio',
-  },
-  ovo: {
-    tipo: 'ovo',
-    propriedades: [],
-    quantidade: 3,
-    texto: '3 ovos médios'
-  },
-  queijo: {
-    tipo: 'laticinios',
-    propriedades: ['queijo', 'ralado'],
-    quantidade: 80,
-    texto: '80 gramas de queijo ralado',
-  },
-salsa:{
-  tipo:'condimento',
-  propriedades:['salsa'],
-  quantidade:15,
-  texto:'1 colher de sopa de salsa picada'
-},
-pimentaPreta: {
-  tipo: 'condimentos',
-  propriedades: ['pimenta', 'primenta preta'],
-  quantidade: 0,
-  texto: 'pimenta preta qb'
-},
-mozzarella: {
-  tipo: 'laticinios',
-  propriedades: ['queijo', 'mozzarella'],
-  quantidade: 1,
-  texto: '1 mozzarella fresca aos cubos',
-},
-oleo:{
-  tipo:'oleo',
-  propriedades:'',
-  quantidade:500,
-  texto:'500 ml de óleo (para fritar)',
-},
-manjericao: {
-  tipo: 'condimentos',
-  propriedades: ['manjericao'],
-  quantidade: 0,
-  texto: 'manjericão qb',
-},
-farinha:{
-tipo: 'farinha',
-propriedades: [],
-quantidade: 0,
-texto: 'meia chávena de farinha'
-},
-paoralado:{
-  tipo:'farinha',
-  propriedades:'pao ralado',
-  quantidade:200,
-  texto:'200 gr de pão ralado',
-},
-},
-    
-  Preparação: {
-    '1': '1. Junte numa taça o arroz, o ovo, o queijo ralado, a salsa e pimenta a gosto.',
-    '2': '2. Misture tudo.',
-    '3': '3. Para a cobertura, coloque em 3 taças diferentes a farinha, noutra os ovos batidos e na última o pão ralado.',
-    '4': '4. Espalhe um pouco da mistura de arroz nas mãos e coloque no centro um quadrado de mozzarella.',
-    '5': '5. Feche formando uma bola.',
-    '6': '6. Passe a bola pela farinha, em seguida pelo ovo e por fim pelo pão ralado.',
-    '7': '7. Continue este processo até o arroz acabar. ',
-    '8': '8. Numa frigideira, aqueça o óleo e frite as bolas de arroz.',
-    '9': '9. Sirva-as quentes e decore com folhas de manjericão.',},
+    autor: 'Pingo Doce',
+    time: '30 minutos',
+    dificuldade: 3,
+    portions: '8 croquetes',
+    Ingredientes: {
+      arroz: {
+        tipo: 'arroz',
+        propriedades: ['sobras'],
+        quantidade: 200,
+        texto: '200 gr de sobras de arroz de tomate frio',
+      },
+      ovo: {
+        tipo: 'ovo',
+        propriedades: [],
+        quantidade: 3,
+        texto: '3 ovos médios'
+      },
+      queijo: {
+        tipo: 'laticinios',
+        propriedades: ['queijo', 'ralado'],
+        quantidade: 80,
+        texto: '80 gramas de queijo ralado',
+      },
+      salsa: {
+        tipo: 'condimento',
+        propriedades: ['salsa'],
+        quantidade: 15,
+        texto: '1 colher de sopa de salsa picada'
+      },
+      pimentapreta: {
+        tipo: 'condimentos',
+        propriedades: ['pimenta', 'primenta preta'],
+        quantidade: 0,
+        texto: 'pimenta preta qb'
+      },
+      mozzarella: {
+        tipo: 'laticinios',
+        propriedades: ['queijo', 'mozzarella'],
+        quantidade: 1,
+        texto: '1 mozzarella fresca aos cubos',
+      },
+      oleo: {
+        tipo: 'oleo',
+        propriedades: '',
+        quantidade: 500,
+        texto: '500 ml de óleo (para fritar)',
+      },
+      manjericao: {
+        tipo: 'condimentos',
+        propriedades: ['manjericao'],
+        quantidade: 0,
+        texto: 'manjericão qb',
+      },
+      farinha: {
+        tipo: 'farinha',
+        propriedades: [],
+        quantidade: 0,
+        texto: 'meia chávena de farinha'
+      },
+      paoralado: {
+        tipo: 'farinha',
+        propriedades: 'pao ralado',
+        quantidade: 200,
+        texto: '200 gr de pão ralado',
+      },
+    },
+
+    Preparação: {
+      '1': '1. Junte numa taça o arroz, o ovo, o queijo ralado, a salsa e pimenta a gosto.',
+      '2': '2. Misture tudo.',
+      '3': '3. Para a cobertura, coloque em 3 taças diferentes a farinha, noutra os ovos batidos e na última o pão ralado.',
+      '4': '4. Espalhe um pouco da mistura de arroz nas mãos e coloque no centro um quadrado de mozzarella.',
+      '5': '5. Feche formando uma bola.',
+      '6': '6. Passe a bola pela farinha, em seguida pelo ovo e por fim pelo pão ralado.',
+      '7': '7. Continue este processo até o arroz acabar. ',
+      '8': '8. Numa frigideira, aqueça o óleo e frite as bolas de arroz.',
+      '9': '9. Sirva-as quentes e decore com folhas de manjericão.',
+    },
     isVeg: true,
     kCal: 365,
   },
-  caril:{
+  caril: {
     name: '',
     autor: 'Pingo Doce',
     time: '1 hora',
     dificuldade: 1,
     portions: '4 pessoas',
     Ingredientes: {
-      lentilhas:{
-        tipo:'legume',
-        propriedades:['lentilhas'],
-        quantidade:200,
-        texto:'200 gr de lentilhas verdes',
+      lentilhas: {
+        tipo: 'legume',
+        propriedades: ['lentilhas'],
+        quantidade: 200,
+        texto: '200 gr de lentilhas verdes',
       },
-      oleococo:{
-        tipo:'oleo',
-        propriedades:['oleo de coco', 'coco'],
-        quantidade:2,
-        texto:'2 colheres de sopa de óleo de coco',
+      oleococo: {
+        tipo: 'oleo',
+        propriedades: ['oleo de coco', 'coco'],
+        quantidade: 2,
+        texto: '2 colheres de sopa de óleo de coco',
       },
       cebola: {
         tipo: 'vegetal',
@@ -1212,7 +1214,7 @@ paoralado:{
       leitecoco: {
         tipo: 'laticinios',
         propriedades: [
-          'leite de coco','coco'
+          'leite de coco', 'coco'
         ],
         quantidade: 200,
         texto: '200ml de leite de coco'
@@ -1243,11 +1245,11 @@ paoralado:{
         quantidade: 0,
         texto: 'coentros qb',
       },
-      basmati:{
-        tipo:'arroz',
-        propriedades:'Basmati',
-        quantidade:350,
-        texto:'350 gr de arroz Basmati feito',
+      basmati: {
+        tipo: 'arroz',
+        propriedades: 'Basmati',
+        quantidade: 350,
+        texto: '350 gr de arroz Basmati feito',
       },
 
     },
@@ -1262,7 +1264,7 @@ paoralado:{
     isVeg: true,
     kCal: 309,
   },
-  saladatomatemozzarella:{
+  saladatomatemozzarella: {
     name: 'Salada de tomate com mozzarella',
     autor: 'Pingo Doce',
     time: '25 minutos',
@@ -1277,13 +1279,13 @@ paoralado:{
       },
       tomatecherryvermelho: {
         tipo: 'vegetal',
-        propriedades: ['tomate','cherry','vermelho'],
+        propriedades: ['tomate', 'cherry', 'vermelho'],
         quantidade: 250,
         texto: '250 gr de tomate cherry vermelho',
       },
       tomatecherryamarelo: {
         tipo: 'vegetal',
-        propriedades: ['tomate','cherry','amarelo'],
+        propriedades: ['tomate', 'cherry', 'amarelo'],
         quantidade: 250,
         texto: '250 gr de tomate cherry amarelo',
       },
@@ -1293,11 +1295,11 @@ paoralado:{
         quantidade: 1,
         texto: '1 abacate',
       },
-      limao:{
-        tipo:'fruto',
-        propriedades:['limão'],
-        quantidade:0,
-        texto:'meio limão',
+      limao: {
+        tipo: 'fruto',
+        propriedades: ['limão'],
+        quantidade: 0,
+        texto: 'meio limão',
       },
       manjericao: {
         tipo: 'condimentos',
@@ -1305,11 +1307,11 @@ paoralado:{
         quantidade: 50,
         texto: '50 gr de manjericão fresco',
       },
-      mel:{
-        tipo:'condimento',
-        propriedades:['mel','doce'],
-        quantidade:1,
-        texto:'1 colher de sopa de mel',
+      mel: {
+        tipo: 'condimento',
+        propriedades: ['mel', 'doce'],
+        quantidade: 1,
+        texto: '1 colher de sopa de mel',
       },
       azeite: {
         tipo: 'azeite',
@@ -1317,11 +1319,11 @@ paoralado:{
         quantidade: 33,
         texto: '2 colheres de sopa de azeite',
       },
-      vinagre:{
-        tipo:'molho',
-        propriedades:['vinagre','balsamico'],
-        quantidade:33,
-        texto:'2 colheres de sobremesa de vinagre balsâmico'
+      vinagre: {
+        tipo: 'molho',
+        propriedades: ['vinagre', 'balsamico'],
+        quantidade: 33,
+        texto: '2 colheres de sobremesa de vinagre balsâmico'
       },
       sal: {
         tipo: 'tempero',
@@ -1331,7 +1333,7 @@ paoralado:{
         quantidade: 10,
         texto: '1 colher de chá de sal'
       },
-      pimentaPreta: {
+      pimentapreta: {
         tipo: 'condimentos',
         propriedades: ['pimenta', 'primenta preta'],
         quantidade: 0,
@@ -1379,9 +1381,502 @@ paoralado:{
   }
 }
 //this is huge
+//isto nao sao os ingredientes que o utilizador tem, mas sim os disponiveis
+var basedadosingred = {
+  farinhatrigo: {
+    tipo: 'farinha',
+    propriedades: [
+      'trigo',
+      'sem fermento'
+    ],
+    quantidade: 1000,
+    texto: '1 kg de farinha de trigo sem fermento'
+  },
+  leite: {
+    tipo: 'laticinios',
+    propriedades: [
+      'morno'
+    ],
+    quantidade: 400,
+    texto: '400ml de leite morno'
+  },
+  ovo: {
+    tipo: 'ovo',
+    propriedades: [],
+    quantidade: 2,
+    texto: '2 ovos (remova a película ou pele da gema)'
+  },
+  fermento: {
+    tipo: 'farinha',
+    propriedades: [
+      'biológico',
+      'fresco'
+    ],
+    quantidade: 45,
+    texto: '45g de fermento biológico fresco'
+  },
+  acucar: {
+    tipo: 'tempero',
+    propriedades: [
+      'acucar'
+    ],
+    quantidade: 200,
+    texto: '1 chávena de açúcar'
+  },
+  sal: {
+    tipo: 'tempero',
+    propriedades: [
+      'sal'
+    ],
+    quantidade: 10,
+    texto: '1/2 colher (sopa) de sal'
+  },
+  graodebico: {
+    tipo: 'feijão',
+    propriedades: ['grão de bico', 'cozido'],
+    quantidade: 300,
+    texto: '300 gr de grão de bico cozido',
+  },
+  sementeslinhaca: {
+    tipo: 'sementes',
+    propriedades: ['linhaça', 'moída'],
+    quantidade: 20,
+    texto: '20 gr de sementes de linhaça moída',
+  },
+  salsa: {
+    tipo: 'condimentos',
+    propriedades: ['salsa'],
+    quantidade: 15,
+    texto: '1 colher de sopa de salsa',
+  },
 
-var inventario={
-  
+  cenoura: {
+    tipo: 'vegetal',
+    propriedades: ['cenoura', 'média'],
+    quantidade: 1,
+    texto: '1 cenoura média',
+  },
+  atum: {
+    tipo: 'conservas',
+    propriedades: ['atum natural'],
+    quantidade: 200,
+    texto: '1 lata de atum natural',
+  },
+  feijaofrade: {
+    tipo: 'feijão',
+    propriedades: ['frade'],
+    quantidade: 200,
+    texto: '200 gr de feijão frade',
+  },
+
+
+  cebola: {
+    tipo: 'vegetal',
+    propriedades: ['cebola'],
+    quantidade: 1,
+    texto: '1 cebola',
+  },
+  alho: {
+    tipo: 'condimentos',
+    propriedades: ['dente de alho', 'alho'],
+    quantidade: 1,
+    texto: '1 dente de alho',
+  },
+
+  claras: {
+    tipo: 'ovo',
+    propriedades: ['ovo', 'claras'],
+    quantidade: 100,
+    texto: '100 gr de claras de ovos',
+  },
+  tomate: {
+    tipo: 'vegetal',
+    propriedades: ['tomate'],
+    quantidade: 1,
+    texto: '1 tomate',
+  },
+
+
+  cogumelos: {
+    tipo: 'vegetal',
+    propriedades: ['cogumelos'],
+    quantidade: 70,
+    texto: '70 gr de cogumelos',
+  },
+
+
+
+
+  oregaos: {
+    tipo: 'condimentos',
+    propriedades: ['oregaos'],
+    quantidade: 0,
+    texto: 'óregãos qb',
+  },
+
+  queijo: {
+    tipo: 'laticinios',
+    propriedades: ['queijo', 'fresco', 'amargo'],
+    quantidade: 1,
+    texto: '1 queijo fresco amargo',
+  },
+  espargos: {
+    tipo: 'vegetal',
+    propriedades: ['espargos'],
+    quantidade: 150,
+    texto: '150 gr de espargos',
+  },
+  alface: {
+    tipo: 'vegetal',
+    propriedades: ['alface'],
+    quantidade: 100,
+    texto: '100 gr de alface',
+  },
+  rucula: {
+    tipo: 'vegetal',
+    propriedades: ['rúcula'],
+    quantidade: 50,
+    texto: '50 gr de rúcula',
+  },
+
+  amendoa: {
+    tipo: 'fruto seco',
+    propriedades: ['amendoa'],
+    quantidade: 5,
+    texto: '5 amêndoas',
+  },
+
+  frango: {
+    tipo: 'carne',
+    propriedades: ['frango', 'peito'],
+    quantidade: 400,
+    texto: '400 gr de peito de frango',
+  },
+  courgette: {
+    tipo: 'legume',
+    propriedades: ['courgette'],
+    quantidade: 4,
+    texto: '4 courgettes médias',
+  },
+
+  louro: {
+    tipo: 'condimento',
+    propriedades: ['louro', 'folha'],
+    quantidade: 1,
+    texto: '1 folha de louro',
+  },
+  malaguetas: {
+    tipo: 'condimentos',
+    propriedades: ['malaguetas vermelhas'],
+    quantidade: 2,
+    texto: '2 malaguetas vermelhas',
+  },
+  caril: {
+    tipo: 'condimentos',
+    propriedades: ['caril', 'pó'],
+    quantidade: 30,
+    texto: '2 colheres de sopa de caril em pó',
+  },
+
+
+  couveflor: {
+    tipo: 'legume',
+    propriedades: ['couve-flor'],
+    quantidade: 1,
+    texto: '1 chávena de chá de couve-flor',
+  },
+  molhosoja: {
+    tipo: 'condimentos',
+    propriedades: ['molho', 'soja'],
+    quantidade: 16,
+    texto: '1 colher de sopa de molho de soja',
+  },
+  azeite: {
+    tipo: 'azeite',
+    propriedades: ['virgem'],
+    quantidade: 16,
+    texto: '1 colheres de sopa de azeite virgem',
+  },
+
+
+
+
+
+  gengibre: {
+    tipo: 'legume',
+    propriedades: ['gengibre'],
+    quantidade: 1,
+    texto: '1 colher de chá de gengibre',
+  },
+
+
+  feijaoverde: {
+    tipo: 'feijão',
+    propriedades: ['feijão-verde'],
+    quantidade: 1,
+    texto: '1 chávena de feijão verde',
+  },
+  beringela: {
+    tipo: 'legume',
+    propriedades: ['beringela'],
+    quantidade: 100,
+    texto: '100 gr de beringela',
+  },
+
+
+  peru: {
+    tipo: 'carne',
+    propriedades: ['bife', 'perú'],
+    quantidade: 100,
+    texto: '100gr bife de perú',
+  },
+
+
+
+
+
+
+  pimentapreta: {
+    tipo: 'condimentos',
+    propriedades: ['pimenta', 'primenta preta'],
+    quantidade: 0,
+    texto: 'pimenta preta qb',
+  },
+  espinafres: {
+    tipo: 'legume',
+    propriedades: ['embalagem', 'espinafre'],
+    quantidade: 1,
+    texto: '1 embalagem de espinafres',
+  },
+  bechamel: {
+    tipo: 'laticinios',
+    propriedades: ['molho', 'béchamel'],
+    quantidade: 500,
+    texto: '500ml de béchamel',
+  },
+  massalasanha: {
+    tipo: 'massa',
+    propriedades: ['massa para lasanha'],
+    quantidade: 500,
+    texto: '500 gr de massa fresca para lasanha',
+  },
+  mozzarella: {
+    tipo: 'laticinios',
+    propriedades: ['queijo', 'mozzarella'],
+    quantidade: 100,
+    texto: '100 gr queijo mozzarella ralado',
+  },
+  parmesao: {
+    tipo: 'laticinios',
+    propriedades: ['queijo', 'parmesão'],
+    quantidade: 100,
+    texto: '100 gr queijo parmesão ralado',
+  },
+
+  manjericao: {
+    tipo: 'condimentos',
+    propriedades: ['manjericao'],
+    quantidade: 0,
+    texto: 'manjericão qb',
+  },
+
+
+  farinhamilho: {
+    tipo: 'farinha',
+    propriedades: ['farinha de milho'],
+    quantidade: 130,
+    texto: '130 gr de farinha de milho'
+  },
+
+  agua: {
+    tipo: 'agua',
+    propriedades: ['H2o'],
+    quantidade: 150,
+    texto: '150ml de água',
+  },
+
+  massapizza: {
+    tipo: 'massa',
+    propriedades: ['massa de pizza', 'refrigerada'],
+    quantidade: 2,
+    texto: '2 massa de pizza refrigerada',
+  },
+  molhopesto: {
+    tipo: 'molho',
+    propriedades: ['molho pesto'],
+    quantidade: 45,
+    texto: '3 colheres de sopa de molho pesto',
+  },
+  burrata: {
+    tipo: 'laticinios',
+    propriedades: ['queijo', 'burrata'],
+    quantidade: 2,
+    texto: '2 embalagens de burrata fresca',
+  },
+
+  pinhoes: {
+    tipo: 'fruto seco',
+    propriedades: ['pinhoes', 'torrados'],
+    quantidade: 30,
+    texto: '2 colheres de sopa de pinhões torrados'
+  },
+
+  salgrosso: {
+    tipo: 'tempero',
+    propriedades: ['sal', 'sal grosso'],
+    quantidade: 5,
+    texto: '1 colher de chá de sal grosso',
+  },
+
+  quinoa: {
+    tipo: '???',
+    propriedades: ['quinoa branca'],
+    quantidade: 200,
+    texto: '200 gr de quinoa branca',
+  },
+
+  legumes: {
+    tipo: 'legumes',
+    propriedades: 'embalagem',
+    quantidade: 1,
+    texto: '1 embalagem de mistura de legumes'
+  },
+  abacate: {
+    tipo: 'fruta',
+    propriedades: ['abacate'],
+    quantidade: 2,
+    texto: '2 abacates',
+  },
+  coentros: {
+    tipo: 'condimentos',
+    propriedades: ['coentros'],
+    quantidade: 0,
+    texto: 'coentros qb',
+  },
+
+
+
+
+
+
+
+
+  ricotaespinafre: {
+    tipo: 'mistura',
+    propriedades: ['ricotta', 'espinafres'],
+    quantidade: 1,
+    texto: '1 embalagem de tortellini de ricota e espinafres',
+  },
+  miolonoz: {
+    time: 'fruto seco',
+    propriedades: ['noz', 'miolo noz'],
+    quantidade: 60,
+    texto: '60 gr de miolo de noz',
+  },
+
+
+  arroz: {
+    tipo: 'arroz',
+    propriedades: ['sobras'],
+    quantidade: 200,
+    texto: '200 gr de sobras de arroz de tomate frio',
+  },
+
+
+  oleo: {
+    tipo: 'oleo',
+    propriedades: '',
+    quantidade: 500,
+    texto: '500 ml de óleo (para fritar)',
+  },
+
+  farinha: {
+    tipo: 'farinha',
+    propriedades: [],
+    quantidade: 0,
+    texto: 'meia chávena de farinha'
+  },
+  paoralado: {
+    tipo: 'farinha',
+    propriedades: 'pao ralado',
+    quantidade: 200,
+    texto: '200 gr de pão ralado',
+  },
+  lentilhas: {
+    tipo: 'legume',
+    propriedades: ['lentilhas'],
+    quantidade: 200,
+    texto: '200 gr de lentilhas verdes',
+  },
+  oleococo: {
+    tipo: 'oleo',
+    propriedades: ['oleo de coco', 'coco'],
+    quantidade: 2,
+    texto: '2 colheres de sopa de óleo de coco',
+  },
+
+
+
+  leitecoco: {
+    tipo: 'laticinios',
+    propriedades: [
+      'leite de coco', 'coco'
+    ],
+    quantidade: 200,
+    texto: '200ml de leite de coco'
+  },
+  pimento: {
+    tipo: 'vegetal',
+    propriedades: ['pimento verde'],
+    quantidade: 2,
+    texto: 'meio pimento verde em puré',
+  },
+
+
+  basmati: {
+    tipo: 'arroz',
+    propriedades: 'Basmati',
+    quantidade: 350,
+    texto: '350 gr de arroz Basmati feito',
+  },
+  tomatecherryvermelho: {
+    tipo: 'vegetal',
+    propriedades: ['tomate', 'cherry', 'vermelho'],
+    quantidade: 250,
+    texto: '250 gr de tomate cherry vermelho',
+  },
+  tomatecherryamarelo: {
+    tipo: 'vegetal',
+    propriedades: ['tomate', 'cherry', 'amarelo'],
+    quantidade: 250,
+    texto: '250 gr de tomate cherry amarelo',
+  },
+
+  limao: {
+    tipo: 'fruto',
+    propriedades: ['limão'],
+    quantidade: 0,
+    texto: 'meio limão',
+  },
+
+  mel: {
+    tipo: 'condimento',
+    propriedades: ['mel', 'doce'],
+    quantidade: 1,
+    texto: '1 colher de sopa de mel',
+  },
+
+  vinagre: {
+    tipo: 'molho',
+    propriedades: ['vinagre', 'balsamico'],
+    quantidade: 33,
+    texto: '2 colheres de sobremesa de vinagre balsâmico'
+  },
+
+
+
+
+
 }
 //console.log(receitas); test stuff
 $('#simveg').on('click change', function () {
@@ -1471,8 +1966,8 @@ $('#theModal').on('show.bs.modal', function (event) {
         console.log("aaaa");
       }
       passos = details['Preparação'];
-      for(var item in passos){
-        $("#receitaEtapas").append("<li>" + passos[item] + "</li>" );
+      for (var item in passos) {
+        $("#receitaEtapas").append("<li>" + passos[item] + "</li>");
       }
       //console.log(autor+" , "+diff +" ," + JSON.stringify(ingredientes));
 
