@@ -43,7 +43,10 @@ table, th, td {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
     <link href='https://fonts.googleapis.com/css?family=Overpass Mono' rel='stylesheet'>
-</head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css">
+  </head>
   
   <body class="body">
     <div id="mySidenav" class="sidenav">
@@ -131,7 +134,7 @@ table, th, td {
   
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div class="main" id="main" >
-        <table style="width: 100%;">
+        <table style="width: 100%;background-color: #ffdeb0;">
             <tr>
                 <td>
                     Vegetariano
@@ -143,7 +146,7 @@ table, th, td {
                     Alimentos a evitar (10 máx)
                 </td>
             </tr>
-            <tr style="background-color: #ffdeb0;">
+            <tr >
                 <td class="first">
                     <form action="" method="post">
                         <input type="radio" id="simveg" name="veg" value="sim" />
@@ -162,16 +165,16 @@ table, th, td {
                     
                 </td>
                 <td class="third">
-                        <button style="border-radius: 50px ; background-color: tomato;">Adicionar</button>
-                        <button style="border-radius: 50px ; background-color: lightseagreen;">Remover</button>
+                        <button style="border-radius: 50px ; background-color: tomato;" id="evitarAdd">Adicionar</button>
+                        <button style="border-radius: 50px ; background-color: lightseagreen;" id="evitarRem">Remover</button>
                 </td>
             </tr>
             <tr style="background-color: #ffdeb0;">
                 <td class="first">
 
                 </td>
-                <td class="second"  >
-                    <form action="/action_page.php" style="background-color:#ffefd9;border-radius: 50px ; padding: 40px;">
+                <td class="second" >
+                    <form action="/action_page.php" style="border-radius: 50px ; padding: 40px;">
                         <label style="font-size:medium;"for="cal">Calorias (kcal) :</label>
                         <input style="border-radius: 50px; width: 70px;"  type="number" id="cal" name="cal"><br><br>
                         <label style="font-size:medium;" for="acucar">Açúcar (gr) :</label>
@@ -179,17 +182,17 @@ table, th, td {
                     </form>
                 </td>
                 <td class="third">
-                    <ul class="center" style="background-color:#ffefd9;border-radius: 50px;height: 340px ;text-align:left; padding: 50px;">
-                        <li id="ing1"  hidden ></li>
-                        <li id="ing2"  hidden ></li>
-                        <li id="ing3"  hidden ></li>
-                        <li id="ing4"  hidden ></li>
-                        <li id="ing5"  hidden ></li>
-                        <li id="ing6"  hidden ></li>
-                        <li id="ing7"  hidden ></li>
-                        <li id="ing8"  hidden ></li>
-                        <li id="ing9"  hidden ></li>
-                        <li id="ing10"  hidden ></li>
+                    <ul class="center" style="border-radius: 50px;height: 340px ;text-align:left; padding: 50px; background-color:#bfab87" id="itemsToAvoid">
+                        <li id="ing1"  class="d-none"></li>
+                        <li id="ing2"  class="d-none"></li>
+                        <li id="ing3"  class="d-none"></li>
+                        <li id="ing4"  class="d-none"></li>
+                        <li id="ing5"  class="d-none"></li>
+                        <li id="ing6"  class="d-none"></li>
+                        <li id="ing7"  class="d-none"></li>
+                        <li id="ing8"  class="d-none"></li>
+                        <li id="ing9"  class="d-none"></li>
+                        <li id="ing10" class="d-none" ></li>
                        
                         
 
@@ -204,9 +207,17 @@ table, th, td {
                 <td>
                     
                 </td>
-                <td><!-- Esta td só aparece quando clicamos em adicionar; o que for escrito tem que aparecer la lista -->
-                    <img src="https://cdn140.picsart.com/267270504000211.png?r1024x1024" style="width:90px;height:68px"/>
-                    <input style="border-radius: 50px; " placeholder="O que deseja adicionar?" type="text" id="search" name="search"><br><br>
+                <td class="d-none flex" id="evitarDiv"><!-- Esta td só aparece quando clicamos em adicionar; o que for escrito tem que aparecer la lista -->
+                    <img src="https://cdn140.picsart.com/267270504000211.png?r1024x1024" style="width:90px;height:68px" class="flex"/>
+                    <div class="ui-widget">
+                      <label for="tags">Tags: </label>
+                      <input style="border-radius: 50px;" class="flex" placeholder="O que deseja adicionar/remover?" type="text" id="tags" name="search"><br><br>
+                      <button id="addItem"> Confirmar </button>
+                      <span class="iconic iconic-warning d-none" title="warning" aria-hidden="true" id="erro" ></span>
+
+                    </div>
+                      
+                    
                 </td>
             </tr>
         </table>
@@ -225,6 +236,8 @@ table, th, td {
     <!-- Latest compiled JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> 
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+
   
     <script src="js/index.js" type="text/javascript"></script>
     <script src="js/recipes.json" type="text/javascript"></script>

@@ -1,3 +1,5 @@
+
+
 //User Settings defaults
 var dieta = false;
 var vegetariano = true;
@@ -1391,6 +1393,7 @@ var basedadosingred = {
     ],
     quantidade: 1000,
     texto: '1 kg de farinha de trigo sem fermento'
+    ,nome:'Farinha de Trigo'
   },
   leite: {
     tipo: 'laticinios',
@@ -1399,21 +1402,29 @@ var basedadosingred = {
     ],
     quantidade: 400,
     texto: '400ml de leite morno'
+    ,nome:'Leite'
+
   },
   ovo: {
     tipo: 'ovo',
     propriedades: [],
     quantidade: 2,
     texto: '2 ovos (remova a película ou pele da gema)'
+    ,nome:'Ovo'
+
   },
   fermento: {
     tipo: 'farinha',
     propriedades: [
       'biológico',
       'fresco'
-    ],
+    ],   
+    
     quantidade: 45,
     texto: '45g de fermento biológico fresco'
+
+    ,nome:'Fermento'
+
   },
   acucar: {
     tipo: 'tempero',
@@ -1421,7 +1432,8 @@ var basedadosingred = {
       'acucar'
     ],
     quantidade: 200,
-    texto: '1 chávena de açúcar'
+    texto: '1 chávena de açúcar'    
+    ,nome:'Açúcar'
   },
   sal: {
     tipo: 'tempero',
@@ -1430,43 +1442,53 @@ var basedadosingred = {
     ],
     quantidade: 10,
     texto: '1/2 colher (sopa) de sal'
+        
+    ,nome:'Sal'
   },
   graodebico: {
     tipo: 'feijão',
     propriedades: ['grão de bico', 'cozido'],
     quantidade: 300,
-    texto: '300 gr de grão de bico cozido',
+    texto: '300 gr de grão de bico cozido',    
+    nome:'Grão de Bico'
   },
   sementeslinhaca: {
     tipo: 'sementes',
     propriedades: ['linhaça', 'moída'],
     quantidade: 20,
     texto: '20 gr de sementes de linhaça moída',
+    nome:'Sementes de Linhaça'
   },
   salsa: {
     tipo: 'condimentos',
     propriedades: ['salsa'],
     quantidade: 15,
-    texto: '1 colher de sopa de salsa',
+    texto: '1 colher de sopa de salsa' 
+    ,nome:'Salsa'
   },
 
   cenoura: {
     tipo: 'vegetal',
     propriedades: ['cenoura', 'média'],
     quantidade: 1,
-    texto: '1 cenoura média',
+    texto: '1 cenoura média',    
+    nome:'Cenoura'
   },
   atum: {
     tipo: 'conservas',
     propriedades: ['atum natural'],
     quantidade: 200,
-    texto: '1 lata de atum natural',
+    texto: '1 lata de atum natural',    
+    
+    nome:'Atum'
+
   },
   feijaofrade: {
     tipo: 'feijão',
     propriedades: ['frade'],
     quantidade: 200,
-    texto: '200 gr de feijão frade',
+    texto: '200 gr de feijão frade',    
+    nome:'Feijão Frade',
   },
 
 
@@ -1474,13 +1496,17 @@ var basedadosingred = {
     tipo: 'vegetal',
     propriedades: ['cebola'],
     quantidade: 1,
-    texto: '1 cebola',
+    texto: '1 cebola',    
+    nome:'Cebola',
   },
   alho: {
     tipo: 'condimentos',
     propriedades: ['dente de alho', 'alho'],
     quantidade: 1,
     texto: '1 dente de alho',
+
+    nome:'Alho',
+
   },
 
   claras: {
@@ -1488,12 +1514,15 @@ var basedadosingred = {
     propriedades: ['ovo', 'claras'],
     quantidade: 100,
     texto: '100 gr de claras de ovos',
+    
+    nome:'Claras',
   },
   tomate: {
     tipo: 'vegetal',
     propriedades: ['tomate'],
     quantidade: 1,
     texto: '1 tomate',
+    nome:'Tomate',
   },
 
 
@@ -1502,7 +1531,9 @@ var basedadosingred = {
     propriedades: ['cogumelos'],
     quantidade: 70,
     texto: '70 gr de cogumelos',
-  },
+
+    nome:'Cogumelos',  
+},
 
 
 
@@ -1512,6 +1543,8 @@ var basedadosingred = {
     propriedades: ['oregaos'],
     quantidade: 0,
     texto: 'óregãos qb',
+    
+    nome:'Orégãos',
   },
 
   queijo: {
@@ -1519,24 +1552,30 @@ var basedadosingred = {
     propriedades: ['queijo', 'fresco', 'amargo'],
     quantidade: 1,
     texto: '1 queijo fresco amargo',
+    
+    nome:'Queijo',
   },
   espargos: {
     tipo: 'vegetal',
     propriedades: ['espargos'],
     quantidade: 150,
     texto: '150 gr de espargos',
+    nome:'Espargos',
   },
   alface: {
     tipo: 'vegetal',
     propriedades: ['alface'],
     quantidade: 100,
     texto: '100 gr de alface',
+    nome:'Alface',
   },
   rucula: {
     tipo: 'vegetal',
     propriedades: ['rúcula'],
     quantidade: 50,
     texto: '50 gr de rúcula',
+    
+    nome:'Rúcula',
   },
 
   amendoa: {
@@ -1544,6 +1583,8 @@ var basedadosingred = {
     propriedades: ['amendoa'],
     quantidade: 5,
     texto: '5 amêndoas',
+    
+    nome:'Amêndoa',
   },
 
   frango: {
@@ -1551,12 +1592,14 @@ var basedadosingred = {
     propriedades: ['frango', 'peito'],
     quantidade: 400,
     texto: '400 gr de peito de frango',
+    nome:'Frango',
   },
   courgette: {
     tipo: 'legume',
     propriedades: ['courgette'],
     quantidade: 4,
     texto: '4 courgettes médias',
+    nome:'Courgette',
   },
 
   louro: {
@@ -1564,18 +1607,22 @@ var basedadosingred = {
     propriedades: ['louro', 'folha'],
     quantidade: 1,
     texto: '1 folha de louro',
+    nome:'Louro',
   },
   malaguetas: {
     tipo: 'condimentos',
     propriedades: ['malaguetas vermelhas'],
     quantidade: 2,
     texto: '2 malaguetas vermelhas',
+    nome:'Malaguetas',
   },
   caril: {
     tipo: 'condimentos',
     propriedades: ['caril', 'pó'],
     quantidade: 30,
     texto: '2 colheres de sopa de caril em pó',
+    
+    nome:'Caril',
   },
 
 
@@ -1584,18 +1631,21 @@ var basedadosingred = {
     propriedades: ['couve-flor'],
     quantidade: 1,
     texto: '1 chávena de chá de couve-flor',
+    nome:'Couve-Flor',
   },
   molhosoja: {
     tipo: 'condimentos',
     propriedades: ['molho', 'soja'],
     quantidade: 16,
     texto: '1 colher de sopa de molho de soja',
+    nome:'Molho de Soja',
   },
   azeite: {
     tipo: 'azeite',
     propriedades: ['virgem'],
     quantidade: 16,
     texto: '1 colheres de sopa de azeite virgem',
+    nome:'Azeite',
   },
 
 
@@ -1607,6 +1657,7 @@ var basedadosingred = {
     propriedades: ['gengibre'],
     quantidade: 1,
     texto: '1 colher de chá de gengibre',
+    nome:'Gengibre',
   },
 
 
@@ -1615,12 +1666,14 @@ var basedadosingred = {
     propriedades: ['feijão-verde'],
     quantidade: 1,
     texto: '1 chávena de feijão verde',
+    nome:'Feijão Verde',
   },
   beringela: {
     tipo: 'legume',
     propriedades: ['beringela'],
     quantidade: 100,
     texto: '100 gr de beringela',
+    nome:'Beringela',
   },
 
 
@@ -1629,6 +1682,7 @@ var basedadosingred = {
     propriedades: ['bife', 'perú'],
     quantidade: 100,
     texto: '100gr bife de perú',
+    nome:'Perú',
   },
 
 
@@ -1641,36 +1695,42 @@ var basedadosingred = {
     propriedades: ['pimenta', 'primenta preta'],
     quantidade: 0,
     texto: 'pimenta preta qb',
+    nome:'Pimenta Preta',
   },
   espinafres: {
     tipo: 'legume',
     propriedades: ['embalagem', 'espinafre'],
     quantidade: 1,
     texto: '1 embalagem de espinafres',
+    nome:'Espinafres',
   },
   bechamel: {
     tipo: 'laticinios',
     propriedades: ['molho', 'béchamel'],
     quantidade: 500,
     texto: '500ml de béchamel',
+    nome:'Molho Bechamel',
   },
   massalasanha: {
     tipo: 'massa',
     propriedades: ['massa para lasanha'],
     quantidade: 500,
     texto: '500 gr de massa fresca para lasanha',
+    nome:'Massa p/ Lasanha',
   },
   mozzarella: {
     tipo: 'laticinios',
     propriedades: ['queijo', 'mozzarella'],
     quantidade: 100,
     texto: '100 gr queijo mozzarella ralado',
+    nome:'Queijo Mozzarella',
   },
   parmesao: {
     tipo: 'laticinios',
     propriedades: ['queijo', 'parmesão'],
     quantidade: 100,
     texto: '100 gr queijo parmesão ralado',
+    nome:'Queijo Parmesão',
   },
 
   manjericao: {
@@ -1678,6 +1738,8 @@ var basedadosingred = {
     propriedades: ['manjericao'],
     quantidade: 0,
     texto: 'manjericão qb',
+    
+    nome:'Manjericão',
   },
 
 
@@ -1685,7 +1747,8 @@ var basedadosingred = {
     tipo: 'farinha',
     propriedades: ['farinha de milho'],
     quantidade: 130,
-    texto: '130 gr de farinha de milho'
+    texto: '130 gr de farinha de milho',
+    nome:'Farinha de Milho'
   },
 
   agua: {
@@ -1693,6 +1756,7 @@ var basedadosingred = {
     propriedades: ['H2o'],
     quantidade: 150,
     texto: '150ml de água',
+    nome:'Água',
   },
 
   massapizza: {
@@ -1700,25 +1764,29 @@ var basedadosingred = {
     propriedades: ['massa de pizza', 'refrigerada'],
     quantidade: 2,
     texto: '2 massa de pizza refrigerada',
+    nome:'Massa de Pizza',
   },
   molhopesto: {
     tipo: 'molho',
     propriedades: ['molho pesto'],
     quantidade: 45,
     texto: '3 colheres de sopa de molho pesto',
+    nome:'Molho Pesto',
   },
   burrata: {
     tipo: 'laticinios',
     propriedades: ['queijo', 'burrata'],
     quantidade: 2,
     texto: '2 embalagens de burrata fresca',
+    nome:'Burrata',
   },
 
   pinhoes: {
     tipo: 'fruto seco',
     propriedades: ['pinhoes', 'torrados'],
     quantidade: 30,
-    texto: '2 colheres de sopa de pinhões torrados'
+    texto: '2 colheres de sopa de pinhões torrados',
+    nome:'Pinhões',
   },
 
   salgrosso: {
@@ -1726,6 +1794,7 @@ var basedadosingred = {
     propriedades: ['sal', 'sal grosso'],
     quantidade: 5,
     texto: '1 colher de chá de sal grosso',
+    nome:'Sal Grosso',
   },
 
   quinoa: {
@@ -1733,45 +1802,45 @@ var basedadosingred = {
     propriedades: ['quinoa branca'],
     quantidade: 200,
     texto: '200 gr de quinoa branca',
+    nome:'Quinoa',
   },
 
   legumes: {
     tipo: 'legumes',
     propriedades: 'embalagem',
     quantidade: 1,
-    texto: '1 embalagem de mistura de legumes'
+    texto: '1 embalagem de mistura de legumes',
+    nome:'Legumes',
   },
   abacate: {
     tipo: 'fruta',
     propriedades: ['abacate'],
     quantidade: 2,
     texto: '2 abacates',
+    nome:'Abacate',
   },
   coentros: {
     tipo: 'condimentos',
     propriedades: ['coentros'],
     quantidade: 0,
     texto: 'coentros qb',
+    nome:'Coentros',
   },
-
-
-
-
-
-
-
 
   ricotaespinafre: {
     tipo: 'mistura',
     propriedades: ['ricotta', 'espinafres'],
     quantidade: 1,
     texto: '1 embalagem de tortellini de ricota e espinafres',
+    
+    nome:'Ricotta e Espinafres',
   },
   miolonoz: {
     time: 'fruto seco',
     propriedades: ['noz', 'miolo noz'],
     quantidade: 60,
     texto: '60 gr de miolo de noz',
+    nome:'Miolo de Noz',
   },
 
 
@@ -1780,6 +1849,7 @@ var basedadosingred = {
     propriedades: ['sobras'],
     quantidade: 200,
     texto: '200 gr de sobras de arroz de tomate frio',
+    nome:'Arroz',
   },
 
 
@@ -1788,31 +1858,36 @@ var basedadosingred = {
     propriedades: '',
     quantidade: 500,
     texto: '500 ml de óleo (para fritar)',
+    nome:'Óleo',
   },
 
   farinha: {
     tipo: 'farinha',
     propriedades: [],
     quantidade: 0,
-    texto: 'meia chávena de farinha'
+    texto: 'meia chávena de farinha',
+    nome:'Farinha',
   },
   paoralado: {
     tipo: 'farinha',
     propriedades: 'pao ralado',
     quantidade: 200,
     texto: '200 gr de pão ralado',
+    nome:'Pão Ralado',
   },
   lentilhas: {
     tipo: 'legume',
     propriedades: ['lentilhas'],
     quantidade: 200,
     texto: '200 gr de lentilhas verdes',
+    nome:'Lentilhas',
   },
   oleococo: {
     tipo: 'oleo',
     propriedades: ['oleo de coco', 'coco'],
     quantidade: 2,
     texto: '2 colheres de sopa de óleo de coco',
+    nome:'Óleo de Coco',
   },
 
 
@@ -1823,13 +1898,15 @@ var basedadosingred = {
       'leite de coco', 'coco'
     ],
     quantidade: 200,
-    texto: '200ml de leite de coco'
+    texto: '200ml de leite de coco',
+    nome:'Leite de Coco',
   },
   pimento: {
     tipo: 'vegetal',
     propriedades: ['pimento verde'],
     quantidade: 2,
     texto: 'meio pimento verde em puré',
+    nome:'Pimento',
   },
 
 
@@ -1838,18 +1915,22 @@ var basedadosingred = {
     propriedades: 'Basmati',
     quantidade: 350,
     texto: '350 gr de arroz Basmati feito',
+    nome:'Arroz Basmatti',
   },
   tomatecherryvermelho: {
     tipo: 'vegetal',
     propriedades: ['tomate', 'cherry', 'vermelho'],
     quantidade: 250,
     texto: '250 gr de tomate cherry vermelho',
+    nome:'Tomate Cherry Vermelho',
   },
   tomatecherryamarelo: {
     tipo: 'vegetal',
     propriedades: ['tomate', 'cherry', 'amarelo'],
     quantidade: 250,
     texto: '250 gr de tomate cherry amarelo',
+    
+    nome:'Tomate Cherry Amarelo',
   },
 
   limao: {
@@ -1857,6 +1938,7 @@ var basedadosingred = {
     propriedades: ['limão'],
     quantidade: 0,
     texto: 'meio limão',
+    nome:'Limão',
   },
 
   mel: {
@@ -1864,13 +1946,15 @@ var basedadosingred = {
     propriedades: ['mel', 'doce'],
     quantidade: 1,
     texto: '1 colher de sopa de mel',
+    nome:'Mel',
   },
 
   vinagre: {
     tipo: 'molho',
     propriedades: ['vinagre', 'balsamico'],
     quantidade: 33,
-    texto: '2 colheres de sobremesa de vinagre balsâmico'
+    texto: '2 colheres de sobremesa de vinagre balsâmico',
+    nome:'Vinagre',
   },
 
 
@@ -1991,3 +2075,55 @@ $('#theModal').on('show.bs.modal', function (event) {
 $('#theModal').on('hide.bs.modal', function (event) {
   $('#ingredientes').removeClass('show');
 });
+
+//=============*PREFERENCIAS*================================================
+//this viable changes if we're adding or removing items
+var mode = false;
+$("#evitarAdd").click(function() {
+$("#evitarDiv").removeClass("d-none");
+$("#tags").attr("placeholder", "O que deseja adicionar?");
+
+});
+
+//$("#evitarRem").click(function() {            POR ESTA FUNCIONALIDADE EM BUTOES
+//    $("#evitarDiv").removeClass("d-none");
+//    $("#tags").attr("placeholder", "O que deseja remover?");
+//});
+var acIng = []; //auto complete ingredients
+for (var key in basedadosingred) {
+    var tmp =basedadosingred[key]
+    acIng.push(tmp['nome']);
+   // console.log(key);
+}
+
+$( "#tags" ).autocomplete({
+    source: acIng
+  });
+var toAdd="";
+var avoidItems=[]
+
+function refreshItems(){
+    $("#itemsToAvoid").empty();
+    console.log(avoidItems);
+    for(var i=0;i<avoidItems.length;i++){
+        console.log(avoidItems[i]);
+        $("#itemsToAvoid").append("<li>" + avoidItems[i] + "</li>");
+    }
+};
+
+$("#addItem").click(function(){
+    toAdd = $("#tags").val();
+    if(acIng.includes(toAdd)){
+    avoidItems.push(toAdd);
+    console.log(toAdd);
+    refreshItems();
+    $("#tags").val("");}
+    else{
+        $("#tags").val("");
+        $("#erro").removeClass("d-none").val("Este ingrediente não está na base de dados!");
+        alert("Este ingrediente não se encontra na base de dados!");
+    }
+  });
+
+
+  
