@@ -1379,6 +1379,10 @@ paoralado:{
   }
 }
 //this is huge
+
+var inventario={
+  
+}
 //console.log(receitas); test stuff
 $('#simveg').on('click change', function () {
   // alert("veg true");
