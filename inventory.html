@@ -4,7 +4,41 @@
 <html>
 
 <head>
+  <style>
+::-webkit-scrollbar {
+    display: block;
+    width: px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+    
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 201, 140, 0.925);
+    border-radius: 50px;
+    border-right: none;
+    border-left: none;
+    
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(129, 129, 129, 0.651);
+    border-radius: 50px;
+    border-right: none;
+    border-left: none;
+    
+}
 
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 100px; 
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 100px;
+}
+  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
 
@@ -98,21 +132,22 @@
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
     <div class="container">
-      <div>
-        <ul id="ingList" style="overflow:scroll;height:500px;">
+      <h2 style="text-align: center;background: transparent;">Inventário</h2>
+      <div style="background-color: #ffe8b8; border-radius: 25px;width: 500px;margin:0 auto;">
+        <ul id="ingList" style="overflow-y:scroll;height:500px;">
 
 
         </ul>
       </div>
-      <div class="flex">
+      <div class="flex" style="padding-left: 100px;">
         <img src="https://cdn140.picsart.com/267270504000211.png?r1024x1024" style="width:90px;height:68px"
           class="flex" />
-        <div class="ui-widget">
-          <label for="tags">Tags: </label>
-          <input style="border-radius: 50px;" class="flex" placeholder="O que deseja adicionar/remover?" type="text"
+        <div class="ui-widget d-inline-flex" style="padding-top: 10px;">
+          <input style="border-radius: 50px; width: 300px;height:40px;text-align: center" class="flex" placeholder="O que deseja adicionar/remover?" type="text"
             id="tags" name="search"><br><br>
-          <input style="border-radius: 50px;" class="flex" placeholder="Quantidade?" type="text" id="qnt">
-          <button id="addInvent"> Confirmar </button>
+          <input style="border-radius: 50px;width: 150px;height:40px;text-align: center;" class="flex" placeholder="Quantidade?" type="text" id="qnt">
+          <button id="addInvent" style="width: 150px;height:40px;border-radius:50px; background-color:rgb(188, 255, 167)"> Adicionar </button>
+          <button id="deleteInvent" style="width: 150px;height:40px;border-radius:50px; background-color:rgb(255, 167, 167)">Remover </button>
           <span class="oi oi-warning d-none" id="erro"></span>
 
 
