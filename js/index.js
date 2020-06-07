@@ -267,6 +267,7 @@ var receitas = {
         time: '1 hora',
         portions: '6 pães',
         dificuldade: 1,
+        foto:"https://amopaocaseiro.com.br/wp-content/uploads/2020/04/receita-de-pao-frances-caseiro-IMG_4360-840x560.jpg",
         Ingredientes: {
             farinhatrigo: {
                 tipo: 'farinha',
@@ -337,6 +338,7 @@ var receitas = {
         name: 'Massa carbonara',
         autor: 'Pingo Doce',
         time: '20 minutos',
+        foto:"https://scm-assets.constant.co/scm/unilever/f4b5026fe1dd6b46672ba349cfbb04e4/8f60d715-0a14-43e1-af12-f9b276dc791f.jpg",
         portions: '3 pessoas',
         dificuldade: 1,
         Ingredientes: {
@@ -408,6 +410,7 @@ var receitas = {
     hamburguergrao: {
         name: 'Hamburguer de grão de bico e linhaça ',
         autor: 'New in town',
+        foto:"https://nit.pt/wp-content/uploads/2016/10/a160b30a-ba6b-4f5c-8945-a66f397d9a6c-754x394.jpg",
         time: '20 minutos',
         portions: '1 pessoa',
         dificuldade: 1,
@@ -465,6 +468,7 @@ var receitas = {
         name: 'Salada de feijão frade e atum',
         autor: 'New in town',
         time: '25 minutos',
+        foto:"https://nit.pt/wp-content/uploads/2016/10/8dd2bcf3-3ce2-4c0c-8151-c98c0f1e462d-754x394.jpg",
         portions: '2 pessoas',
         dificuldade: 2,
         Ingredientes: {
@@ -524,6 +528,7 @@ var receitas = {
         name: 'Omolete de legumes',
         autor: 'New in Town',
         time: '30 minutos',
+        foto:"https://nit.pt/wp-content/uploads/2016/10/b35695bc-dd82-4fc1-a412-806eea1fdd16-754x394.jpg",
         portions: '1 pessoa',
         dificuldade: 1,
         Ingredientes: {
@@ -545,9 +550,9 @@ var receitas = {
                 quantidade: 1,
                 texto: '1 tomate',
             },
-            pimento: {
+            pimentovermelho: {
                 tipo: 'vegetal',
-                propriedades: ['pimento'],
+                propriedades: ['pimento','vermelho'],
                 quantidade: 2,
                 texto: '2 pimentos pequenos',
             },
@@ -564,6 +569,7 @@ var receitas = {
         name: 'Tomates recheados com atum e cogumelos',
         autor: 'New in Town',
         time: '15 minutos',
+        foto:"https://nit.pt/wp-content/uploads/2016/10/7d5fe591-dac8-4ae4-8a66-2367fa2b4c95-754x394.jpg",
         dificuldade: 1,
         portions: '1 pessoa',
         Ingredientes: {
@@ -585,7 +591,7 @@ var receitas = {
                 quantidade: 70,
                 texto: '70 gr de cogumelos',
             },
-            pimento: {
+            pimentoverde: {
                 tipo: 'vegetal',
                 propriedades: ['pimento', 'verde'],
                 quantidade: 2,
@@ -640,6 +646,7 @@ var receitas = {
     saladaespargos: {
         name: 'Salada de queijo fresco e espargos',
         autor: 'New in Town',
+        foto:"https://nit.pt/wp-content/uploads/2016/10/acadcf9c-d5dc-4a27-a86e-4e3f04a5145b-754x394.jpg",
         time: '5 minutos',
         dificuldade: 1,
         portions: '1 pessoa',
@@ -702,6 +709,7 @@ var receitas = {
         name: 'Caril de frango com courgette',
         autor: 'New in Town',
         time: '20 minutos',
+        foto:"https://nit.pt/wp-content/uploads/2016/10/48ee0542-fbbd-4299-a929-4eb709caebd4-754x394.jpg",
         dificuldade: 2,
         portions: '2 pessoas',
         Ingredientes: {
@@ -766,6 +774,7 @@ var receitas = {
     },
     couveflorfrango: {
         name: 'Couve flor com frango',
+        foto:"https://nit.pt/wp-content/uploads/2016/10/1f9d25fd-2191-40bc-a4c6-048d91d9d1a5-754x394.jpg",
         autor: 'New in Town',
         time: '20 minutos',
         dificuldade: 1,
@@ -801,7 +810,7 @@ var receitas = {
                 quantidade: 0,
                 texto: 'pimenta preta qb',
             },
-            pimento: {
+            pimentovermelho: {
                 tipo: 'vegetal',
                 propriedades: ['pimento', 'vermelho'],
                 quantidade: 20,
@@ -858,6 +867,7 @@ var receitas = {
         name: 'Beringela recheada',
         autor: 'New in Town',
         time: '25 minutos',
+        foto:"https://nit.pt/wp-content/uploads/2016/10/f84b14fd-afe9-4bdd-b6e2-6d59c7f47dc1-754x394.jpg",
         dificuldade: 4,
         portions: '1 pessoa',
         Ingredientes: {
@@ -917,6 +927,7 @@ var receitas = {
         name: 'Lasanha de legumes',
         autor: 'Pingo Doce',
         time: '1 hora',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/2016/07/lasanhadelegumes617.jpg",
         dificuldade: 4,
         portions: '4 pessoas',
         Ingredientes: {
@@ -1047,6 +1058,7 @@ var receitas = {
         name: 'Peixinhos da horta',
         autor: 'Pingo Doce',
         time: '30 minutos',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/2019/03/peixinhos-da-horta.jpg",
         dificuldade: 2,
         portions: '4 pessoas',
         Ingredientes: {
@@ -1120,6 +1132,7 @@ var receitas = {
     pizzaveg: {
         name: 'Pizza com burrata e pesto',
         autor: 'Pingo Doce',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/2019/02/pizza-com-burrata-e-pesto.jpg",
         time: '30 minutos',
         dificuldade: 1,
         portions: '6 pessoas',
@@ -1188,6 +1201,7 @@ var receitas = {
     quinoa: {
         name: 'Quinoa salteada com ovo e abacate',
         autor: 'Pingo Doce',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/2019/01/quinoa-salteada-com-ovo.jpg",
         time: '30 minutos',
         dificuldade: 1,
         portions: '4 pessoas',
@@ -1269,6 +1283,7 @@ var receitas = {
     tortellini: {
         name: 'Tortellini de espinafres e ovo',
         autor: 'Pingo Doce',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/2018/10/tortelini-espinafres-tiras-ovo.jpg",
         time: '20 minutos',
         dificuldade: 1,
         portions: '4 pessoas',
@@ -1344,6 +1359,7 @@ var receitas = {
     croquetes: {
         name: 'Croquetes de arroz de tomate',
         autor: 'Pingo Doce',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/2019/04/croquetes-arroz-tomate.jpg",
         time: '30 minutos',
         dificuldade: 3,
         portions: '8 croquetes',
@@ -1425,9 +1441,10 @@ var receitas = {
         kCal: 365,
     },
     caril: {
-        name: '',
+        name: 'Caril de lentilhas',
         autor: 'Pingo Doce',
         time: '1 hora',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/2018/09/caril_lentilhas370x617.jpg",
         dificuldade: 1,
         portions: '4 pessoas',
         Ingredientes: {
@@ -1475,7 +1492,7 @@ var receitas = {
                 quantidade: 200,
                 texto: '200ml de leite de coco'
             },
-            pimento: {
+            pimentoverde: {
                 tipo: 'vegetal',
                 propriedades: ['pimento verde'],
                 quantidade: 2,
@@ -1526,6 +1543,7 @@ var receitas = {
         time: '25 minutos',
         dificuldade: 3,
         portions: '4 pessoas',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/2019/03/salada-de-tomate-com-mozzarella.jpg",
         Ingredientes: {
             pinhoes: {
                 tipo: 'fruto seco',
@@ -1616,25 +1634,400 @@ var receitas = {
         isVeg: true,
         kCal: 348,
     },
-    outrareceita: {
-        name: '',
-        autor: '',
-        time: '',
+    bacalhau:{
+        name: 'Bacalhau no forno',
+    autor: '',
+    foto:"https://i0.wp.com/ncultura.pt/wp-content/uploads/2020/03/Bacalhau-assado-no-forno-com-batatas-e-crosta-de-broa.jpg?fit=650%2C433&ssl=1",
+    time: '55 minutos',
+    dificuldade: 1,
+    portions: '2 pessoas',
+    Ingredientes: {
+        bacalhau:{
+            tipo:"peixe",
+            propriedades:['posta','bacalhau'],
+            quantidade:2,
+            texto:"2 postas de bacalhau",
+        },
+        batata:{
+            tipo:"batata",
+            propriedades:[],
+            quantidade:1,
+            texto:'1 batata grande',
+
+        },
+        cebola: {
+            tipo: 'vegetal',
+            propriedades: ['cebola'],
+            quantidade: 1,
+            texto: 'meia cebola',
+   },
+   azeite: {
+    tipo: 'azeite',
+    propriedades: ['virgem'],
+    quantidade: 0,
+    texto: 'azeite',},
+
+    alho: {
+        tipo: 'condimentos',
+        propriedades: ['pó', 'alho'],
+        quantidade: 0,
+        texto: 'alho em pó',},
+        sal: {
+            tipo: 'tempero',
+            propriedades: [
+                'sal'
+            ],
+            quantidade: 0,
+            texto: 'sal qb',},
+
+            pimentovermelho: {
+                tipo: 'vegetal',
+                propriedades: ['pimento vermelho'],
+                quantidade: 0,
+                texto: 'pimento vermelho a gosto',
+            },
+                
+    },
+
+    Preparação: {
+        '1': '1. Num pirex, coloque a cebola às rodelas e um pouco de azeite.',
+        '2': '2. Por cima, coloque as postas de bacalhau e, à volta delas, a batata cortadinha aos bocados.',
+        '3': '3. Tempere com alho e sal.',
+        '4': '4. Coloque os pimentos cortados e regue com azeite.',
+        '5': '5. Leve ao forno por 45 minutos.',
+    },
+    isVeg: false,
+    kCal: 0,
+
+    },
+    salada:{
+        name: 'Salada de tomate',
+        autor: 'Juliana',
+        foto:"https://www.receiteria.com.br/wp-content/uploads/receitas-de-salada-mista-2.jpg",
+        time: '15 minutos',
         dificuldade: 1,
-        portions: '',
-        Ingredientes: {},
+        portions: '6 pessoas',
+        Ingredientes: {
+            tomate: {
+                tipo: 'vegetal',
+                propriedades: ['toma0te'],
+                quantidade: 6,
+                texto: '6 tomates cortados em forma de lua crescente sem casca',},
+            alho: {
+                    tipo: 'condimentos',
+                    propriedades: ['dente de alho', 'alho'],
+                    quantidade: 4,
+                    texto: '4 dentes de alho picado',
+
+                },  
+            vinagre: {
+                    tipo: 'molho',
+                    propriedades: ['vinagre', 'balsamico'],
+                    quantidade: 33,
+                    texto: '2 colheres de sopa de vinagre balsâmico',},
+            azeite: {
+                        tipo: 'azeite',
+                        propriedades: ['virgem'],
+                        quantidade: 0,
+                        texto: 'azeite a gosto',
+                    },
+            sal: {
+                        tipo: 'tempero',
+                        propriedades: [
+                            'sal'
+                        ],
+                        quantidade: 0,
+                        texto: 'sal qb',},
+            oregaos: {
+                            tipo: 'condimentos',
+                            propriedades: ['oregaos'],
+                            quantidade: 0,
+                            texto: 'óregãos qb',},
+
+            },
         Preparação: {
-            '1': '1. ',
-            '2': '2. ',
-            '3': '3. ',
-            '4': '4. ',
-            '5': '5. ',
-            '6': '6. ',
-            '7': '7. ',
+            '1': '1. Coloque os tomates em uma refratária acrescente todo o alho e por cima, coloque bastante azeite, o suficiente para banhar todos os tomates.',
+            '2': '2. Mexa bem e em seguida acrescente o sal.',
+            '3': '3. Mexa novamente.',
+            '4': '4. Depois acrescente o vinagre, mexendo novamente.',
+            '5': '5. Por último acrescente o orégano',
+
         },
         isVeg: false,
         kCal: 0,
-    }
+    },
+    bolo:{
+        foto:"https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2018/12/15/receita-de-bolo-de-chocolate-fofinho-confira.jpg",
+        name: 'Bolo de chocolate',
+        autor: 'Sandro Valério',
+     
+        time: '40 minutos',
+        dificuldade: 1,
+        portions: '10 pessoas',
+        Ingredientes: {
+            ovo: {
+                tipo: 'ovo',
+                propriedades: [],
+                quantidade: 4,
+                texto: '4 ovos',
+            },
+            chocolate:{
+                tipo:'chocolate',
+                propriedades:['pó'],
+                quantidade:11,
+                texto:'11 colheres de sopa de chocolate em pó',
+            },
+            manteiga:{
+                tipo:'laticinios',
+                propriedades:['manteiga'],
+                quantidade:4,
+                texto:'4 colheres de sopa de manteiga',
+            },
+            farinhatrigo: {
+                tipo: 'farinha',
+                propriedades: [
+                    'trigo',
+                    'sem fermento'
+                ],
+                quantidade: 600,
+                texto: '3 xícaras de chá de farinha de trigo',
+            },
+            acucar: {
+                tipo: 'tempero',
+                propriedades: [
+                    'acucar'
+                ],
+                quantidade: 500,
+                texto: '2 xícaras e 3 colheres de sopa de açúcar',
+            },
+            fermento: {
+                tipo: 'farinha',
+                propriedades: [
+                    'biológico',
+                    'fresco'
+                ],
+        
+                quantidade: 45,
+                texto: '2 colheres de sopa de fermento',
+            },
+            leite: {
+                tipo: 'laticinios',
+                propriedades: [
+                    'morno'
+                ],
+                quantidade: 200,
+                texto: '1 xícara de chá de leite',
+            },
+            cremedeleite:{
+                tipo:'laticinios',
+                propriedades:['creme de leite','lata'],
+                quantidade:2,
+                texto:'2 latas de creme de leite',
+            },
+
+        },
+        Preparação: {
+            '1': '1. Comecemos pela massa.Em um liquidificador adicione 4 ovos, 4 colheres de chocolate em pó, 2 colheres de manteiga, a farinha de trigo, 2 xícaras de açúcar e o leite.',
+            '2': '2. Bata por 5 minutos.',
+            '3': '3. Adicione o fermento e misture com uma espátula delicadamente.',
+            '4': '4. Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. ',
+            '5': '5.  Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! ',
+            '6': '6. Para a calda, em uma panela, aqueça a manteiga e misture o chocolate em pó até que esteja homogêneo.',
+            '7': '7. Acrescente o creme de leite e misture bem até obter uma consistência cremosa.',
+            '8': '8. Desligue o fogo e acrescente o açúcar.'
+        },
+        isVeg: true,
+        kCal: 0,
+    },
+    guisado:{
+        name: 'Carne de vaca estufada',
+    autor: 'Cozinhar sem stress',
+    foto:"https://www.cozinharsemstress.pt/cozinhar/wp-content/uploads/2015/06/A-001-2006.jpg",
+    time: '40 minutos',
+    dificuldade: 3,
+    portions: '4 pessoas',
+    Ingredientes: {
+        vaca:{
+            tipo:'carne',
+            propriedades:['vaca'],
+            quantidade:600,
+            texto:'600 gr de carne de vaca para estufar',
+        },
+        vinho:{
+            tipo:'vinho',
+            propriedades:[],
+            quantidade:100,
+            texto:'1 dl de vinho branco',
+        },
+        piripiri:{
+            tipo:'molho',
+            propriedades:['piripiri','picante'],
+            quantidade:1,
+            texto:'1 colher de café de piripiri',
+        
+        },
+        azeite: {
+            tipo: 'azeite',
+            propriedades: ['virgem'],
+            quantidade: 100,
+            texto: '1 dl de azeite',
+        },
+        cebola: {
+            tipo: 'vegetal',
+            propriedades: ['cebola'],
+            quantidade: 1,
+            texto: '1 cebola',
+        },
+        alho: {
+            tipo: 'condimentos',
+            propriedades: ['dente de alho', 'alho'],
+            quantidade: 1,
+            texto: '1 dente de alho',
+        },
+        louro: {
+            tipo: 'condimento',
+            propriedades: ['louro', 'folha'],
+            quantidade: 1,
+            texto: '1 folha de louro',
+        },
+        cenoura: {
+            tipo: 'vegetal',
+            propriedades: ['cenoura', 'média'],
+            quantidade: 2,
+            texto: '2 cenouras',
+        },
+        polpatomate:{
+            tipo:'molho',
+            propriedades:['molho','polpa','tomate'],
+            quantidade:1,
+            texto:'1 colher de polpa de tomate',
+        },
+        ervilhas:{
+            tipo:'legumes',
+            propriedades:['ervilhas'],
+            quantidade:150,
+            texto:'150 gr de ervilhas',
+        },
+        sal: {
+            tipo: 'tempero',
+            propriedades: [
+                'sal'
+            ],
+            quantidade: 0,
+            texto: 'sal qb',},
+            pimentapreta: {
+                tipo: 'condimentos',
+                propriedades: ['pimenta', 'primenta preta'],
+                quantidade: 0,
+                texto: 'pimenta preta qb',
+            },
+
+        },
+    Preparação: {
+        '1': '1. Corte a carne em pedaços e tempere-os com sal, pimenta, o vinho branco, o molho picante e o azeite.',
+        '2': '2. Deixe marinar por algum tempo.',
+        '3': '3. Pique a cebola e o dente de alho e refogue-os num fio de azeite com o louro.',
+        '4': '4. Junte a carne e deixe-a corar, mexendo.',
+        '5': '5. Corte a cenoura em pedaços.',
+        '6': '6. Junte um pouco da marinada ao refogado, assim como a polpa de tomate.',
+        '7': '7. Regue com um pouco de água e junte as ervilhas e a cenoura.',
+        '8': '8. Tape e deixe cozinhar, até completar a cozedura. ',
+        '9': '9. Sirva tudo junto com bastante caldo.',
+  
+    },
+    isVeg: false,
+    kCal: 0,
+},
+    strogonoff:{ 
+    name: 'Strogonoff de frango',
+    autor: 'Fernanda',
+    foto:"https://i0.statig.com.br/bancodeimagens/60/8i/1o/608i1ok6qsdptta89j94ygzoa.jpg",
+    time: '1 hora',
+    dificuldade: 2,
+    portions: '10 pessoas',
+    Ingredientes: {
+        frango: {
+            tipo: 'carne',
+            propriedades: ['frango', 'peito'],
+            quantidade: 600,
+            texto: '3 peitos de frango cortados em cubos',
+        },
+        alho: {
+            tipo: 'condimentos',
+            propriedades: ['dente de alho', 'alho'],
+            quantidade: 1,
+            texto: '1 dente de alho picado',
+        },
+        sal: {
+            tipo: 'tempero',
+            propriedades: [
+                'sal'
+            ],
+            quantidade: 0,
+            texto: 'sal qb',},
+            pimentapreta: {
+                tipo: 'condimentos',
+                propriedades: ['pimenta', 'primenta preta'],
+                quantidade: 0,
+                texto: 'pimenta preta qb',
+            },
+            
+    cebola: {
+        tipo: 'vegetal',
+        propriedades: ['cebola'],
+        quantidade: 1,
+        texto: '1 cebola picada',
+    },
+    maionese:{
+        tipo:'molho',
+        propriedades:['maionese','ovos'],
+        quantidade:2,
+        texto:'2 colheres de sopa de maionese',
+    },
+    manteiga:{
+        tipo:'laticinios',
+        propriedades:['manteiga'],
+        quantidade:1,
+        texto:'1 colher de sopa de manteiga',
+    },
+    ketchup:{
+        tipo:'molho',
+        propriedades:['ketchup','tomate'],
+        quantidade:100,
+        texto:'meio copo de ketchup',
+    },
+    mostarda:{
+        tipo:'molho',
+        propriedades:['mostarda'],
+        quantidade:67,
+        texto:'um terço de um copo de mostarda',
+    },        
+    cogumelos: {
+        tipo: 'vegetal',
+        propriedades: ['cogumelos'],
+        quantidade: 200,
+        texto: '1 copo de cogumelos',
+    },
+    cremedeleite:{
+        tipo:'laticinios',
+        propriedades:['creme de leite'],
+        quantidade:200,
+        texto:'1 copo de creme de leite',
+    },
+   
+    },
+    Preparação: {
+        '1': '1. Em uma panela, misture o frango, o alho, a maionese, o sal e a pimenta.',
+        '2': '2. Em uma frigideira grande, derreta a manteiga e doure a cebola.',
+        '3': '3. Junte o frango temperado até que esteja dourado.',
+        '4': '4. Adicione os cogumelos, o ketchup e a mostarda.',
+        '5': '5. Incorpore o creme de leite e retire do fogo antes de ferver.',
+        '6': '6. Sirva com arroz branco.',
+    },
+    isVeg: false,
+    kCal: 0,
+},
+  
 }
 //this is huge
 //isto nao sao os ingredientes que o utilizador tem, mas sim os disponiveis
@@ -1649,7 +2042,7 @@ var basedadosingred = {
         texto: '1 kg de farinha de trigo sem fermento'
         , nome: 'Farinha de Trigo',
         foto:"https://img.itdg.com.br/tdg/images/blog/uploads/2018/10/tipos-de-farinha-de-trigo-veja.jpg?w=1200"
-    },
+   , },
     leite: {
         tipo: 'laticinios',
         propriedades: [
@@ -1657,7 +2050,8 @@ var basedadosingred = {
         ],
         quantidade: 400,
         texto: '400ml de leite morno'
-        , nome: 'Leite'
+        , nome: 'Leite',
+        foto:"https://www.bancodasaude.com/cdn/press/leiteee.jpg",
 
     },
     ovo: {
@@ -1666,8 +2060,8 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 ovos (remova a película ou pele da gema)'
         , nome: 'Ovo'
-
-    },
+,foto:"https://www.deco.proteste.pt/-/media/edideco/images/home/alimentacao/produtos%20alimentares/news/2019/ovos%20frescura/thumb-ovos-frescura.jpg?rev=7e0bf811-f1a7-4ab3-b64c-ece85ef2c464&mw=480&hash=7C74D956F2CE88A62E843C9D61AA217B"
+   , },
     fermento: {
         tipo: 'farinha',
         propriedades: [
@@ -1678,9 +2072,10 @@ var basedadosingred = {
         quantidade: 45,
         texto: '45g de fermento biológico fresco'
 
-        , nome: 'Fermento'
+        , nome: 'Fermento',
+        foto:"https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2005828(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1"
 
-    },
+   , },
     acucar: {
         tipo: 'tempero',
         propriedades: [
@@ -1688,8 +2083,9 @@ var basedadosingred = {
         ],
         quantidade: 200,
         texto: '1 chávena de açúcar'
-        , nome: 'Açúcar'
-    },
+        , nome: 'Açúcar',
+        foto:"https://cdn1.newsplex.pt/media/2017/9/22/604762.png?type=artigo"
+    ,},
     sal: {
         tipo: 'tempero',
         propriedades: [
@@ -1698,53 +2094,59 @@ var basedadosingred = {
         quantidade: 10,
         texto: '1/2 colher (sopa) de sal'
 
-        , nome: 'Sal'
-    },
+        , nome: 'Sal',
+        foto:"https://www.mdsaude.com/wp-content/uploads/sal-imagem2.jpg"
+   , },
     graodebico: {
         tipo: 'feijão',
         propriedades: ['grão de bico', 'cozido'],
         quantidade: 300,
         texto: '300 gr de grão de bico cozido',
         nome: 'Grão de Bico'
-    },
+        ,foto:"https://www.jasminealimentos.com/wp-content/uploads/2017/08/Como-cozinhar-grao-de-bico-1.jpg"
+ ,   },
     sementeslinhaca: {
         tipo: 'sementes',
         propriedades: ['linhaça', 'moída'],
         quantidade: 20,
         texto: '20 gr de sementes de linhaça moída',
-        nome: 'Sementes de Linhaça'
-    },
+        nome: 'Sementes de Linhaça',
+        foto:"https://doceritinha.pt/4397-large_default/sementes-linhaca-dourada.jpg"
+  ,  },
     salsa: {
         tipo: 'condimentos',
         propriedades: ['salsa'],
         quantidade: 15,
         texto: '1 colher de sopa de salsa'
-        , nome: 'Salsa'
-    },
+        , nome: 'Salsa',
+        foto:"https://foreveryoung.sapo.pt/wp-content/uploads/2019/05/salsa-750x430.jpg"
+   , },
 
     cenoura: {
         tipo: 'vegetal',
         propriedades: ['cenoura', 'média'],
         quantidade: 1,
         texto: '1 cenoura média',
-        nome: 'Cenoura'
-    },
+        nome: 'Cenoura',
+foto:"https://belezaesaude.com/i/730/45/cenoura-beneficios.jpg"  , 
+ },
     atum: {
         tipo: 'conservas',
         propriedades: ['atum natural'],
         quantidade: 200,
         texto: '1 lata de atum natural',
 
-        nome: 'Atum'
+        nome: 'Atum',
+        foto:"https://i.pinimg.com/originals/06/dc/f6/06dcf6173e0e7475287c5dd35c348b50.jpg"
 
-    },
+ ,   },
     feijaofrade: {
         tipo: 'feijão',
         propriedades: ['frade'],
         quantidade: 200,
         texto: '200 gr de feijão frade',
         nome: 'Feijão Frade',
-    },
+    foto:"https://www.biocabaz.pt/web/wp-conteudos/uploads/2016/04/feijao-frade.jpg"  ,  },
 
 
     cebola: {
@@ -1753,7 +2155,7 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 cebola',
         nome: 'Cebola',
-    },
+foto:"https://cdn130.picsart.com/251861331002212.png?type=webp&to=min&r=640"  ,  },
     alho: {
         tipo: 'condimentos',
         propriedades: ['dente de alho', 'alho'],
@@ -1761,8 +2163,8 @@ var basedadosingred = {
         texto: '1 dente de alho',
 
         nome: 'Alho',
-
-    },
+foto:"https://static.tuasaude.com/media/article/rx/st/alho_34631_l.jpg"
+   , },
 
     claras: {
         tipo: 'ovo',
@@ -1771,13 +2173,16 @@ var basedadosingred = {
         texto: '100 gr de claras de ovos',
 
         nome: 'Claras',
-    },
+        foto:"https://www.mundoboaforma.com.br/wp-content/uploads/2015/07/Eggwhite-1280x720.jpg"
+   , },
     tomate: {
         tipo: 'vegetal',
         propriedades: ['tomate'],
         quantidade: 1,
         texto: '1 tomate',
         nome: 'Tomate',
+        foto:"https://belezaesaude.com/i/730/56/tomate.jpg",
+
     },
 
 
@@ -1788,6 +2193,7 @@ var basedadosingred = {
         texto: '70 gr de cogumelos',
 
         nome: 'Cogumelos',
+        foto:"https://img.itdg.com.br/tdg/images/blog/uploads/2018/09/confira-como-limpar-cogumelos.jpg?w=1200",
     },
 
 
@@ -1800,6 +2206,15 @@ var basedadosingred = {
         texto: 'óregãos qb',
 
         nome: 'Orégãos',
+        foto:"https://d1doqjmisr497k.cloudfront.net/-/media/margpt2018/campaign/origine/oregano_2000.jpg?vd=20180709T190728Z&hash=C8B6F5785DC44E74E2D2FCEBCCF0290AE43ABD2A",
+    },
+    vinho:{
+        tipo:'vinho',
+        propriedades:[],
+        quantidade:100,
+        texto:'1 dl de vinho branco',
+        nome:'Vinho Branco',
+        foto:"https://i2.wp.com/www.wine.com.br/winepedia/wp-content/uploads/2018/08/Como-%C3%A9-feito-o-vinho-branco.jpg?fit=1348%2C899&ssl=1",
     },
 
     queijo: {
@@ -1809,13 +2224,14 @@ var basedadosingred = {
         texto: '1 queijo fresco amargo',
 
         nome: 'Queijo',
-    },
+foto:"https://i.ytimg.com/vi/4ty-I61x684/hqdefault.jpg",    },
     espargos: {
         tipo: 'vegetal',
         propriedades: ['espargos'],
         quantidade: 150,
         texto: '150 gr de espargos',
         nome: 'Espargos',
+        foto:"https://asenhoradomonte.com/wp-content/uploads/2018/08/beneficios-dos-espargos.jpg",
     },
     alface: {
         tipo: 'vegetal',
@@ -1823,6 +2239,7 @@ var basedadosingred = {
         quantidade: 100,
         texto: '100 gr de alface',
         nome: 'Alface',
+        foto:"https://thumbs.web.sapo.io/?W=800&H=0&delay_optim=1&epic=NGNl88jzGknot26JMojOuazXgJK7LxXKMWes/sScQk5fBN0SWv2+xq8Og5AdjwcYXZJl2CwN0AY5Ofv1E2o6thyTdQ==",
     },
     rucula: {
         tipo: 'vegetal',
@@ -1831,6 +2248,7 @@ var basedadosingred = {
         texto: '50 gr de rúcula',
 
         nome: 'Rúcula',
+        foto:"https://www.mundoboaforma.com.br/wp-content/uploads/2015/07/rucula-1280x720.jpg",
     },
 
     amendoa: {
@@ -1840,6 +2258,7 @@ var basedadosingred = {
         texto: '5 amêndoas',
 
         nome: 'Amêndoa',
+        foto:"https://www.saberviver.pt/wp-content/uploads/2019/04/amendoas.jpg",
     },
 
     frango: {
@@ -1848,6 +2267,7 @@ var basedadosingred = {
         quantidade: 400,
         texto: '400 gr de peito de frango',
         nome: 'Frango',
+        foto:"https://alimentacaoescolar.files.wordpress.com/2016/11/frango.jpg?w=311&h=179",
     },
     courgette: {
         tipo: 'legume',
@@ -1855,6 +2275,7 @@ var basedadosingred = {
         quantidade: 4,
         texto: '4 courgettes médias',
         nome: 'Courgette',
+        foto:"https://ecoaldeiajanas.org/wp-content/uploads/2019/05/courgette-1.jpg",
     },
 
     louro: {
@@ -1863,6 +2284,7 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 folha de louro',
         nome: 'Louro',
+        foto:"https://asenhoradomonte.com/wp-content/uploads/2018/07/folhas-de-louro.jpg",
     },
     malaguetas: {
         tipo: 'condimentos',
@@ -1870,14 +2292,14 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 malaguetas vermelhas',
         nome: 'Malaguetas',
+        foto:"https://www.bancodasaude.com/cdn/press/malka.jpg",
     },
     caril: {
         tipo: 'condimentos',
         propriedades: ['caril', 'pó'],
         quantidade: 30,
         texto: '2 colheres de sopa de caril em pó',
-
-        nome: 'Caril',
+foto:"https://www.aosabordovento.com/wp-content/media_files/2015/10/caril-po-especiarias-receita-1024x682.jpg",        nome: 'Caril',
     },
 
 
@@ -1887,6 +2309,7 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 chávena de chá de couve-flor',
         nome: 'Couve-Flor',
+        foto:"https://pt.cat-ret.assets.lidl/catalog4media/pt/article/2018chekw50/gallery/zoom/2018chekw50_20.jpg",
     },
     molhosoja: {
         tipo: 'condimentos',
@@ -1894,6 +2317,7 @@ var basedadosingred = {
         quantidade: 16,
         texto: '1 colher de sopa de molho de soja',
         nome: 'Molho de Soja',
+        foto:"https://comuniti.pt/882-large_default/molho-soja.jpg",
     },
     azeite: {
         tipo: 'azeite',
@@ -1901,27 +2325,39 @@ var basedadosingred = {
         quantidade: 16,
         texto: '1 colheres de sopa de azeite virgem',
         nome: 'Azeite',
+        foto:"https://cdn.shopify.com/s/files/1/0002/3976/3470/products/CopiadeAzeitebiologico_1_1200x1200.png?v=1586624053",
     },
-
-
-
-
-
+    vaca:{
+        tipo:'carne',
+        propriedades:['vaca'],
+        quantidade:600,
+        texto:'600 gr de carne de vaca para estufar',
+        nome:'Vaca',
+        foto:"https://talhocastro.com/wp-content/uploads/2018/08/Bovino_f-1187x588.jpg",
+    },
     gengibre: {
         tipo: 'legume',
         propriedades: ['gengibre'],
         quantidade: 1,
         texto: '1 colher de chá de gengibre',
         nome: 'Gengibre',
+        foto:"https://www.greenme.com.br/wp-content/uploads/2016/05/gengibre-corpo-1200x600.jpg",
     },
-
-
     feijaoverde: {
         tipo: 'feijão',
         propriedades: ['feijão-verde'],
         quantidade: 1,
         texto: '1 chávena de feijão verde',
         nome: 'Feijão Verde',
+        foto:"https://www.sementesvivas.bio/639-large_default/feijao-verde-domino-.jpg",
+    },
+    piripiri:{
+        tipo:'molho',
+        propriedades:['piripiri','picante'],
+        quantidade:1,
+        texto:'1 colher de café de piripiri',
+        nome:'Piripiri',
+        foto:"https://target.scene7.com/is/image/Target/GUEST_02cc746d-6e3b-4344-8855-eaf1fb21d53e?wid=488&hei=488&fmt=pjpeg",
     },
     beringela: {
         tipo: 'legume',
@@ -1929,35 +2365,30 @@ var basedadosingred = {
         quantidade: 100,
         texto: '100 gr de beringela',
         nome: 'Beringela',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/2016/11/beringela-como-cozinha-la.jpg",
     },
-
-
     peru: {
         tipo: 'carne',
         propriedades: ['bife', 'perú'],
         quantidade: 100,
         texto: '100gr bife de perú',
         nome: 'Perú',
+        foto:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSflEsD_42eFvW9No5yQOSgIheYpOt85Fqbgs0vdq_TauOovdMS&usqp=CAU",
     },
-
-
-
-
-
-
     pimentapreta: {
         tipo: 'condimentos',
         propriedades: ['pimenta', 'primenta preta'],
         quantidade: 0,
         texto: 'pimenta preta qb',
         nome: 'Pimenta Preta',
-    },
+foto:"https://www.dicasdemulher.com.br/wp-content/uploads/2018/02/pimenta-do-reino.jpg",    },
     espinafres: {
         tipo: 'legume',
         propriedades: ['embalagem', 'espinafre'],
         quantidade: 1,
         texto: '1 embalagem de espinafres',
         nome: 'Espinafres',
+        foto:"https://cdn.vidaativa.pt/uploads/2019/11/espinafres-425x318.jpg",
     },
     bechamel: {
         tipo: 'laticinios',
@@ -1965,6 +2396,7 @@ var basedadosingred = {
         quantidade: 500,
         texto: '500ml de béchamel',
         nome: 'Molho Bechamel',
+        foto:"https://t2.rg.ltmcdn.com/pt/images/8/1/8/img_molho_bechamel_tradicional_3818_orig.jpg",
     },
     massalasanha: {
         tipo: 'massa',
@@ -1972,6 +2404,7 @@ var basedadosingred = {
         quantidade: 500,
         texto: '500 gr de massa fresca para lasanha',
         nome: 'Massa p/ Lasanha',
+        foto:"https://www.recheio.pt/catalogo/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/4/0/408859_3.png",
     },
     mozzarella: {
         tipo: 'laticinios',
@@ -1979,6 +2412,7 @@ var basedadosingred = {
         quantidade: 100,
         texto: '100 gr queijo mozzarella ralado',
         nome: 'Queijo Mozzarella',
+        foto:"https://www.gourmetfoodstore.com/images/product/large/6421_1_.jpg",
     },
     parmesao: {
         tipo: 'laticinios',
@@ -1986,6 +2420,7 @@ var basedadosingred = {
         quantidade: 100,
         texto: '100 gr queijo parmesão ralado',
         nome: 'Queijo Parmesão',
+        foto:"https://t2.uc.ltmcdn.com/pt/images/5/0/4/img_como_fazer_queijo_parmesao_3405_600_square.jpg",
     },
 
     manjericao: {
@@ -1993,33 +2428,32 @@ var basedadosingred = {
         propriedades: ['manjericao'],
         quantidade: 0,
         texto: 'manjericão qb',
-
         nome: 'Manjericão',
+        foto:"https://belezaesaude.com/i/f/o/saude/conteudo/manjericao.jpg",
     },
-
-
     farinhamilho: {
         tipo: 'farinha',
         propriedades: ['farinha de milho'],
         quantidade: 130,
         texto: '130 gr de farinha de milho',
-        nome: 'Farinha de Milho'
+        nome: 'Farinha de Milho',
+        foto:"https://lh3.googleusercontent.com/proxy/ngZjicGYmAeMzvWxZMGuj0ATY9PNJ_J-9dH1LKo8wJlm6BzFiTpiKnsTKRaWr9i9HZEZVUlBBfvrEQx9kM6_ebrvGbkYHGsTvnAmMitBqyzCtBhuJdF5JFcB-go9wZYPdirnUwpNDPj5lqqsqYJBmmd08QFsI-PdloQNYiRdiDDt3Xz4GWZt9AYliJAYnRQJfPbJ5QfYj2z6L3l0IrR1",
     },
-
     agua: {
         tipo: 'agua',
         propriedades: ['H2o'],
         quantidade: 150,
         texto: '150ml de água',
         nome: 'Água',
+        foto:"https://media-manager.noticiasaominuto.com/1920/naom_5baa3f3b180c2.jpg",
     },
-
     massapizza: {
         tipo: 'massa',
         propriedades: ['massa de pizza', 'refrigerada'],
         quantidade: 2,
         texto: '2 massa de pizza refrigerada',
         nome: 'Massa de Pizza',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/2017/09/massa-de-pizza.jpg",
     },
     molhopesto: {
         tipo: 'molho',
@@ -2027,6 +2461,7 @@ var basedadosingred = {
         quantidade: 45,
         texto: '3 colheres de sopa de molho pesto',
         nome: 'Molho Pesto',
+        foto:"https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2018/02/16/molho-pesto.jpg",
     },
     burrata: {
         tipo: 'laticinios',
@@ -2034,38 +2469,39 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 embalagens de burrata fresca',
         nome: 'Burrata',
+        foto:"https://upload.wikimedia.org/wikipedia/commons/f/f1/Burrata2.jpg",
     },
-
     pinhoes: {
         tipo: 'fruto seco',
         propriedades: ['pinhoes', 'torrados'],
         quantidade: 30,
         texto: '2 colheres de sopa de pinhões torrados',
         nome: 'Pinhões',
+        foto:"https://lh3.googleusercontent.com/proxy/I7HjXby_BONbJiojU5iBZtsiTmqczQaIrjVeWvkSZL7909rWaLmivbLoysOC4yhXTe4TkSYBAkpLNvwme3EpIKdJWkY82Zp3o_qyVy1KRoA3_aNtYzvFCMGMAZ1zUUsppN4a",
     },
-
     salgrosso: {
         tipo: 'tempero',
         propriedades: ['sal', 'sal grosso'],
         quantidade: 5,
         texto: '1 colher de chá de sal grosso',
         nome: 'Sal Grosso',
+        foto:"https://s2.glbimg.com/JSApgyyxnKnUIdwtfcB899Tx9QU=/620x480/top/e.glbimg.com/og/ed/f/original/2018/07/06/captura_de_tela_2018-07-06_as_15.26.01.png",
     },
-
     quinoa: {
-        tipo: '???',
+        tipo: 'sementes',
         propriedades: ['quinoa branca'],
         quantidade: 200,
         texto: '200 gr de quinoa branca',
         nome: 'Quinoa',
+        foto:"https://conteudo.imguol.com.br/c/entretenimento/9b/2018/01/12/quinoa-1515783995564_v2_1920x1280.jpg",
     },
-
     legumes: {
         tipo: 'legumes',
         propriedades: 'embalagem',
         quantidade: 1,
         texto: '1 embalagem de mistura de legumes',
         nome: 'Legumes',
+        foto:"https://www.pingodoce.pt/wp-content/uploads/products/thumbnail/336088-efe28bcabf44c2a5a48ecda62738f835.jpg",
     },
     abacate: {
         tipo: 'fruta',
@@ -2073,6 +2509,7 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 abacates',
         nome: 'Abacate',
+        foto:"https://s2.glbimg.com/ew1z80L80DVKWV8z7XDqQZA4anw=/261x122:4670x3948/924x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2014/11/20/abacate.jpg",
     },
     coentros: {
         tipo: 'condimentos',
@@ -2080,8 +2517,8 @@ var basedadosingred = {
         quantidade: 0,
         texto: 'coentros qb',
         nome: 'Coentros',
+        foto:"https://www.fitnesshut.pt/assets/img/treinar/nutricao/artigos/1526293156_Coentros.jpg",
     },
-
     ricotaespinafre: {
         tipo: 'mistura',
         propriedades: ['ricotta', 'espinafres'],
@@ -2089,6 +2526,7 @@ var basedadosingred = {
         texto: '1 embalagem de tortellini de ricota e espinafres',
 
         nome: 'Ricotta e Espinafres',
+        foto:"https://receitinhas.s3-sa-east-1.amazonaws.com/wp-content/uploads/2017/08/iStock-509483890-848x477.jpg",
     },
     miolonoz: {
         time: 'fruto seco',
@@ -2096,32 +2534,31 @@ var basedadosingred = {
         quantidade: 60,
         texto: '60 gr de miolo de noz',
         nome: 'Miolo de Noz',
+        foto:"https://www.biocabaz.pt/web/wp-conteudos/uploads/2016/04/secos-noz_miolo.jpg",
     },
-
-
     arroz: {
         tipo: 'arroz',
         propriedades: ['sobras'],
         quantidade: 200,
         texto: '200 gr de sobras de arroz de tomate frio',
         nome: 'Arroz',
+        foto:"https://portal-amb-imgs.clubedaana.com.br/2016/11/arroz-de-micro-ondas-768x512.jpg",
     },
-
-
     oleo: {
         tipo: 'oleo',
         propriedades: '',
         quantidade: 500,
         texto: '500 ml de óleo (para fritar)',
         nome: 'Óleo',
+        foto:"https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2004635(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
     },
-
     farinha: {
         tipo: 'farinha',
         propriedades: [],
         quantidade: 0,
         texto: 'meia chávena de farinha',
         nome: 'Farinha',
+        foto:"https://cozinhatecnica.com/wp-content/uploads/2018/04/Farinha-de-arroz-e1523395479373.jpg",
     },
     paoralado: {
         tipo: 'farinha',
@@ -2129,6 +2566,7 @@ var basedadosingred = {
         quantidade: 200,
         texto: '200 gr de pão ralado',
         nome: 'Pão Ralado',
+        foto:"https://cdn.e-konomista.pt/uploads/2019/07/receitas-com-pao-ralado_1516543618-425x318.jpg",
     },
     lentilhas: {
         tipo: 'legume',
@@ -2136,6 +2574,7 @@ var basedadosingred = {
         quantidade: 200,
         texto: '200 gr de lentilhas verdes',
         nome: 'Lentilhas',
+        foto:"https://thumbs.web.sapo.io/?W=800&H=0&png=1&delay_optim=1&epic=ODEyTMovMv/KMILSD3c/Lkir0RueaRnT463rIPswriU9huvGJotPCZc9Zbl4jnPPhp33sgLEN3YWcELx/Vh6jOFc5yD3niI4jBYRA8ZB0ZT4/kQ=",
     },
     oleococo: {
         tipo: 'oleo',
@@ -2143,10 +2582,8 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 colheres de sopa de óleo de coco',
         nome: 'Óleo de Coco',
+        foto:"https://chaecia.vteximg.com.br/arquivos/ids/157348-1000-1000/oleo-de-coco-extra-virgem-500ml.jpg?v=636667373419170000",
     },
-
-
-
     leitecoco: {
         tipo: 'laticinios',
         propriedades: [
@@ -2155,22 +2592,23 @@ var basedadosingred = {
         quantidade: 200,
         texto: '200ml de leite de coco',
         nome: 'Leite de Coco',
+        foto:"https://3.bp.blogspot.com/-zE6QCuOUxzI/WzOMJ6XgUpI/AAAAAAABLpU/Nhl5ALeGkEMWCupP0xX5wo4uqukVjQGawCLcBGAs/s1600/receita-leite-de-coco-caseiro.jpg",
     },
-    pimento: {
+    pimentoverde: {
         tipo: 'vegetal',
         propriedades: ['pimento verde'],
         quantidade: 2,
         texto: 'meio pimento verde em puré',
-        nome: 'Pimento',
+        nome: 'Pimento Verde',
+        foto:"https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2076823(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
     },
-
-
     basmati: {
         tipo: 'arroz',
         propriedades: 'Basmati',
         quantidade: 350,
         texto: '350 gr de arroz Basmati feito',
         nome: 'Arroz Basmatti',
+        foto:"https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2018/09/25/shutterstock604635731.jpg",
     },
     tomatecherryvermelho: {
         tipo: 'vegetal',
@@ -2178,13 +2616,22 @@ var basedadosingred = {
         quantidade: 250,
         texto: '250 gr de tomate cherry vermelho',
         nome: 'Tomate Cherry Vermelho',
+        foto:"https://cdn.pixabay.com/photo/2015/07/08/05/25/tomatoes-835385_960_720.jpg",
+    },
+    cremedeleite:{
+        tipo:'laticinios',
+        propriedades:['creme de leite','lata'],
+        quantidade:2,
+        texto:'2 latas de creme de leite',
+        nome:'Creme de Leite',
+        foto:"https://images-americanas.b2w.io/produtos/01/00/oferta/54069/7/54069711_1GG.jpg",
     },
     tomatecherryamarelo: {
         tipo: 'vegetal',
         propriedades: ['tomate', 'cherry', 'amarelo'],
         quantidade: 250,
         texto: '250 gr de tomate cherry amarelo',
-
+        foto:"https://www.joiadocampo.com/wp-content/uploads/2016/10/tomate-cherry-amarelo-kg-importado.jpg",
         nome: 'Tomate Cherry Amarelo',
     },
 
@@ -2194,6 +2641,7 @@ var basedadosingred = {
         quantidade: 0,
         texto: 'meio limão',
         nome: 'Limão',
+        foto:"https://valemais.pt/vlm/wp-content/uploads/2016/01/dieta-do-limao_site.jpg",
     },
 
     mel: {
@@ -2202,6 +2650,7 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 colher de sopa de mel',
         nome: 'Mel',
+        foto:"https://media-manager.noticiasaominuto.com/1920/1562314810/naom_5d1f02f162859.jpg?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoyNTYwLCJjcm9wSGVpZ2h0IjoxNDM5LCJjcm9wWCI6MCwiY3JvcFkiOjI1MH0sInBvcnRyYWl0Ijp7ImNyb3BXaWR0aCI6MTA3NywiY3JvcEhlaWdodCI6MTkxNCwiY3JvcFgiOjI1MCwiY3JvcFkiOjB9fQ==",
     },
 
     vinagre: {
@@ -2210,8 +2659,89 @@ var basedadosingred = {
         quantidade: 33,
         texto: '2 colheres de sobremesa de vinagre balsâmico',
         nome: 'Vinagre',
+        foto:"https://p2.trrsf.com/image/fget/cf/1200/1200/filters:quality(85)/images.terra.com/2018/02/20/vinagre-balsc3a2mico.jpg",
     },
+    bacalhau:{
+        tipo:"peixe",
+        propriedades:['posta','bacalhau'],
+        quantidade:2,
+        texto:"2 postas de bacalhau",
+        nome:'Bacalhau',
+        foto:"https://lh3.googleusercontent.com/proxy/2vZ2UpQ8IkTAUaMCSTiTORWSZipu81EIHVf00kta3FbPRTBC8kyaFc6fuoKd5svKfBgKW2PyhDJhGV0c3huG1_cMx2UwXk5UZ2ERcs0Ff5USDcLwjqaXCtVOrOI",
+    },
+    batata:{
+        tipo:"batata",
+        propriedades:[],
+        quantidade:1,
+        texto:'1 batata grande',
+        nome:'Batatas',
+        foto:"https://media-manager.noticiasaominuto.com/1920/1582634326/naom_5e5514ead7999.jpg?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoyNDU1LCJjcm9wSGVpZ2h0IjoxMzgxLCJjcm9wWCI6MCwiY3JvcFkiOjU4fX0=",
 
+    },
+    pimentovermelho: {
+        tipo: 'vegetal',
+        propriedades: ['pimento', 'vermelho'],
+        quantidade: 20,
+        texto: '20 gr pimentos vermelhos',
+        nome:'Pimento Vermelho',
+        foto:"https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2076826(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
+    },
+    chocolate:{
+        tipo:'chocolate',
+        propriedades:['pó'],
+        quantidade:11,
+        texto:'11 colheres de sopa de chocolate em pó',
+        nome:'Chocolate em pó',
+        foto:"https://4.bp.blogspot.com/-TGPJVrZUiOM/V3EOGwYdopI/AAAAAAAABYU/__h6qsMhGaUobgqEC8BycXyEK0CCwYR3ACLcB/s1600/Cacau%2Bem%2Bp%25C3%25B3.jpg",
+    },
+    manteiga:{
+        tipo:'laticinios',
+        propriedades:['manteiga'],
+        quantidade:4,
+        texto:'4 colheres de sopa de manteiga',
+        nome:'Manteiga',
+        foto:"https://t1.rg.ltmcdn.com/pt/images/2/3/2/manteiga_caseira_com_nata_7232_600.jpg",
+    },
+    polpatomate:{
+        tipo:'molho',
+        propriedades:['molho','polpa','tomate'],
+        quantidade:1,
+        texto:'1 colher de polpa de tomate',
+        nome:'Polpa de Tomate',
+        foto:"https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=4092713(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
+    },
+    ervilhas:{
+        tipo:'legumes',
+        propriedades:['ervilhas'],
+        quantidade:150,
+        texto:'150 gr de ervilhas',
+        nome:'Ervilhas',
+        foto:"https://www.greenme.com.br/wp-content/uploads/2017/06/ervilha-beneficios-1200x600.jpg",
+    },
+    maionese:{
+        tipo:'molho',
+        propriedades:['maionese','ovos'],
+        quantidade:2,
+        texto:'2 colheres de sopa de maionese',
+        nome:'Maionese',
+        foto:"https://static.carrefour.com.br/medias/sys_master/images/images/h8b/h31/h00/h00/11606263791646.jpg",
+    }, 
+    ketchup:{
+        tipo:'molho',
+        propriedades:['ketchup','tomate'],
+        quantidade:100,
+        texto:'meio copo de ketchup',
+        nome:'Ketchup',
+        foto:"https://savegnago.vteximg.com.br/arquivos/ids/287973-1000-1000/CATCHUP-HEINZ-397G-PET.jpg?v=636592447588900000",
+    },
+    mostarda:{
+        tipo:'molho',
+        propriedades:['mostarda'],
+        quantidade:67,
+        texto:'um terço de um copo de mostarda',
+        nome:'Mostarda',
+        foto:"https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=4970162(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
+    },        
 
 
 
