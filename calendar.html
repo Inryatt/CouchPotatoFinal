@@ -5,58 +5,64 @@
 <head>
   <style>
     .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.ingredientesmissing{
-  text-align: center;
-  font-size: medium;
-  padding:30px;
-  width:50%;
-  background-color:#fff2de;
-  
-} 
-.linha{
-width: 100%;
-height: 220px;
-background-color: khaki;
-float: left;
-}
-.receita{
-  width: 33%;
-  height: 220px;
-  float: left;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
 
-}
-.receita1{
-  width: 50%;
-  height: 100%;
-  vertical-align: middle;
-  float: left;
+    .ingredientesmissing {
+      text-align: center;
+      font-size: medium;
+      padding: 30px;
+      width: 50%;
+      background-color: #fff2de;
 
-  padding: 35px 40px 35px 40px; 
-}
-img{
-  height: 150px;
-  width: 150px;
-  border-radius: 100px;
-  
-  
-  
-}
-.receita2{
+    }
 
-  width: 40%;
-  height: 220px;
-  float: left;
-  font-size: x-large;
-  padding-top: 90px;
-  padding-right: 0px;
-  padding-bottom: 90px;
-  padding-left: 0px;
-}
+    .linha {
+      width: 100%;
+      height: 220px;
+      background-color: khaki;
+      float: left;
+    }
+
+    .receita {
+      width: 33%;
+      height: 220px;
+      float: left;
+
+    }
+
+    .receita1 {
+      width: 50%;
+      height: 100%;
+      vertical-align: middle;
+      float: left;
+
+      padding: 35px 40px 35px 40px;
+    }
+
+    img {
+      height: 150px;
+      width: 150px;
+      border-radius: 100px;
+
+
+
+    }
+
+    .receita2 {
+
+      width: 40%;
+      height: 220px;
+      float: left;
+      font-size: x-large;
+      padding-top: 90px;
+      padding-right: 0px;
+      padding-bottom: 90px;
+      padding-left: 0px;
+    }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/global.css">
@@ -148,62 +154,89 @@ img{
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
     <div>
-      <div style="width: 50%;float:left; border:2px;"id="Calendário">
-METER CALENDARIO AQUI
+      <div style="width: 50%;float:left; border:2px;" id="Calendário">
+        <table class="table" style="background-color: #ffe9cc;">
+          <thead>
+            <td>Segunda</td>
+            <td>Terça</td>
+            <td>Quarta</td>
+            <td>Quinta</td>
+            <td>Sexta</td>
+            <td>Sabado</td>
+            <td>Domingo</td>
+  
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div style="float:left; width:50%; border:2px ">
-      <img class="center" src="../CouchPotatoFinal-1/assets/CouchPotato/kawaii donut.png" style="padding-top:20px ;width:200px;height: 130px; ">
-      <p class="ingredientesmissing center">
-        Não lhe falta nenhum ingrediente.
-      </p>
-      <ul class="ingredientesmissing center" hidden>
+        <img class="center" src="assets/CouchPotato/kawaii donut.png"
+          style="padding-top:20px ;width:200px;height: 130px; ">
+        <p class="ingredientesmissing center">
+          Não lhe falta nenhum ingrediente.
+        </p>
+        <ul class="ingredientesmissing center" hidden>
 
-      </ul>
-      <button style="font-weight: bold;font-size: large;color:white;width:175px;height:50px; background-color:#ffb94d; border:2px solid #ffd240;border-radius: 50px;" class="center">
-        Confirmar
-      </button>
-     
-    </div> 
-    <div style="font-size: x-large;opacity: 0;" >aaaaa</div>
-    <div ><input style="border-radius: 50px; float: right; text-align: center;" placeholder="Procurar receita" type="text" id="search" name="search"></div>
+        </ul>
+        <button
+          style="font-weight: bold;font-size: large;color:white;width:175px;height:50px; background-color:#ffb94d; border:2px solid #ffd240;border-radius: 50px;"
+          class="center">
+          Confirmar
+        </button>
 
-    <div style="font-size: x-large;" id="cycleButton" onclick=cycleRecipes()>
-      Mostrar outras <span style="font-size: xx-large; font-weight: bold;">&#x21BB</span>
-      
-    </div>
-
-    <div id="receitas" class="linha">
-      <div class="receita" id="recBox1">
-        <div class="receita1">
-          <img  src="assets/CouchPotato/lilcakes.jpg">
-          
-        </div>
-        <div class="receita2" id="recText1">
-          Sushi
-        </div>
-        
       </div>
-      <div class="receita" id="recBox2">
-        <div class="receita1">
-          <img  src="assets/CouchPotato/lilcakes.jpg">
-          
-        </div>
-        <div class="receita2"id="recText2">
-          Sushi
-        </div>
-        
-      </div><div class="receita" id="recBox3">
-        <div class="receita1">
-          <img  src="/assets/CouchPotato/lilcakes.jpg">
-          
-        </div>
-        <div class="receita2" id="recText3">
-          Sushi
-        </div>
-        
+      <div style="font-size: x-large;opacity: 0;">aaaaa</div>
+      <div><input style="border-radius: 50px; float: right; text-align: center;" placeholder="Procurar receita"
+          type="text" id="search" name="search"></div>
+
+      <div style="font-size: x-large;" id="cycleButton" onclick=cycleRecipes()>
+        Mostrar outras <span style="font-size: xx-large; font-weight: bold;">&#x21BB</span>
+
       </div>
-      
-    </div>
+
+      <div id="receitas" class="linha">
+        <div class="receita" id="recBox1">
+          <div class="receita1">
+            <img src="assets/CouchPotato/lilcakes.jpg">
+
+          </div>
+          <div class="receita2" id="recText1">
+            Sushi
+          </div>
+
+        </div>
+        <div class="receita" id="recBox2">
+          <div class="receita1">
+            <img src="assets/CouchPotato/lilcakes.jpg">
+
+          </div>
+          <div class="receita2" id="recText2">
+            Sushi
+          </div>
+
+        </div>
+        <div class="receita" id="recBox3">
+          <div class="receita1">
+            <img src="/assets/CouchPotato/lilcakes.jpg">
+
+          </div>
+          <div class="receita2" id="recText3">
+            Sushi
+          </div>
+
+        </div>
+
+      </div>
     </div>
 
 

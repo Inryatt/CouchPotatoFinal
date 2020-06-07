@@ -2494,17 +2494,17 @@ $("#addInvent").click(function () {
 
 function cycleRecipes() {
     console.log("cycling...")
-    const keys = Object.keys(basedadosingred);
+    const keys = Object.keys(receitas);
     var randomIndex = keys[Math.floor(Math.random() * keys.length)];
     console.log(randomIndex)
     //const item = basedadosingred[randomIndex];
-    $("#recText2").text(basedadosingred[randomIndex]['nome']);
+    $("#recText2").text(receitas[randomIndex]['name']);
     randomIndex = keys[Math.floor(Math.random() * keys.length)];
-    item = basedadosingred[randomIndex];
-    $("#recText1").text(basedadosingred[randomIndex]['nome']);
+    item = receitas[randomIndex];
+    $("#recText1").text(receitas[randomIndex]['name']);
     randomIndex = keys[Math.floor(Math.random() * keys.length)];
-    item = basedadosingred[randomIndex];
-    $("#recText3").text(basedadosingred[randomIndex]['nome']);
+    item = receitas[randomIndex];
+    $("#recText3").text(receitas[randomIndex]['name']);
 }
 
 $("calendar.html").ready(function () {
