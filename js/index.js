@@ -2,8 +2,8 @@
 
 //User Settings defaults
 localStorage.dieta = false;
- localStorage.vegetariano = true;
- localStorage.alimentos = [];
+localStorage.vegetariano = true;
+localStorage.alimentos = [];
 
 //REGISTO
 var username;
@@ -12,251 +12,252 @@ var pwd;
 
 $("#registo").click(function () {
     event.preventDefault();
-    
+
     username = $("#regName").val();
     email = $("#regMail").val();
     pwd = $("#regPwd").val();
 
-    if(username==""||email==""|| pwd==""){
+    if (username == "" || email == "" || pwd == "") {
         alert("Campos em vazio!");
     }
-    else{
-    localStorage.username = username;
-    localStorage.email = email;
-    localStorage.pwd = pwd;
-    console.log("success register")
-    window.location.href = "login.html";//redirect para a main page
+    else {
+        localStorage.username = username;
+        localStorage.email = email;
+        localStorage.pwd = pwd;
+        console.log("success register")
+        window.location.href = "login.html";//redirect para a main page
     }
 })
 //============================================
 $("#login").click(function () {
     event.preventDefault();
-  
+
     var tmpE, tmpP;
     tmpE = $("#logMail").val();
     tmpP = $("#logPwd").val();
-    console.log("login attempted...") 
-    if(tmpE==""||tmpP==""){
+    console.log("login attempted...")
+    if (tmpE == "" || tmpP == "") {
         alert("Campos em vazio!");
         $("#logMail").empty();
         $("#logPwd").empty();
     }
-    else{
-    if ((tmpE == localStorage.email) && (tmpP == localStorage.pwd)) {
-        console.log("LOGIN SUCCESSFULL")
-        window.location.href = "index.html";//redirect para a main page
-        var inventario = {
-            farinhatrigo: {
-                tipo: 'farinha',
-                propriedades: [
-                    'trigo',
-                    'sem fermento'
-                ],
-                quantidade: 100,
-                texto: '1 kg de farinha de trigo sem fermento'
-                , nome: 'Farinha de Trigo'
-            },
-            leite: {
-                tipo: 'laticinios',
-                propriedades: [
-                    'morno'
-                ],
-                quantidade: 400,
-                texto: '400ml de leite morno'
-                , nome: 'Leite'
-        
-            },
-            ovo: {
-                tipo: 'ovo',
-                propriedades: [],
-                quantidade: 2,
-                texto: '2 ovos (remova a película ou pele da gema)'
-                , nome: 'Ovo'
-        
-            },
-            fermento: {
-                tipo: 'farinha',
-                propriedades: [
-                    'biológico',
-                    'fresco'
-                ],
-        
-                quantidade: 45,
-                texto: '45g de fermento biológico fresco'
-        
-                , nome: 'Fermento'
-        
-            },
-            acucar: {
-                tipo: 'tempero',
-                propriedades: [
-                    'acucar'
-                ],
-                quantidade: 200,
-                texto: '1 chávena de açúcar'
-                , nome: 'Açúcar'
-            },
-            sal: {
-                tipo: 'tempero',
-                propriedades: [
-                    'sal'
-                ],
-                quantidade: 10,
-                texto: '1/2 colher (sopa) de sal'
-        
-                , nome: 'Sal'
-            },
-            graodebico: {
-                tipo: 'feijão',
-                propriedades: ['grão de bico', 'cozido'],
-                quantidade: 300,
-                texto: '300 gr de grão de bico cozido',
-                nome: 'Grão de Bico'
-            },
-            sementeslinhaca: {
-                tipo: 'sementes',
-                propriedades: ['linhaça', 'moída'],
-                quantidade: 20,
-                texto: '20 gr de sementes de linhaça moída',
-                nome: 'Sementes de Linhaça'
-            },
-            salsa: {
-                tipo: 'condimentos',
-                propriedades: ['salsa'],
-                quantidade: 15,
-                texto: '1 colher de sopa de salsa'
-                , nome: 'Salsa'
-            },
-        
-            cenoura: {
-                tipo: 'vegetal',
-                propriedades: ['cenoura', 'média'],
-                quantidade: 1,
-                texto: '1 cenoura média',
-                nome: 'Cenoura'
-            },
-            atum: {
-                tipo: 'conservas',
-                propriedades: ['atum natural'],
-                quantidade: 200,
-                texto: '1 lata de atum natural',
-        
-                nome: 'Atum'
-        
-            },
-            feijaofrade: {
-                tipo: 'feijão',
-                propriedades: ['frade'],
-                quantidade: 200,
-                texto: '200 gr de feijão frade',
-                nome: 'Feijão Frade',
-            },
-        
-        
-            cebola: {
-                tipo: 'vegetal',
-                propriedades: ['cebola'],
-                quantidade: 1,
-                texto: '1 cebola',
-                nome: 'Cebola',
-            },
-            alho: {
-                tipo: 'condimentos',
-                propriedades: ['dente de alho', 'alho'],
-                quantidade: 1,
-                texto: '1 dente de alho',
-        
-                nome: 'Alho',
-        
-            },
-        
-            claras: {
-                tipo: 'ovo',
-                propriedades: ['ovo', 'claras'],
-                quantidade: 100,
-                texto: '100 gr de claras de ovos',
-        
-                nome: 'Claras',
-            },
-            tomate: {
-                tipo: 'vegetal',
-                propriedades: ['tomate'],
-                quantidade: 1,
-                texto: '1 tomate',
-                nome: 'Tomate',
-            },
-        
-        
-            cogumelos: {
-                tipo: 'vegetal',
-                propriedades: ['cogumelos'],
-                quantidade: 70,
-                texto: '70 gr de cogumelos',
-        
-                nome: 'Cogumelos',
-            },
-        
-        
-        
-        
-            oregaos: {
-                tipo: 'condimentos',
-                propriedades: ['oregaos'],
-                quantidade: 0,
-                texto: 'óregãos qb',
-        
-                nome: 'Orégãos',
-            },
-        
-            queijo: {
-                tipo: 'laticinios',
-                propriedades: ['queijo', 'fresco', 'amargo'],
-                quantidade: 1,
-                texto: '1 queijo fresco amargo',
-        
-                nome: 'Queijo',
-            },
-            espargos: {
-                tipo: 'vegetal',
-                propriedades: ['espargos'],
-                quantidade: 150,
-                texto: '150 gr de espargos',
-                nome: 'Espargos',
-            },
-            alface: {
-                tipo: 'vegetal',
-                propriedades: ['alface'],
-                quantidade: 100,
-                texto: '100 gr de alface',
-                nome: 'Alface',
-            },
-            rucula: {
-                tipo: 'vegetal',
-                propriedades: ['rúcula'],
-                quantidade: 50,
-                texto: '50 gr de rúcula',
-        
-                nome: 'Rúcula',
-            },
-        
-            amendoa: {
-                tipo: 'fruto seco',
-                propriedades: ['amendoa'],
-                quantidade: 5,
-                texto: '5 amêndoas',
-        
-                nome: 'Amêndoa',
-            },
-        }
-        localStorage.inventario = JSON.stringify(inventario);
-
-    }
     else {
-        console.log("BAD LOGIN!");
-        alert("Credenciais erradas!")
-        $("#logMail").empty();
-        $("#logPwd").empty();
-    }}
+        if ((tmpE == localStorage.email) && (tmpP == localStorage.pwd)) {
+            console.log("LOGIN SUCCESSFULL")
+            window.location.href = "index.html";//redirect para a main page
+            var inventario = {
+                farinhatrigo: {
+                    tipo: 'farinha',
+                    propriedades: [
+                        'trigo',
+                        'sem fermento'
+                    ],
+                    quantidade: 100,
+                    texto: '1 kg de farinha de trigo sem fermento'
+                    , nome: 'Farinha de Trigo'
+                },
+                leite: {
+                    tipo: 'laticinios',
+                    propriedades: [
+                        'morno'
+                    ],
+                    quantidade: 400,
+                    texto: '400ml de leite morno'
+                    , nome: 'Leite'
+
+                },
+                ovo: {
+                    tipo: 'ovo',
+                    propriedades: [],
+                    quantidade: 2,
+                    texto: '2 ovos (remova a película ou pele da gema)'
+                    , nome: 'Ovo'
+
+                },
+                fermento: {
+                    tipo: 'farinha',
+                    propriedades: [
+                        'biológico',
+                        'fresco'
+                    ],
+
+                    quantidade: 45,
+                    texto: '45g de fermento biológico fresco'
+
+                    , nome: 'Fermento'
+
+                },
+                acucar: {
+                    tipo: 'tempero',
+                    propriedades: [
+                        'acucar'
+                    ],
+                    quantidade: 200,
+                    texto: '1 chávena de açúcar'
+                    , nome: 'Açúcar'
+                },
+                sal: {
+                    tipo: 'tempero',
+                    propriedades: [
+                        'sal'
+                    ],
+                    quantidade: 10,
+                    texto: '1/2 colher (sopa) de sal'
+
+                    , nome: 'Sal'
+                },
+                graodebico: {
+                    tipo: 'feijão',
+                    propriedades: ['grão de bico', 'cozido'],
+                    quantidade: 300,
+                    texto: '300 gr de grão de bico cozido',
+                    nome: 'Grão de Bico'
+                },
+                sementeslinhaca: {
+                    tipo: 'sementes',
+                    propriedades: ['linhaça', 'moída'],
+                    quantidade: 20,
+                    texto: '20 gr de sementes de linhaça moída',
+                    nome: 'Sementes de Linhaça'
+                },
+                salsa: {
+                    tipo: 'condimentos',
+                    propriedades: ['salsa'],
+                    quantidade: 15,
+                    texto: '1 colher de sopa de salsa'
+                    , nome: 'Salsa'
+                },
+
+                cenoura: {
+                    tipo: 'vegetal',
+                    propriedades: ['cenoura', 'média'],
+                    quantidade: 1,
+                    texto: '1 cenoura média',
+                    nome: 'Cenoura'
+                },
+                atum: {
+                    tipo: 'conservas',
+                    propriedades: ['atum natural'],
+                    quantidade: 200,
+                    texto: '1 lata de atum natural',
+
+                    nome: 'Atum'
+
+                },
+                feijaofrade: {
+                    tipo: 'feijão',
+                    propriedades: ['frade'],
+                    quantidade: 200,
+                    texto: '200 gr de feijão frade',
+                    nome: 'Feijão Frade',
+                },
+
+
+                cebola: {
+                    tipo: 'vegetal',
+                    propriedades: ['cebola'],
+                    quantidade: 1,
+                    texto: '1 cebola',
+                    nome: 'Cebola',
+                },
+                alho: {
+                    tipo: 'condimentos',
+                    propriedades: ['dente de alho', 'alho'],
+                    quantidade: 1,
+                    texto: '1 dente de alho',
+
+                    nome: 'Alho',
+
+                },
+
+                claras: {
+                    tipo: 'ovo',
+                    propriedades: ['ovo', 'claras'],
+                    quantidade: 100,
+                    texto: '100 gr de claras de ovos',
+
+                    nome: 'Claras',
+                },
+                tomate: {
+                    tipo: 'vegetal',
+                    propriedades: ['tomate'],
+                    quantidade: 1,
+                    texto: '1 tomate',
+                    nome: 'Tomate',
+                },
+
+
+                cogumelos: {
+                    tipo: 'vegetal',
+                    propriedades: ['cogumelos'],
+                    quantidade: 70,
+                    texto: '70 gr de cogumelos',
+
+                    nome: 'Cogumelos',
+                },
+
+
+
+
+                oregaos: {
+                    tipo: 'condimentos',
+                    propriedades: ['oregaos'],
+                    quantidade: 0,
+                    texto: 'óregãos qb',
+
+                    nome: 'Orégãos',
+                },
+
+                queijo: {
+                    tipo: 'laticinios',
+                    propriedades: ['queijo', 'fresco', 'amargo'],
+                    quantidade: 1,
+                    texto: '1 queijo fresco amargo',
+
+                    nome: 'Queijo',
+                },
+                espargos: {
+                    tipo: 'vegetal',
+                    propriedades: ['espargos'],
+                    quantidade: 150,
+                    texto: '150 gr de espargos',
+                    nome: 'Espargos',
+                },
+                alface: {
+                    tipo: 'vegetal',
+                    propriedades: ['alface'],
+                    quantidade: 100,
+                    texto: '100 gr de alface',
+                    nome: 'Alface',
+                },
+                rucula: {
+                    tipo: 'vegetal',
+                    propriedades: ['rúcula'],
+                    quantidade: 50,
+                    texto: '50 gr de rúcula',
+
+                    nome: 'Rúcula',
+                },
+
+                amendoa: {
+                    tipo: 'fruto seco',
+                    propriedades: ['amendoa'],
+                    quantidade: 5,
+                    texto: '5 amêndoas',
+
+                    nome: 'Amêndoa',
+                },
+            }
+            localStorage.inventario = JSON.stringify(inventario);
+
+        }
+        else {
+            console.log("BAD LOGIN!");
+            alert("Credenciais erradas!")
+            $("#logMail").empty();
+            $("#logPwd").empty();
+        }
+    }
 })
 
 var receitas = {
@@ -2804,7 +2805,7 @@ function closeNav() {
 //recipe modal call
 
 $('#theModal').on('show.bs.modal', function (event) {
-        var tmpInv=JSON.parse(localStorage.inventario);
+    var tmpInv = JSON.parse(localStorage.inventario);
 
     var button = $(event.relatedTarget) // Button that triggered the modal
     var name = button.data('name') // Extract info from data-* attributes
@@ -2918,11 +2919,11 @@ $("#tags").autocomplete({
 });
 var toAdd = "";
 var avoidItems = []
-localStorage.avoidItems=JSON.stringify(avoidItems);
+localStorage.avoidItems = JSON.stringify(avoidItems);
 function refreshItems() {
     $("#itemsToAvoid").empty();
     console.log(avoidItems);
-    avoidItems=JSON.parse(localStorage.avoidItems);
+    avoidItems = JSON.parse(localStorage.avoidItems);
     for (var i = 0; i < avoidItems.length; i++) {
         console.log(avoidItems[i]);
         $("#itemsToAvoid").append("<li>" + avoidItems[i] + "</li>");
@@ -2930,7 +2931,7 @@ function refreshItems() {
 };
 
 function refreshItemsINV() {
-    var tmpInv=JSON.parse(localStorage.inventario);
+    var tmpInv = JSON.parse(localStorage.inventario);
 
     $("#ingList").empty();
     console.log(tmpInv);
@@ -2942,12 +2943,12 @@ function refreshItemsINV() {
 
 $("#addItem").click(function () {
     toAdd = $("#tags").val();
-    avoidItems=JSON.parse(localStorage.avoidItems);
+    avoidItems = JSON.parse(localStorage.avoidItems);
 
     if (acIng.includes(toAdd)) {
         avoidItems.push(toAdd);
         console.log(toAdd);
-        localStorage.avoidItems=JSON.stringify(avoidItems);
+        localStorage.avoidItems = JSON.stringify(avoidItems);
 
         refreshItems();
         $("#tags").val("");
@@ -2960,7 +2961,7 @@ $("#addItem").click(function () {
 });
 
 $(document).ready(function () {
-    var tmpInv=JSON.parse(localStorage.inventario);
+    var tmpInv = JSON.parse(localStorage.inventario);
 
     for (var item in tmpInv) {
         console.log(item);
@@ -2969,8 +2970,8 @@ $(document).ready(function () {
 })
 var qnt;
 $("#addInvent").click(function () {
-    
-    var tmpInv=JSON.parse(localStorage.inventario);
+
+    var tmpInv = JSON.parse(localStorage.inventario);
     toAdd = $("#tags").val();
     qnt = $("#qnt").val();
     console.log("toadd " + toAdd)
@@ -3021,7 +3022,26 @@ $("#addInvent").click(function () {
 
 //============= CALENDARIO
 
-const keys = basedadosingred.keys(list);
-const randomIndex = keys[Math.floor(Math.random() * keys.length)];
-const item = list[randomIndex];
+function cycleRecipes() {
+    console.log("cycling...")
+    const keys = Object.keys(receitas);
+    var randomIndex = keys[Math.floor(Math.random() * keys.length)];
+    console.log(randomIndex)
+    //const item = basedadosingred[randomIndex];
+    $("#recText2").text(receitas[randomIndex]['name']);
+    randomIndex = keys[Math.floor(Math.random() * keys.length)];
+    item = receitas[randomIndex];
+    $("#recText1").text(receitas[randomIndex]['name']);
+    randomIndex = keys[Math.floor(Math.random() * keys.length)];
+    item = receitas[randomIndex];
+    $("#recText3").text(receitas[randomIndex]['name']);
+}
 
+$("calendar.html").ready(function () {
+   
+    cycleRecipes();
+
+});
+$("#cycleButton").click(function () {
+    cycleRecipes();
+});
