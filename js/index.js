@@ -2270,8 +2270,8 @@ $('#theModal').on('show.bs.modal', function (event) {
                     if (ingredientes[item]['quantidade'] > inventario[item]['quantidade']) {
                         console.log(ingredientes[item]['quantidade'] + 'MIMIMIMI');
                         $("#ingredientes").append("<li style=\"color:red\">" + ingredientes[item]['texto'] + "</li>");
-                        alert("beepbeep");
-                        console.log("LAAAAAAALALAALLALALALALAL");
+                      //  alert("beepbeep");
+                       // console.log("LAAAAAAALALAALLALALALALAL");
                     } else {
                         $("#ingredientes").append("<li>" + ingredientes[item]['texto'] + "</li>");
 
