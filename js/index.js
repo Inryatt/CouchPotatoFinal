@@ -1,9 +1,9 @@
 
 
 //User Settings defaults
-var dieta = false;
-var vegetariano = true;
-let alimentos = [];
+localStorage.dieta = false;
+ localStorage.vegetariano = true;
+ localStorage.alimentos = [];
 
 //REGISTO
 var username;
@@ -2222,21 +2222,21 @@ var basedadosingred = {
 //console.log(receitas); test stuff
 $('#simveg').on('click change', function () {
     // alert("veg true");
-    vegetariano = true;
+    localStorage.vegetariano = true;
 });
 $('#naoveg').on('click change', function () {
     // alert("veg false");
-    vegetariano = false;
+    localStorage.vegetariano = false;
 });
 
 $('#simdiet').on('click change', function () {
-    // alert("dieta true");
-    dieta = true;
+    // alert("localStorage.dieta true");
+    localStorage.dieta = true;
 });
 
 $('#naodiet').on('click change', function () {
-    // alert("dieta false");
-    dieta = false;
+    // alert("localStorage.dieta false");
+    localStorage.dieta = false;
 });
 
 
@@ -2387,10 +2387,11 @@ $("#tags").autocomplete({
 });
 var toAdd = "";
 var avoidItems = []
-
+localStorage.avoidItems=JSON.stringify(avoidItems);
 function refreshItems() {
     $("#itemsToAvoid").empty();
     console.log(avoidItems);
+    avoidItems=JSON.parse(localStorage.avoidItems);
     for (var i = 0; i < avoidItems.length; i++) {
         console.log(avoidItems[i]);
         $("#itemsToAvoid").append("<li>" + avoidItems[i] + "</li>");
@@ -2410,9 +2411,13 @@ function refreshItemsINV() {
 
 $("#addItem").click(function () {
     toAdd = $("#tags").val();
+    avoidItems=JSON.parse(localStorage.avoidItems);
+
     if (acIng.includes(toAdd)) {
         avoidItems.push(toAdd);
         console.log(toAdd);
+        localStorage.avoidItems=JSON.stringify(avoidItems);
+
         refreshItems();
         $("#tags").val("");
     }
