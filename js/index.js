@@ -2357,4 +2357,10 @@ $("#addItem").click(function () {
     }
 });
 
+$(document).ready(function(){
+    for(var item in inventario){
+        console.log(item);
+        $("#ingList").append("<li>"+inventario[item]['nome']+"  ["+inventario[item]['quantidade']+"]</li>");
+    }
+})
 
