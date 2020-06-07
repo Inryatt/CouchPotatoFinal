@@ -1647,7 +1647,8 @@ var basedadosingred = {
         ],
         quantidade: 1000,
         texto: '1 kg de farinha de trigo sem fermento'
-        , nome: 'Farinha de Trigo'
+        , nome: 'Farinha de Trigo',
+        foto:"https://img.itdg.com.br/tdg/images/blog/uploads/2018/10/tipos-de-farinha-de-trigo-veja.jpg?w=1200"
     },
     leite: {
         tipo: 'laticinios',
@@ -2487,4 +2488,10 @@ $("#addInvent").click(function () {
         alert("Este ingrediente não se encontra na base de dados!");
     }
 });
+
+//============= CALENDARIO
+
+const keys = basedadosingred.keys(list);
+const randomIndex = keys[Math.floor(Math.random() * keys.length)];
+const item = list[randomIndex];
 
