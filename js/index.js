@@ -2261,14 +2261,14 @@ $('#theModal').on('show.bs.modal', function (event) {
 
 
             for (var item in ingredientes) {
-              //  console.log(inventario);
+                //  console.log(inventario);
                 // console.log(ingredientes[item]['texto']);
                 if (item in inventario) {
-                    console.log('necessario:'+ingredientes[item]['quantidade']);
-                    console.log('existe'+inventario[item]['quantidade']);
+                    console.log('necessario:' + ingredientes[item]['quantidade']);
+                    console.log('existe' + inventario[item]['quantidade']);
                     console.log((ingredientes[item]['quantidade'] > inventario[item]['quantidade']));
                     if (ingredientes[item]['quantidade'] > inventario[item]['quantidade']) {
-                        console.log(ingredientes[item]['quantidade']+'MIMIMIMI');
+                        console.log(ingredientes[item]['quantidade'] + 'MIMIMIMI');
                         $("#ingredientes").append("<li style=\"color:red\">" + ingredientes[item]['texto'] + "</li>");
                         alert("beepbeep");
                         console.log("LAAAAAAALALAALLALALALALAL");
@@ -2280,14 +2280,15 @@ $('#theModal').on('show.bs.modal', function (event) {
                 } else {
                     $("#ingredientes").append("<li style=\"color:red\">" + ingredientes[item]['texto'] + "</li>");
                 }
-                passos = details['Preparação'];}
-                for (var item in passos) {
-                    $("#receitaEtapas").append("<li>" + passos[item] + "</li>");
-                }
-                //console.log(autor+" , "+diff +" ," + JSON.stringify(ingredientes));
+                passos = details['Preparação'];
+            }
+            for (var item in passos) {
+                $("#receitaEtapas").append("<li>" + passos[item] + "</li>");
+            }
+            //console.log(autor+" , "+diff +" ," + JSON.stringify(ingredientes));
 
 
-            
+
         }
     }
 
@@ -2342,6 +2343,15 @@ function refreshItems() {
     }
 };
 
+function refreshItemsINV() {
+    $("#ingList").empty();
+    console.log(inventario);
+    for (var item in inventario) {
+        console.log(item);
+        $("#ingList").append("<li>" + inventario[item]['nome'] + "  [" + inventario[item]['quantidade'] + "]</li>");
+    }
+};
+
 $("#addItem").click(function () {
     toAdd = $("#tags").val();
     if (acIng.includes(toAdd)) {
@@ -2357,10 +2367,54 @@ $("#addItem").click(function () {
     }
 });
 
-$(document).ready(function(){
-    for(var item in inventario){
+$(document).ready(function () {
+    for (var item in inventario) {
         console.log(item);
-        $("#ingList").append("<li>"+inventario[item]['nome']+"  ["+inventario[item]['quantidade']+"]</li>");
+        $("#ingList").append("<li>" + inventario[item]['nome'] + "  [" + inventario[item]['quantidade'] + "]</li>");
     }
 })
+var qnt;
+$("#addInvent").click(function () {
+    toAdd = $("#tags").val();
+    qnt = $("#qnt").val();
+    console.log("toadd "+toAdd)
+    if (acIng.includes(toAdd)) {
 
+        if (qnt > 0) {
+            for(item in basedadosingred){
+                if(basedadosingred[item]['nome']==toAdd){
+                    toAdd=item;
+                    console.log("TOADD AFTER TRANSFROM: "+toAdd);
+                    //console.log(inventario);
+                    break;
+                }
+            }
+            if (toAdd  in inventario) {
+
+                inventario[toAdd]['quantidade'] = parseInt(inventario[toAdd]['quantidade'])+ parseInt(qnt);
+                refreshItemsINV()
+            }
+            else{
+                inventario[toAdd]=basedadosingred[toAdd];
+                console.log(basedadosingred[toAdd]);
+                inventario[toAdd]['quantidade'] = qnt;
+                console.log(toAdd);
+                refreshItems();
+                $("#tags").val("");
+                refreshItemsINV()
+            }
+        }
+        else {
+            $("#tags").val("");
+            $("#erro").removeClass("d-none").text("Por favor insira uma quantidade válida!");
+            alert("Por favor insira uma quantidade válida!");
+            $("#qnt").val("");
+        }
+    }
+    else {
+        $("#tags").val("");
+        $("#qnt").val("");
+        $("#erro").removeClass("d-none").text("Este ingrediente não está na base de dados!");
+        alert("Este ingrediente não se encontra na base de dados!");
+    }
+});
