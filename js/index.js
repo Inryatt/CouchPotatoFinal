@@ -3045,3 +3045,92 @@ $("calendar.html").ready(function () {
 $("#cycleButton").click(function () {
     cycleRecipes();
 });
+
+
+
+function openModal(modalName)
+
+    var tmpInv = JSON.parse(localStorage.inventario);
+
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var name = button.data('name') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    var nome;
+    var autor;
+    var diff;
+    var port;
+    var time;
+    var ingredientes;
+    var passos;
+    var details;
+    $("#ingredientes").empty();
+    $("#receitaEtapas").empty();
+
+
+    for (var property in receitas) {
+        console.log(property);
+        if (property == name) {
+            // alert('beep');
+            details = receitas[property];
+            console.log(details);
+            nome = details['name'];
+            autor = details['autor'];
+            console.log(autor);
+            diff = details['dificuldade'];
+            port = details['portions'];
+            time = details['time'];
+
+            ingredientes = details['Ingredientes'];
+
+
+
+
+
+
+
+
+            for (var item in ingredientes) {
+                //  console.log(JSON.parse(localStorage.inventario));
+                // console.log(ingredientes[item]['texto']);
+                if (item in tmpInv) {
+                    console.log('necessario:' + ingredientes[item]['quantidade']);
+                    console.log('existe' + tmpInv[item]['quantidade']);
+                    console.log((ingredientes[item]['quantidade'] > tmpInv[item]['quantidade']));
+                    if (ingredientes[item]['quantidade'] > tmpInv[item]['quantidade']) {
+                        console.log(ingredientes[item]['quantidade'] + 'MIMIMIMI');
+                        $("#ingredientes").append("<li style=\"color:red\">" + ingredientes[item]['texto'] + "</li>");
+                        //  alert("beepbeep");
+                        // console.log("LAAAAAAALALAALLALALALALAL");
+                    } else {
+                        $("#ingredientes").append("<li>" + ingredientes[item]['texto'] + "</li>");
+
+                    }
+                    //console.log("aaaa");
+                } else {
+                    $("#ingredientes").append("<li style=\"color:red\">" + ingredientes[item]['texto'] + "</li>");
+                }
+                passos = details['Preparação'];
+            }
+            for (var item in passos) {
+                $("#receitaEtapas").append("<li>" + passos[item] + "</li>");
+            }
+            //console.log(autor+" , "+diff +" ," + JSON.stringify(ingredientes));
+
+
+
+        }
+    }
+
+    modal.find('#recipeName').text(nome);
+    modal.find('#recipeAutor').text(autor);
+    modal.find('#recipeDif').text(diff);
+    modal.find('#recipeTime').text(time);
+    modal.find('#recipePor').text(port);
+
+
+
+
+
+});
