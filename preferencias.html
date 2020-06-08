@@ -115,6 +115,7 @@ table, th, td {
   
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div class="main" id="main" >
+      <h2 style="text-align: center;background: transparent;">Preferências</h2>
         <table style="width: 100%;background-color: #ffdeb0; border-radius: 50px;">
             <tr>
                 <td>
@@ -138,7 +139,7 @@ table, th, td {
                 </td>
                 <td class="second">
                     <form action="" method="post">
-                        <input type="radio" id="simdiet" name="diet" value="sim"  />
+                        <input type="radio" id="simdiet" name="diet" value="sim" id="addCal" />
                         <label for="simdiet">Sim&nbsp&nbsp</label>
                         <input type="radio" id="naodiet" name="diet" value="nao"  />
                         <label for="naodiet"> Nao
@@ -155,7 +156,7 @@ table, th, td {
 
                 </td>
                 <td class="second" >
-                    <form action="/action_page.php" style="border-radius: 50px ; padding: 40px;">
+                    <form class="d-none"action="/action_page.php" style="border-radius: 50px ; padding: 40px;background-color:#bfab87" id="evitarform">
                         <label style="font-size:medium;"for="cal">Calorias (kcal) :</label>
                         <input style="border-radius: 50px; width: 70px;"  type="number" id="cal" name="cal"><br><br>
                         <label style="font-size:medium;" for="acucar">Açúcar (gr) :</label>

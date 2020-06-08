@@ -26,7 +26,7 @@ $("#registo").click(function () {
         localStorage.email = email;
         localStorage.pwd = pwd;
         console.log("success register")
-        window.location.href = "login.html";//redirect para a main page
+        window.location.href = "infogath.html";//redirect para a main page
     }
 })
 //============================================
@@ -2974,6 +2974,15 @@ $("#evitarAdd").click(function () {
     $("#tags").attr("placeholder", "O que deseja adicionar?");
 
 });
+$('input:radio[name="diet"]').change(function(){
+    if($(this).val() == 'sim'){
+        $("#evitarform").removeClass("d-none");
+    }
+    if($(this).val() == 'nao'){
+        $("#evitarform").addClass("d-none");
+    }
+});
+
 
 //$("#evitarRem").click(function() {            POR ESTA FUNCIONALIDADE EM BUTOES
 //    $("#evitarDiv").removeClass("d-none");
@@ -2986,9 +2995,7 @@ for (var key in basedadosingred) {
     // console.log(key);
 }
 
-$("#tags").autocomplete({
-    source: acIng
-});
+//$("#tags").autocomplete({source: acIng});
 var toAdd = "";
 
 function refreshItems() {
@@ -3147,6 +3154,34 @@ function cycleRecipes3() {
     $("#recText9").text(receitas[randomIndex]['name']);
     $("#recImg9").attr("src", receitas[randomIndex]['foto']);
 }
+$("#concluir").click(function () {
+    event.preventDefault();
+
+    nameut = $("#gatnome").val();
+    dnascimento = $("#gatdata").val();
+    telefono=$("#gattel").val();
+    cresidencia = $("#gatcidade").val();
+    numerocliente=$("gatcc").val();
+    if (nameut == "" || dnascimento == "" || telefono == "" || cresidencia =="") {
+        alert("Campos em vazio!");
+    }
+    else {
+        localStorage.nameut = nameut;
+        localStorage.dnascimento = dnascimento;
+        localStorage.telefono = telefono;
+        localStorage.cresidencia=cresidencia;
+  
+        if(numerocliente==""){
+            localStorage.numerocliente=numerocliente;
+        }
+        else{
+                localStorage.numerocliente=numerocliente;
+            
+        }
+        console.log("success register")
+        window.location.href = "login.html";//redirect para a main page
+    }
+})
 $("calendar.html").ready(function () {
 
     cycleRecipes();
@@ -3163,3 +3198,16 @@ $("#cycleButton").click(function () {
 $("#cycleButton2").click(function () {
     cycleRecipes2();
 });
+function loadInfo(){
+    $("#nomeperfil").text(localStorage.nameut);  
+    $("#dn").text(localStorage.dnascimento);
+    $("#nt").text(localStorage.telefono);  
+    $("#cr").text(localStorage.cresidencia);  
+    $("#email").text(localStorage.email);  
+    if(localStorage.numerocliente=="undefined"){
+        $("#ccli").text("---");
+    }
+    else{
+    $("#ccli").text(localStorage.numerocliente);  }
+
+}
