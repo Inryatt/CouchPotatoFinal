@@ -2927,6 +2927,15 @@ $("#evitarAdd").click(function () {
     $("#tags").attr("placeholder", "O que deseja adicionar?");
 
 });
+$('input:radio[name="diet"]').change(function(){
+    if($(this).val() == 'sim'){
+        $("#evitarform").removeClass("d-none");
+    }
+    if($(this).val() == 'nao'){
+        $("#evitarform").addClass("d-none");
+    }
+});
+
 
 //$("#evitarRem").click(function() {            POR ESTA FUNCIONALIDADE EM BUTOES
 //    $("#evitarDiv").removeClass("d-none");
