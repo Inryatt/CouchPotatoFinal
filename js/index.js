@@ -2995,7 +2995,7 @@ for (var key in basedadosingred) {
     // console.log(key);
 }
 
-//$("#tags").autocomplete({source: acIng});
+$("#tags").autocomplete({source: acIng});
 var toAdd = "";
 
 function refreshItems() {
@@ -3022,7 +3022,7 @@ function refreshItemsINV() {
 $("#addItem").click(function () {
     toAdd = $("#tags").val();
     avoidItems = JSON.parse(localStorage.avoidItems);
-
+    console.log("beep")
     if (acIng.includes(toAdd)) {
         avoidItems.push(toAdd);
         console.log(toAdd);
