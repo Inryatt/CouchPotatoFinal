@@ -2,7 +2,16 @@
 <meta charset="UTF-8">
 <html>
   <head>
-      
+    <style>.center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    h5{
+      text-align: center;
+    }
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
   </head>
@@ -18,10 +27,10 @@
             style="background-image: url('assets/CouchPotato/LOGO_FIXEDSIZE.png'); width: 191.25px;
             height: 57px; background-size: contain; background-repeat:no-repeat; align-content:center ; margin-left:30px;margin-bottom:50px"></a>
         </div>
-        <div style="border-radius: 10%" class="card">
+        <div style="border-radius: 50px" class="card">
           <div class="card-header" id="headingOne">
             <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              <button  onclick="location.href='Perfil.html';" style="color:black" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Tua Conta
               </button>
@@ -30,58 +39,40 @@
   
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-              <ul style="border-radius: 20%" class="list-group">
+              <ul style="border-radius: 50px" class="list-group">
                 <li class="list-group-item"><a href="inventory.html">Inventário</a></li>
                 <li class="list-group-item"><a href="calendar.html">Calendário </a></li>
                 <li class="list-group-item"><a href="preferencias.html">Preferências</a></li>
-                <li class="list-group-item"><a href="">Carrinho de Compras(WIP)</a></li>
+                <li class="list-group-item"><a href="cart.html">Carrinho de Compras(WIP)</a></li>
               </ul>
             </div>
           </div>
         </div>
   
   
-        <div style="border-radius: 10%" class="card">
+        <div style="border-radius: 50px" class="card">
           <div class="card-header" id="headingTwo">
             <h2 class="mb-0">
-              <button href="suggestions.html" class="btn btn-link btn-block text-left collapsed" type="button"
+              <button onclick="location.href='suggestions.html';" style="color:black" class="btn btn-link btn-block text-left collapsed" type="button"
                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Sugestões
               </button>
             </h2>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-              wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-              you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
+         
         </div>
   
   
-        <div style="border-radius: 10%" class="card">
+        <div style="border-radius: 50px" class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              <button onclick="location.href='cart.html';" style="color:black" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                 data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Compras
               </button>
             </h2>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-              wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-              you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
+         
         </div>
   
       </div>
@@ -112,39 +103,39 @@
   </div>
     <div  class=" d-flex yellowColor p-5 flex-row"style="height:60%; min-height:100%; justify-content:space-evenly;" >
       
-      <div class="card menuItemBg menuItemSize menuItemAlign">
-        <img src="assets/CouchPotato/kawaii donut.png" class="card-img-top menuPic" alt="...">
+      <div class="card menuItemBg menuItemSize menuItemAlign"><a href="cart.html" style="color:black">
+        <img src="assets/CouchPotato/kawaii donut.png" class="card-img-top menuPic center" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Cesto de Compras</h5>
-        </div>
+          <h5 class="card-title" >Cesto de Compras</h5>
+        </div></a>
       </div>
 
-      <div class="card menuItemBg menuItemSize menuItemAlign">
-        <img src="assets/CouchPotato/onion roll.png" class="card-img-top menuPic" alt="...">
+      <div class="card menuItemBg menuItemSize menuItemAlign"><a href="calendar.html" style="color:black">
+        <img src="assets/CouchPotato/onion roll.png" class="card-img-top menuPic center" alt="...">
         <div class="card-body">
           <h5 class="card-title">Calendário</h5>
-        </div>
+        </div></a>
       </div>
 
-      <div class="card menuItemBg menuItemSizeBIG menuItemAlign"><a href="recipebook.html">
-        <img src="assets/CouchPotato/CouchPotato LOGO.png" class="card-img-top menuPic" alt="...">
+      <div class="card menuItemBg menuItemSizeBIG menuItemAlign"><a href="recipebook.html" style="color:black">
+        <img src="assets/CouchPotato/CouchPotato LOGO.png" class="card-img-top menuPic center" alt="...">
         <div class="card-body">
           <h5 class="card-title">Receitas</h5>
         </div></a>
       </div>
 
-      <div class="card menuItemBg menuItemSize menuItemAlign">
-        <img src="assets/CouchPotato/icon.png" class="card-img-top menuPic" alt="...">
+      <div class="card menuItemBg menuItemSize menuItemAlign"><a href="inventory.html" style="color:black">
+        <img src="assets/CouchPotato/icon.png" class="card-img-top menuPic center" alt="...">
         <div class="card-body">
           <h5 class="card-title">Inventário</h5>
-        </div>
+        </div></a>
       </div>
 
-      <div class="card menuItemBg menuItemSize menuItemAlign">
-        <img src="assets/CouchPotato/kawaii latte.png" class="card-img-top menuPic" alt="...">
+      <div class="card menuItemBg menuItemSize menuItemAlign"><a href="Perfil.html" style="color:black">
+        <img src="assets/CouchPotato/kawaii latte.png" class="card-img-top menuPic center" alt="...">
         <div class="card-body">
           <h5 class="card-title">Conta</h5>
-        </div>
+        </div></a>
       </div>
           
 

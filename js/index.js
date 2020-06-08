@@ -567,7 +567,7 @@ var receitas = {
         kCal: 210,
     },
     tomatesrecheados: {
-        name: 'Tomates recheados com atum e cogumelos',
+        name: 'Tomates com atum e cogumelos',
         autor: 'New in Town',
         time: '15 minutos',
         foto:"https://nit.pt/wp-content/uploads/2016/10/7d5fe591-dac8-4ae4-8a66-2367fa2b4c95-754x394.jpg",
@@ -2771,6 +2771,14 @@ $('#naodiet').on('click change', function () {
     localStorage.dieta = false;
 });
 
+//isto nao funciona e nao sei porque help
+$('#addCart').click(function(){
+    $("#ingredientes").remove("<li id=\"addCart\" style=\"color:red\">" + ingredientes[item]['texto'] + "<button style=\"border-radius: 50px ; background:transparent;\" id=\"addCart\">&#x1f6d2</button></li>");
+    $("#ingredientes").append("<li>" + ingredientes[item]['texto'] + "</li>");
+    $("#shoppingcart").append(" <tr><td class=\"nome\">"+ingredientes[item]['nome']+"</td><td ><input type=\"number\">"+ingredientes[item]['quantidade']+"</td><td ></td></tr>");
+});
+
+
 
 function makeUL(array) {
     // Create the list element:
@@ -2806,7 +2814,7 @@ function closeNav() {
 
 $('#theModal').on('show.bs.modal', function (event) {
     var tmpInv = JSON.parse(localStorage.inventario);
-
+    var compras=[];
     var button = $(event.relatedTarget) // Button that triggered the modal
     var name = button.data('name') // Extract info from data-* attributes
     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
@@ -2855,7 +2863,20 @@ $('#theModal').on('show.bs.modal', function (event) {
                     console.log((ingredientes[item]['quantidade'] > tmpInv[item]['quantidade']));
                     if (ingredientes[item]['quantidade'] > tmpInv[item]['quantidade']) {
                         console.log(ingredientes[item]['quantidade'] + 'MIMIMIMI');
-                        $("#ingredientes").append("<li style=\"color:red\">" + ingredientes[item]['texto'] + "</li>");
+                        $("#ingredientes").append("<li id=\"addCart\" style=\"color:red\">" + ingredientes[item]['texto'] + "<button style=\"border-radius: 50px ; background:transparent;\" id=\"addCart\">&#x1f6d2</button></li>");
+                        //A minha ideia aqui em baixo é que quando clicas no carrinho, o item é adicionado a uma lista
+                        //no local storage e quando o carrinho de compras abrisse, iamos buscar os itens a esta lista
+                        // e já os tinhamos no carrinho
+                        //however, não tou a conseguir mandar o item ou até o nome do item para uma lista
+                        var nomee=ingredientes[item];
+                        $('#addCart').click(function(nomee){
+            
+                            alert("Adicionado ao carrinho com sucesso");
+                            compras.push(nomee) ; 
+                            
+                            localStorage.setItem("compras", JSON.stringify(compras));
+                        });
+
                         //  alert("beepbeep");
                         // console.log("LAAAAAAALALAALLALALALALAL");
                     } else {
@@ -2864,7 +2885,7 @@ $('#theModal').on('show.bs.modal', function (event) {
                     }
                     //console.log("aaaa");
                 } else {
-                    $("#ingredientes").append("<li style=\"color:red\">" + ingredientes[item]['texto'] + "</li>");
+                    $("#ingredientes").append("<li id=\"addCart\" style=\"color:red\"> " + ingredientes[item]['texto'] + "<button style=\"border-radius: 50px ; background:transparent;\" id=\"addCart\">&#x1f6d2</button></li>");
                 }
                 passos = details['Preparação'];
             }
@@ -3028,15 +3049,54 @@ function cycleRecipes() {
     var randomIndex = keys[Math.floor(Math.random() * keys.length)];
     console.log(randomIndex)
     //const item = basedadosingred[randomIndex];
-    $("#recText2").text(receitas[randomIndex]['name']);
+  
+    $("#recText2").text(receitas[randomIndex]['name']);  
+    $("#recImg2").attr("src", receitas[randomIndex]['foto'] );
     randomIndex = keys[Math.floor(Math.random() * keys.length)];
     item = receitas[randomIndex];
-    $("#recText1").text(receitas[randomIndex]['name']);
+    $("#recText1").text(receitas[randomIndex]['name']);  
+    $("#recImg1").attr("src", receitas[randomIndex]['foto'] );
     randomIndex = keys[Math.floor(Math.random() * keys.length)];
     item = receitas[randomIndex];
     $("#recText3").text(receitas[randomIndex]['name']);
+    $("#recImg3").attr("src", receitas[randomIndex]['foto'] );
 }
-
+function cycleRecipes2() {
+    console.log("cycling...")
+    const keys = Object.keys(receitas);
+    var randomIndex = keys[Math.floor(Math.random() * keys.length)];
+    console.log(randomIndex)
+    //const item = basedadosingred[randomIndex];
+  
+    $("#recText4").text(receitas[randomIndex]['name']);  
+    $("#recImg4").attr("src", receitas[randomIndex]['foto'] );
+    randomIndex = keys[Math.floor(Math.random() * keys.length)];
+    item = receitas[randomIndex];
+    $("#recText5").text(receitas[randomIndex]['name']);  
+    $("#recImg5").attr("src", receitas[randomIndex]['foto'] );
+    randomIndex = keys[Math.floor(Math.random() * keys.length)];
+    item = receitas[randomIndex];
+    $("#recText6").text(receitas[randomIndex]['name']);
+    $("#recImg6").attr("src", receitas[randomIndex]['foto'] );
+}
+function cycleRecipes3() {
+    console.log("cycling...")
+    const keys = Object.keys(receitas);
+    var randomIndex = keys[Math.floor(Math.random() * keys.length)];
+    console.log(randomIndex)
+    //const item = basedadosingred[randomIndex];
+  
+    $("#recText7").text(receitas[randomIndex]['name']);  
+    $("#recImg7").attr("src", receitas[randomIndex]['foto'] );
+    randomIndex = keys[Math.floor(Math.random() * keys.length)];
+    item = receitas[randomIndex];
+    $("#recText8").text(receitas[randomIndex]['name']);  
+    $("#recImg8").attr("src", receitas[randomIndex]['foto'] );
+    randomIndex = keys[Math.floor(Math.random() * keys.length)];
+    item = receitas[randomIndex];
+    $("#recText9").text(receitas[randomIndex]['name']);
+    $("#recImg9").attr("src", receitas[randomIndex]['foto'] );
+}
 $("calendar.html").ready(function () {
    
     cycleRecipes();
@@ -3133,4 +3193,7 @@ function openModal(modalName)
 
 
 
+});
+$("#cycleButton2").click(function () {
+    cycleRecipes2();
 });

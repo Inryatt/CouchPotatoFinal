@@ -59,10 +59,10 @@ table, th, td {
             style="background-image: url('assets/CouchPotato/LOGO_FIXEDSIZE.png'); width: 191.25px;
             height: 57px; background-size: contain; background-repeat:no-repeat; align-content:center ; margin-left:30px;margin-bottom:50px"></a>
         </div>
-        <div style="border-radius: 10%" class="card">
+        <div style="border-radius: 50px" class="card">
           <div class="card-header" id="headingOne">
             <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              <button  onclick="location.href='Perfil.html';" style="color:black" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Tua Conta
               </button>
@@ -71,70 +71,51 @@ table, th, td {
   
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-              <ul style="border-radius: 20%" class="list-group">
+              <ul style="border-radius: 50px" class="list-group">
                 <li class="list-group-item"><a href="inventory.html">Inventário</a></li>
                 <li class="list-group-item"><a href="calendar.html">Calendário </a></li>
                 <li class="list-group-item"><a href="preferencias.html">Preferências</a></li>
-                <li class="list-group-item"><a href="">Carrinho de Compras(WIP)</a></li>
+                <li class="list-group-item"><a href="cart.html">Carrinho de Compras(WIP)</a></li>
               </ul>
             </div>
           </div>
         </div>
   
   
-        <div style="border-radius: 10%" class="card">
+        <div style="border-radius: 50px" class="card">
           <div class="card-header" id="headingTwo">
             <h2 class="mb-0">
-              <button href="suggestions.html" class="btn btn-link btn-block text-left collapsed" type="button"
+              <button onclick="location.href='suggestions.html';" style="color:black" class="btn btn-link btn-block text-left collapsed" type="button"
                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Sugestões
               </button>
             </h2>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-              wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-              you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
+         
         </div>
   
   
-        <div style="border-radius: 10%" class="card">
+        <div style="border-radius: 50px" class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              <button onclick="location.href='cart.html';" style="color:black" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                 data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Compras
               </button>
             </h2>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-              wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-              you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
+         
         </div>
   
       </div>
     </div>
-  
     <!-- Use any element to open the sidenav -->
     <img onclick="openNav()" src="assets/icons/menu.png" style="height: 30px; width: 30px;">
   
   
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div class="main" id="main" >
-        <table style="width: 100%;background-color: #ffdeb0;">
+        <table style="width: 100%;background-color: #ffdeb0; border-radius: 50px;">
             <tr>
                 <td>
                     Vegetariano
@@ -143,7 +124,7 @@ table, th, td {
                     Dieta
                 </td>
                 <td>
-                    Alimentos a evitar (10 máx)
+                    Alimentos a evitar
                 </td>
             </tr>
             <tr >
@@ -182,27 +163,16 @@ table, th, td {
                     </form>
                 </td>
                 <td class="third">
-                    <ul class="center" style="border-radius: 50px;height: 340px ;text-align:left; padding: 50px; background-color:#bfab87" id="itemsToAvoid">
-                        <li id="ing1"  class="d-none"></li>
-                        <li id="ing2"  class="d-none"></li>
-                        <li id="ing3"  class="d-none"></li>
-                        <li id="ing4"  class="d-none"></li>
-                        <li id="ing5"  class="d-none"></li>
-                        <li id="ing6"  class="d-none"></li>
-                        <li id="ing7"  class="d-none"></li>
-                        <li id="ing8"  class="d-none"></li>
-                        <li id="ing9"  class="d-none"></li>
-                        <li id="ing10" class="d-none" ></li>
-                       
+                    <ul class="center" style="overflow-y:scroll;border-radius: 50px;height: 340px ;text-align:left; padding: 50px; background-color:#bfab87" id="itemsToAvoid">
                         
 
                     </ul>
 
                 </td>
             </tr>
-            <tr style="background-color: #ffdeb0;">
+            <tr style="background-color: #ffdeb0;border-bottom-radius:50px ;">
                 <td>
-                    <img style="width: 250px;height: 224px;;" src="https://www.nicepng.com/png/full/65-657231_kawaii-tumblr-food-png-cute-food-with-faces.png"/>
+                    <img style="border-radius:50px;width: 250px;height: 224px;;" src="https://www.nicepng.com/png/full/65-657231_kawaii-tumblr-food-png-cute-food-with-faces.png"/>
                 </td>
                 <td>
                     
@@ -224,10 +194,7 @@ table, th, td {
         
    
     
-        
-        <div style="width:100%;padding: 20px;">
-            <p style="border-radius: 50%; width: 50px;height:50px; background-color: #ffc847;font-size:xx-large;text-align: center;color: white; ;" onclick="javascript:history.back()">&#x219c</p>
-        </div>
+      
        
     </div>  
     <!-- jQuery library -->
