@@ -2846,16 +2846,16 @@ var tmpID;
 function addcompra() {
     console.log(tmpID);
     compras = JSON.parse(localStorage.compras)
-   // console.log("COMPRAS" + compras);
+    // console.log("COMPRAS" + compras);
     alert("Adicionado ao carrinho com sucesso");
     compras.push(tmpID);
 
     localStorage.compras = JSON.stringify(compras);
 };
-function getid(clicked){
-    
-    tmpID=clicked;
-    console.log("TMPID="+tmpID)
+function getid(clicked) {
+
+    tmpID = clicked;
+    console.log("TMPID=" + tmpID)
     addcompra();
 }
 
@@ -2885,7 +2885,7 @@ $('#theModal').on('show.bs.modal', function (event) {
         if (property == name) {
             // alert('beep');
             details = receitas[property];
-           // console.log(details);
+            // console.log(details);
             nome = details['name'];
             autor = details['autor'];
             //console.log(autor);
@@ -2904,7 +2904,7 @@ $('#theModal').on('show.bs.modal', function (event) {
 
                 if (item in tmpInv) {
                     var nomee = item;
-                  //  console.log('necessario:' + ingredientes[item]['quantidade']);
+                    //  console.log('necessario:' + ingredientes[item]['quantidade']);
                     //console.log('existe' + tmpInv[item]['quantidade']);
 
 
@@ -2921,7 +2921,7 @@ $('#theModal').on('show.bs.modal', function (event) {
 
 
                         //Camila: on it
-                     
+
 
 
                         //  alert("beepbeep");
@@ -2936,7 +2936,7 @@ $('#theModal').on('show.bs.modal', function (event) {
                     //console.log("ITEM=" + item)
                     $("#ingredientes").append("<li id=\"addCart\" style=\"color:red\">" + ingredientes[item]['texto'] + "<button style=\"border-radius: 50px ; background:transparent;\" id=\"" + item + "\" onclick=\"getid(this.id)\" >&#x1f6d2</button></li>");
                     console.log(item)
-                   
+
                 }
                 passos = details['Preparação'];
             }
@@ -2974,11 +2974,11 @@ $("#evitarAdd").click(function () {
     $("#tags").attr("placeholder", "O que deseja adicionar?");
 
 });
-$('input:radio[name="diet"]').change(function(){
-    if($(this).val() == 'sim'){
+$('input:radio[name="diet"]').change(function () {
+    if ($(this).val() == 'sim') {
         $("#evitarform").removeClass("d-none");
     }
-    if($(this).val() == 'nao'){
+    if ($(this).val() == 'nao') {
         $("#evitarform").addClass("d-none");
     }
 });
@@ -3159,24 +3159,24 @@ $("#concluir").click(function () {
 
     nameut = $("#gatnome").val();
     dnascimento = $("#gatdata").val();
-    telefono=$("#gattel").val();
+    telefono = $("#gattel").val();
     cresidencia = $("#gatcidade").val();
-    numerocliente=$("gatcc").val();
-    if (nameut == "" || dnascimento == "" || telefono == "" || cresidencia =="") {
+    numerocliente = $("gatcc").val();
+    if (nameut == "" || dnascimento == "" || telefono == "" || cresidencia == "") {
         alert("Campos em vazio!");
     }
     else {
         localStorage.nameut = nameut;
         localStorage.dnascimento = dnascimento;
         localStorage.telefono = telefono;
-        localStorage.cresidencia=cresidencia;
-  
-        if(numerocliente==""){
-            localStorage.numerocliente=numerocliente;
+        localStorage.cresidencia = cresidencia;
+
+        if (numerocliente == "") {
+            localStorage.numerocliente = numerocliente;
         }
-        else{
-                localStorage.numerocliente=numerocliente;
-            
+        else {
+            localStorage.numerocliente = numerocliente;
+
         }
         console.log("success register")
         window.location.href = "login.html";//redirect para a main page
@@ -3198,16 +3198,72 @@ $("#cycleButton").click(function () {
 $("#cycleButton2").click(function () {
     cycleRecipes2();
 });
-function loadInfo(){
-    $("#nomeperfil").text(localStorage.nameut);  
+function loadInfo() {
+    $("#nomeperfil").text(localStorage.nameut);
     $("#dn").text(localStorage.dnascimento);
-    $("#nt").text(localStorage.telefono);  
-    $("#cr").text(localStorage.cresidencia);  
-    $("#email").text(localStorage.email);  
-    if(localStorage.numerocliente=="undefined"){
+    $("#nt").text(localStorage.telefono);
+    $("#cr").text(localStorage.cresidencia);
+    $("#email").text(localStorage.email);
+    if (localStorage.numerocliente == "undefined") {
         $("#ccli").text("---");
     }
-    else{
-    $("#ccli").text(localStorage.numerocliente);  }
+    else {
+        $("#ccli").text(localStorage.numerocliente);
+    }
 
 }
+
+$("cart.html").ready(function () {
+    var listaTmp = JSON.parse(localStorage.compras);
+    $("#shopingcart").empty();
+    $("#shopingcart").append(" <tr > <th style=\"border-top-left-radius: 25px;text-align: center;width: 540px;\">Ingrediente</th> <th style=\"    text-align: center;\">Quantidade</th>    <th style=\"border-top-right-radius: 25px;text-align: center;\">Preço</th> </tr>");
+    var i = 0
+    var n = 0;
+    var idNome;
+    var idQnt;
+    console.log(listaTmp);
+    for (i = 0; i < listaTmp.length; i++) {
+        var idNome = listaTmp[i] + 'N';
+        var idQnt = listaTmp[i] + 'Q';
+        $("#shopingcart").append("  <tr><td class=\"nome\" id=\"" + idNome + "\" >" + listaTmp[i] + "</td>    <td ><input type=\"number\" id=\"" + idQnt + "\" ></td>  <td ></td> </tr>");
+
+    }
+    console.log("cart loaded")
+    $("#shopingcart").append(" <tr><td style=\"border-bottom-left-radius: 25px; font-weight: bold;\" >Total:   <span id=\"total\"></span>€</td>   <td></td> <td style=\"border-bottom-right-radius: 25px;\"><button style=\"padding:10px;font-weight: bold;color:white;background-color:lightsalmon;border-radius: 50px; border:transparent \" id=\"concluir\">Prosseguir</button> </td></tr>");
+
+
+
+
+    $("#concluir").click(function () {
+        var listaTmp = JSON.parse(localStorage.compras);
+        console.log("concluindo");
+        var inventario = JSON.parse(localStorage.inventario);
+        console.log(listaTmp);
+        for (i = 0; i < listaTmp.length; i++) {
+            var idQnt = listaTmp[i] + 'Q';
+            var quant = $("#idQnt").val();
+            if (listaTmp[i] in inventario) {
+                //var seila=listaTmp[i]
+                //console.log(inventario[seila]['quantidade']);
+
+               // console.log()
+                 //console.log("TESTING "+listaTmp[i])
+                inventario[listaTmp[i]]['quantidade'] = inventario[listaTmp[i]]['quantidade'] + quant;
+                console.log("added")
+            }
+            else {
+                console.log("caso2")
+                inventariolistaTmp[i]=basedadosingred[listaTmp[i]];
+                inventario[listaTmp[i]]['quantidade'] = quant;
+            }
+            console.log(inventario);
+        }
+         listaTmp = [];
+        localStorage.compras = JSON.stringify(listaTmp);
+        localStorage.inventario = JSON.stringify(inventario);
+
+        window.location.href = "index.html";//redirect para a main page
+    
+    })
+});
+
