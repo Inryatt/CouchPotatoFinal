@@ -2,9 +2,17 @@
 
 //User Settings defaults
 localStorage.dieta = false;
-localStorage.vegetariano = true;
-localStorage.alimentos = [];
 
+localStorage.alimentos = [];
+$("#saveDiet").click(function(){
+
+    event.preventDefault();
+    cal = $("#cal").val();
+    sugar = $("#acucar").val();
+    localStorage.cal = cal;
+    localStorage.sugar = sugar;
+    
+})
 //REGISTO
 var username;
 var email;
@@ -2923,8 +2931,17 @@ $('#theModal').on('hide.bs.modal', function (event) {
 //this viable changes if we're adding or removing items
 var mode = false;
 $("#evitarAdd").click(function () {
+    $("#addItem").removeClass("d-none");
+    $("#deleteItem").addClass("d-none");
     $("#evitarDiv").removeClass("d-none");
     $("#tags").attr("placeholder", "O que deseja adicionar?");
+
+});
+$("#evitarRem").click(function () {
+    $("#addItem").addClass("d-none");
+    $("#deleteItem").removeClass("d-none");
+    $("#evitarDiv").removeClass("d-none");
+    $("#tags").attr("placeholder", "O que deseja remover?");
 
 });
 $('input:radio[name="diet"]').change(function(){
@@ -2937,10 +2954,7 @@ $('input:radio[name="diet"]').change(function(){
 });
 
 
-//$("#evitarRem").click(function() {            POR ESTA FUNCIONALIDADE EM BUTOES
-//    $("#evitarDiv").removeClass("d-none");
-//    $("#tags").attr("placeholder", "O que deseja remover?");
-//});
+
 var acIng = []; //auto complete ingredients
 for (var key in basedadosingred) {
     var tmp = basedadosingred[key]
@@ -2948,10 +2962,9 @@ for (var key in basedadosingred) {
     // console.log(key);
 }
 
-//$("#tags").autocomplete({source: acIng});
+$("#tags").autocomplete({source: acIng});
 var toAdd = "";
-var avoidItems = []
-localStorage.avoidItems = JSON.stringify(avoidItems);
+var avoidItems=[];
 function refreshItems() {
     $("#itemsToAvoid").empty();
     console.log(avoidItems);
@@ -2972,19 +2985,44 @@ function refreshItemsINV() {
         $("#ingList").append("<li>" + tmpInv[item]['nome'] + "  [" + tmpInv[item]['quantidade'] + "]</li>");
     }
 };
-
 $("#addItem").click(function () {
     toAdd = $("#tags").val();
     avoidItems = JSON.parse(localStorage.avoidItems);
 
     if (acIng.includes(toAdd)) {
+        if(avoidItems.includes(toAdd)){
+            alert("Este ingrediente já foi adicionado!");
+            $("#tags").val("");
+        }
+        else{
         avoidItems.push(toAdd);
         console.log(toAdd);
         localStorage.avoidItems = JSON.stringify(avoidItems);
-
         refreshItems();
         $("#tags").val("");
+    }}
+    else {
+        $("#tags").val("");
+        $("#erro").removeClass("d-none").val("Este ingrediente não está na base de dados!");
+        alert("Este ingrediente não se encontra na base de dados!");
     }
+});
+$("#deleteItem").click(function () {
+    toDel = $("#tags").val();
+    avoidItems = JSON.parse(localStorage.avoidItems);
+
+    if (acIng.includes(toDel)) {
+        if(avoidItems.includes(toDel)){
+            avoidItems.splice( $.inArray(toDel, avoidItems), 1 );
+            console.log(toDel);
+        localStorage.avoidItems = JSON.stringify(avoidItems);
+        refreshItems();
+        $("#tags").val("");
+           
+        }
+        else{ alert("Este ingrediente não está na lista!");
+        $("#tags").val("");
+    }}
     else {
         $("#tags").val("");
         $("#erro").removeClass("d-none").val("Este ingrediente não está na base de dados!");
@@ -3164,4 +3202,22 @@ function loadInfo(){
     else{
     $("#ccli").text(localStorage.numerocliente);  }
 
+}
+function loadDiet(){
+    if(localStorage.sugar!="" || localStorage.cal!=""){
+         $("#acucar").val(localStorage.sugar);
+         $("#simdiet").prop( "checked", true );
+    $("#cal").val(localStorage.cal);
+    $("#evitarform").removeClass("d-none");
+    }
+    else{
+        $("#naodiet").prop( "checked", true );
+    }
+    if(localStorage.vegetariano=="true"){
+        $("#simveg").prop("checked",true);
+    }
+    else{$("#naoveg").prop("checked",true);}
+   
+  
+   
 }
