@@ -54,7 +54,7 @@
 
 </head>
 
-<body>
+<body onLoad="loadInfo()">
   <div id="mySidenav" class="sidenav">
     <a style="position: absolute; right:0px;  ;" href="javascript:void(0)" class="closebtn"
       onclick="closeNav()">&times;</a>
@@ -124,7 +124,7 @@
   <div id="main">
     <div>
       <!-- adicionar o carrinho aqui em baixo! -->
-      <img onclick="location.href=''" class="right" src="https://static.thenounproject.com/png/2035327-200.png"
+      <img onclick="location.href='cart.html'" class="right" src="https://static.thenounproject.com/png/2035327-200.png"
         style="width: 70px;height:70px" />
       <img class="center" src="https://cdn130.picsart.com/268646784010211.png?type=webp&to=min&r=640"
         style="width: 60px;height:60px;">
@@ -135,34 +135,31 @@
         <table style="width: 100%;">
           <tr>
             <td class="first">
-              <label style="font-size:medium;" for="nome">Nome :</label>
+              <label style="font-size:medium;" for="nomeperfil">Nome :</label>
             </td>
             <td class="second">
-              <input style="width: 100%;" placeholder="Nome" type="text" id="nome" name="nome"><br><br>
-            </td>
+              <p id="nomeperfil"></p>            </td>
           </tr>
           <tr>
             <td class="first">
               <label style="font-size:medium;" for="dn">Data de nascimento :</label>
             </td>
             <td class="second">
-              <input style="width: 100%;" placeholder="Data de nascimento" type="date" id="dn" name="dn"><br><br>
-            </td>
+              <p id="dn"></p>            </td>
           </tr>
           <tr>
             <td class="first">
               <label style="font-size:medium;" for="nt">Número de telefone :</label>
             </td>
             <td class="second">
-              <input style="width: 100%;" placeholder="Número de telefone" type="number" id="nt" name="nt"><br><br>
-            </td>
+              <p id="nt"></p>            </td>
           </tr>
           <tr>
             <td class="first">
               <label style="font-size:medium;" for="cr">Cidade de residência :</label>
             </td>
             <td class="second">
-              <input style="width: 100%;" placeholder="Cidade de residência" type="text" id="cr" name="cr"><br><br>
+              <p id="cr"></p>
             </td>
           </tr>
           <tr>
@@ -170,29 +167,17 @@
               <label style="font-size:medium;" for="email">E-mail :</label>
             </td>
             <td class="second">
-              <input style="width: 100%;" placeholder="E-mail" type="email" id="email" name="email"><br><br>
-            </td>
+              <p id="email"></p>            </td>
           </tr>
           <tr>
             <td class="first">
               <label style="font-size:medium;" for="ccli">Cartão cliente :</label>
             </td>
             <td class="second">
-              <input style="width: 100%;" placeholder="Número cartão cliente" type="number" id="ccli"
-                name="ccli"><br><br>
+              <p id="ccli"></p>
             </td>
           </tr>
-          <tr>
-            <td class="first">
-              <label style="font-size:medium;" for="cc">Cartão de débito:</label>
-            </td>
-            <td class="second">
-              <form>
-                <input style="width: 60%; " placeholder="Número cartão de débito" type="number" id="cc" name="cc">
-                <input style="width: 30%;" placeholder="Número CVV" type="number" id="cccvv" name="cccvv">
-              </form>
-            </td>
-          </tr>
+         
 
         </table>
       </form>
