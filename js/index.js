@@ -3017,7 +3017,17 @@ for (var key in basedadosingred) {
     // console.log(key);
 }
 
+
+var acRec = []; //auto complete ingredients
+for (var key in receitas) {
+    var tmp = receitas[key]
+    acRec.push(tmp['name']);
+    // console.log(key);
+}
+
 $("#tags").autocomplete({ source: acIng });
+$("#tagsR").autocomplete({ source: acRec });
+
 var toAdd = "";
 
 function refreshItems() {
@@ -3289,3 +3299,11 @@ $("cart.html").ready(function () {
     })
 });
 
+$("#procurar").click(function(){
+    var recNam = $("#tagsR").val();
+    for( el in receitas){
+        if(receitas[el]['name']==recNam){
+            $("#procurar").attr('data-name',el);
+        }
+    }
+});
