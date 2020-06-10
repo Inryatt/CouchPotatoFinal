@@ -150,13 +150,20 @@
 
     <!-- !PAGE CONTENT! -->
     <div style="height: 100px;padding: 20px;">
-      <h1>
+      <h1 style="display:inline-block; padding-left:100px ;">
         <img src="https://i.pinimg.com/originals/f5/35/77/f535774ddf57aa98193b3008c3bc81da.png"
           style="width: 50px;height: 50px;" />
         Livro de Receitas
         <img src="https://i.pinimg.com/originals/f5/35/77/f535774ddf57aa98193b3008c3bc81da.png"
           style="width: 50px;height: 50px;" />
       </h1>
+      <h5 style="display:inline-block; float:right">
+        <div class="ui-widget d-inline-flex" style="padding-top: 10px;">
+          <input style="border-radius: 50px; width: 300px;height:40px;text-align: center" class="flex" placeholder="O que procura?" type="text"
+            id="tagsR" name="search" ><br><br>
+          <button id="procurar" data-toggle="modal" data-name="REPLACE" data-target="#theModal" href="recipeModal.html" style="width: 150px;height:40px;border-radius:50px; background-color:rgb(188, 255, 167)"> Procurar </button>
+        
+      </h5>
     </div>
     <div class="w3-main w3-content w3-padding flex-column container" style="max-width:95%;margin-top:10px">
       <!-- First Photo Grid-->

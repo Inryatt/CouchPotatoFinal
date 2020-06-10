@@ -3300,10 +3300,23 @@ $("cart.html").ready(function () {
 });
 
 $("#procurar").click(function(){
+
     var recNam = $("#tagsR").val();
+    console.log("RecNam: "+recNam)
+    var foundRec =false;
     for( el in receitas){
         if(receitas[el]['name']==recNam){
+            console.log("Found recipe!!")
+            $("#procurar").attr('data-toggle',"modal");
+
             $("#procurar").attr('data-name',el);
+            foundRec=true;
         }
+    }
+    if(!foundRec){
+        event.preventDefault();
+        $("#procurar").attr('data-toggle',"");
+        alert("Esta receita não existe no sistema!")
+        $("#tagsR").val("");
     }
 });
