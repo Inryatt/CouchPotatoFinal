@@ -4,17 +4,17 @@
 if (localStorage.getItem("loggedIn") === null) {
     localStorage.loggedIn = false;
     console.log("Variables inicializadas")
-    var loops =0;
+    var loops = 0;
 }
 
 $(document).ready(function () {
-    console.log(localStorage.loggedIn+"WHY DONT YOU WORK")
-    if (JSON.parse ( localStorage.loggedIn ) == false && loops == 0 ) {
+    console.log(localStorage.loggedIn + "WHY DONT YOU WORK")
+    if (JSON.parse(localStorage.loggedIn) == false && loops == 0) {
 
         console.log("please log in.")
         window.location.href = "login.html";
         loops++;
-        
+
     }
     else {
 
@@ -40,6 +40,7 @@ $(document).ready(function () {
                 localStorage.dieta = false;
                 localStorage.vegetariano = true;
                 localStorage.alimentos = [];
+                localStorage.avoidItems = [];
                 localStorage.username = username;
                 localStorage.email = email;
                 localStorage.pwd = pwd;
@@ -3040,24 +3041,15 @@ function refreshItems() {
     }
 };
 
-function refreshItemsINV() {
-    var tmpInv = JSON.parse(localStorage.inventario);
 
-    $("#ingList").empty();
-    console.log(tmpInv);
-    for (var item in tmpInv) {
-        console.log(item);
-        $("#ingList").append("<li>" + tmpInv[item]['nome'] + "  [" + tmpInv[item]['quantidade'] + "]</li>");
-    }
-};
 
 $("#addItem").click(function () {
     toAdd = $("#tags").val();
     avoidItems = JSON.parse(localStorage.avoidItems);
-    console.log("beep")
+    //  console.log("beep")
     if (acIng.includes(toAdd)) {
         avoidItems.push(toAdd);
-        console.log(toAdd);
+        // console.log(toAdd);
         localStorage.avoidItems = JSON.stringify(avoidItems);
 
         refreshItems();
@@ -3079,6 +3071,19 @@ $(document).ready(function () {
     }
 })
 var qnt;
+
+
+function refreshItemsINV() {
+    var tmpInv = JSON.parse(localStorage.inventario);
+
+    $("#ingList").empty();
+    console.log("refreshing " + tmpInv);
+    for (var item in tmpInv) {
+        console.log(item);
+        $("#ingList").append("<li>" + tmpInv[item]['nome'] + "  [" + tmpInv[item]['quantidade'] + "]</li>");
+    }
+};
+
 $("#addInvent").click(function () {
 
     var tmpInv = JSON.parse(localStorage.inventario);
@@ -3088,10 +3093,11 @@ $("#addInvent").click(function () {
     if (acIng.includes(toAdd)) {
 
         if (qnt > 0) {
+            $("#erro").addClass("d-none");
             for (item in basedadosingred) {
                 if (basedadosingred[item]['nome'] == toAdd) {
                     toAdd = item;
-                    console.log("TOADD AFTER TRANSFROM: " + toAdd);
+                    // console.log("TOADD AFTER TRANSFROM: " + toAdd);
                     //console.log(JSON.parse(localStorage.inventario));
                     break;
                 }
@@ -3101,7 +3107,7 @@ $("#addInvent").click(function () {
                 tmpInv[toAdd]['quantidade'] = parseInt(tmpInv[toAdd]['quantidade']) + parseInt(qnt);
                 localStorage.inventario = JSON.stringify(tmpInv);
 
-                refreshItemsINV()
+                refreshItemsINV();
             }
             else {
                 tmpInv[toAdd] = basedadosingred[toAdd];
@@ -3110,15 +3116,14 @@ $("#addInvent").click(function () {
                 localStorage.inventario = JSON.stringify(tmpInv);
 
                 console.log(toAdd);
-                refreshItems();
-                $("#tags").val("");
-                refreshItemsINV()
+
+                refreshItemsINV();
             }
         }
         else {
             $("#tags").val("");
             $("#erro").removeClass("d-none").text("Por favor insira uma quantidade válida!");
-            alert("Por favor insira uma quantidade válida!");
+           // alert("Por favor insira uma quantidade válida!");
             $("#qnt").val("");
         }
     }
@@ -3126,9 +3131,68 @@ $("#addInvent").click(function () {
         $("#tags").val("");
         $("#qnt").val("");
         $("#erro").removeClass("d-none").text("Este ingrediente não está na base de dados!");
-        alert("Este ingrediente não se encontra na base de dados!");
+       // alert("Este ingrediente não se encontra na base de dados!");
     }
+    refreshItemsINV();
+
 });
+
+$("#deleteInvent").click(function () {
+
+    var tmpInv = JSON.parse(localStorage.inventario);
+    toAdd = $("#tags").val();
+    qnt = $("#qnt").val();
+    console.log("toadd " + toAdd)
+    if (acIng.includes(toAdd)) {
+
+        if (qnt > 0) {
+            $("#erro").addClass("d-none");
+            for (item in basedadosingred) {
+                if (basedadosingred[item]['nome'] == toAdd) {
+                    toAdd = item;
+                    // console.log("TOADD AFTER TRANSFROM: " + toAdd);
+                    //console.log(JSON.parse(localStorage.inventario));
+                    break;
+                }
+            }
+            if (toAdd in tmpInv) {
+                if (parseInt(tmpInv[toAdd]['quantidade']) - parseInt(qnt)>0) {
+                    tmpInv[toAdd]['quantidade'] = parseInt(tmpInv[toAdd]['quantidade']) - parseInt(qnt);
+                    localStorage.inventario = JSON.stringify(tmpInv);
+
+                    refreshItemsINV();
+                }else{
+                    tmpInv[toAdd]['quantidade'] =0;
+                    localStorage.inventario = JSON.stringify(tmpInv);
+
+                    refreshItemsINV();
+                }
+
+            }
+            else {
+                $("#tags").val("");
+                $("#erro").removeClass("d-none").text("Este ingrediente não se encontra no seu inventário!");
+             //   alert("Por favor insira uma quantidade válida!");
+                $("#qnt").val("");
+            }
+        }
+        else {
+            $("#tags").val("");
+            $("#erro").removeClass("d-none").text("Por favor insira uma quantidade válida!");
+         //   alert("Por favor insira uma quantidade válida!");
+            $("#qnt").val("");
+        }
+    }
+    else {
+        $("#tags").val("");
+        $("#qnt").val("");
+        $("#erro").removeClass("d-none").text("Este ingrediente não está na base de dados!");
+      //  alert("Este ingrediente não se encontra na base de dados!");
+    }
+    refreshItemsINV();
+
+});
+
 
 //============= CALENDARIO
 
@@ -3299,23 +3363,23 @@ $("cart.html").ready(function () {
     })
 });
 
-$("#procurar").click(function(){
+$("#procurar").click(function () {
 
     var recNam = $("#tagsR").val();
-    console.log("RecNam: "+recNam)
-    var foundRec =false;
-    for( el in receitas){
-        if(receitas[el]['name']==recNam){
+    console.log("RecNam: " + recNam)
+    var foundRec = false;
+    for (el in receitas) {
+        if (receitas[el]['name'] == recNam) {
             console.log("Found recipe!!")
-            $("#procurar").attr('data-toggle',"modal");
+            $("#procurar").attr('data-toggle', "modal");
 
-            $("#procurar").attr('data-name',el);
-            foundRec=true;
+            $("#procurar").attr('data-name', el);
+            foundRec = true;
         }
     }
-    if(!foundRec){
+    if (!foundRec) {
         event.preventDefault();
-        $("#procurar").attr('data-toggle',"");
+        $("#procurar").attr('data-toggle', "");
         alert("Esta receita não existe no sistema!")
         $("#tagsR").val("");
     }
