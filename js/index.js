@@ -3310,6 +3310,7 @@ function loadInfo() {
 }
 
 $("cart.html").ready(function () {
+    console.log("WELCOME TO THE WORST DAMN PAGE")
     var listaTmp = JSON.parse(localStorage.compras);
     $("#shopingcart").empty();
     $("#shopingcart").append(" <tr > <th style=\"border-top-left-radius: 25px;text-align: center;width: 540px;\">Ingrediente</th> <th style=\"    text-align: center;\">Quantidade</th>    <th style=\"border-top-right-radius: 25px;text-align: center;\">Preço</th> </tr>");
