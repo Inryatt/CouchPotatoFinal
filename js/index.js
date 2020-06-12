@@ -1,6 +1,7 @@
 
 
 
+
 if (localStorage.getItem("loggedIn") === null) {
     localStorage.loggedIn = false;
     console.log("Variables inicializadas")
