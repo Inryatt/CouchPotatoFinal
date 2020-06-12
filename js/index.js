@@ -1,5 +1,17 @@
 
+//User Settings defaults
+localStorage.dieta = false;
 
+localStorage.alimentos = [];
+$("#saveDiet").click(function(){
+
+    event.preventDefault();
+    cal = $("#cal").val();
+    sugar = $("#acucar").val();
+    localStorage.cal = cal;
+    localStorage.sugar = sugar;
+    
+})
 
 
 if (localStorage.getItem("loggedIn") === null) {
@@ -46,7 +58,7 @@ $(document).ready(function () {
                 localStorage.email = email;
                 localStorage.pwd = pwd;
                 console.log("success register")
-                window.location.href = "infogath.html";//redirect para a main page
+                window.location.href = "infogath.html";//redirect para a  page de dados
             }
         })
         //============================================
@@ -2078,6 +2090,7 @@ var basedadosingred = {
             'trigo',
             'sem fermento'
         ],
+        preco:0.10,
         quantidade: 1000,
         texto: '1 kg de farinha de trigo sem fermento'
         , nome: 'Farinha de Trigo',
@@ -2090,6 +2103,7 @@ var basedadosingred = {
             'morno'
         ],
         quantidade: 400,
+        preco:0.12,
         texto: '400ml de leite morno'
         , nome: 'Leite',
         foto: "https://www.bancodasaude.com/cdn/press/leiteee.jpg",
@@ -2099,6 +2113,7 @@ var basedadosingred = {
         tipo: 'ovo',
         propriedades: [],
         quantidade: 2,
+        preco:0.42,
         texto: '2 ovos (remova a película ou pele da gema)'
         , nome: 'Ovo'
         , foto: "https://www.deco.proteste.pt/-/media/edideco/images/home/alimentacao/produtos%20alimentares/news/2019/ovos%20frescura/thumb-ovos-frescura.jpg?rev=7e0bf811-f1a7-4ab3-b64c-ece85ef2c464&mw=480&hash=7C74D956F2CE88A62E843C9D61AA217B"
@@ -2110,6 +2125,7 @@ var basedadosingred = {
             'biológico',
             'fresco'
         ],
+        preco:0.15,
 
         quantidade: 45,
         texto: '45g de fermento biológico fresco'
@@ -2124,6 +2140,7 @@ var basedadosingred = {
         propriedades: [
             'acucar'
         ],
+        preco:0.10,
         quantidade: 200,
         texto: '1 chávena de açúcar'
         , nome: 'Açúcar',
@@ -2135,6 +2152,7 @@ var basedadosingred = {
         propriedades: [
             'sal'
         ],
+        preco:0.10,
         quantidade: 10,
         texto: '1/2 colher (sopa) de sal'
 
@@ -2147,7 +2165,8 @@ var basedadosingred = {
         propriedades: ['grão de bico', 'cozido'],
         quantidade: 300,
         texto: '300 gr de grão de bico cozido',
-        nome: 'Grão de Bico'
+        nome: 'Grão de Bico',
+        preco:0.20
         , foto: "https://www.jasminealimentos.com/wp-content/uploads/2017/08/Como-cozinhar-grao-de-bico-1.jpg"
         ,
     },
@@ -2157,6 +2176,7 @@ var basedadosingred = {
         quantidade: 20,
         texto: '20 gr de sementes de linhaça moída',
         nome: 'Sementes de Linhaça',
+        preco:0.23,
         foto: "https://doceritinha.pt/4397-large_default/sementes-linhaca-dourada.jpg"
         ,
     },
@@ -2166,6 +2186,7 @@ var basedadosingred = {
         quantidade: 15,
         texto: '1 colher de sopa de salsa'
         , nome: 'Salsa',
+        preco:0.05,
         foto: "https://foreveryoung.sapo.pt/wp-content/uploads/2019/05/salsa-750x430.jpg"
         ,
     },
@@ -2176,6 +2197,7 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 cenoura média',
         nome: 'Cenoura',
+        preco:0.8,
         foto: "https://belezaesaude.com/i/730/45/cenoura-beneficios.jpg",
     },
     atum: {
@@ -2183,7 +2205,7 @@ var basedadosingred = {
         propriedades: ['atum natural'],
         quantidade: 200,
         texto: '1 lata de atum natural',
-
+        preco:0.23,
         nome: 'Atum',
         foto: "https://i.pinimg.com/originals/06/dc/f6/06dcf6173e0e7475287c5dd35c348b50.jpg"
 
@@ -2193,6 +2215,7 @@ var basedadosingred = {
         tipo: 'feijão',
         propriedades: ['frade'],
         quantidade: 200,
+        preco:0.10,
         texto: '200 gr de feijão frade',
         nome: 'Feijão Frade',
         foto: "https://www.biocabaz.pt/web/wp-conteudos/uploads/2016/04/feijao-frade.jpg",
@@ -2204,6 +2227,7 @@ var basedadosingred = {
         propriedades: ['cebola'],
         quantidade: 1,
         texto: '1 cebola',
+        preco:0.45,
         nome: 'Cebola',
         foto: "https://cdn130.picsart.com/251861331002212.png?type=webp&to=min&r=640",
     },
@@ -2212,7 +2236,7 @@ var basedadosingred = {
         propriedades: ['dente de alho', 'alho'],
         quantidade: 1,
         texto: '1 dente de alho',
-
+        preco:0.10,
         nome: 'Alho',
         foto: "https://static.tuasaude.com/media/article/rx/st/alho_34631_l.jpg"
         ,
@@ -2223,7 +2247,7 @@ var basedadosingred = {
         propriedades: ['ovo', 'claras'],
         quantidade: 100,
         texto: '100 gr de claras de ovos',
-
+        preco:0.12,
         nome: 'Claras',
         foto: "https://www.mundoboaforma.com.br/wp-content/uploads/2015/07/Eggwhite-1280x720.jpg"
         ,
@@ -2235,7 +2259,7 @@ var basedadosingred = {
         texto: '1 tomate',
         nome: 'Tomate',
         foto: "https://belezaesaude.com/i/730/56/tomate.jpg",
-
+        preco:0.32,
     },
 
 
@@ -2244,7 +2268,7 @@ var basedadosingred = {
         propriedades: ['cogumelos'],
         quantidade: 70,
         texto: '70 gr de cogumelos',
-
+        preco:0.11,
         nome: 'Cogumelos',
         foto: "https://img.itdg.com.br/tdg/images/blog/uploads/2018/09/confira-como-limpar-cogumelos.jpg?w=1200",
     },
@@ -2257,7 +2281,7 @@ var basedadosingred = {
         propriedades: ['oregaos'],
         quantidade: 0,
         texto: 'óregãos qb',
-
+        preco:0.10,
         nome: 'Orégãos',
         foto: "https://d1doqjmisr497k.cloudfront.net/-/media/margpt2018/campaign/origine/oregano_2000.jpg?vd=20180709T190728Z&hash=C8B6F5785DC44E74E2D2FCEBCCF0290AE43ABD2A",
     },
@@ -2267,6 +2291,7 @@ var basedadosingred = {
         quantidade: 100,
         texto: '1 dl de vinho branco',
         nome: 'Vinho Branco',
+        preco:0.05,
         foto: "https://i2.wp.com/www.wine.com.br/winepedia/wp-content/uploads/2018/08/Como-%C3%A9-feito-o-vinho-branco.jpg?fit=1348%2C899&ssl=1",
     },
 
@@ -2275,7 +2300,7 @@ var basedadosingred = {
         propriedades: ['queijo', 'fresco', 'amargo'],
         quantidade: 1,
         texto: '1 queijo fresco amargo',
-
+        preco:2.3,
         nome: 'Queijo',
         foto: "https://i.ytimg.com/vi/4ty-I61x684/hqdefault.jpg",
     },
@@ -2285,6 +2310,7 @@ var basedadosingred = {
         quantidade: 150,
         texto: '150 gr de espargos',
         nome: 'Espargos',
+        preco:0.10,
         foto: "https://asenhoradomonte.com/wp-content/uploads/2018/08/beneficios-dos-espargos.jpg",
     },
     alface: {
@@ -2292,7 +2318,7 @@ var basedadosingred = {
         propriedades: ['alface'],
         quantidade: 100,
         texto: '100 gr de alface',
-        nome: 'Alface',
+        nome: 'Alface',preco:0.10,
         foto: "https://thumbs.web.sapo.io/?W=800&H=0&delay_optim=1&epic=NGNl88jzGknot26JMojOuazXgJK7LxXKMWes/sScQk5fBN0SWv2+xq8Og5AdjwcYXZJl2CwN0AY5Ofv1E2o6thyTdQ==",
     },
     rucula: {
@@ -2300,7 +2326,7 @@ var basedadosingred = {
         propriedades: ['rúcula'],
         quantidade: 50,
         texto: '50 gr de rúcula',
-
+        preco:0.10,
         nome: 'Rúcula',
         foto: "https://www.mundoboaforma.com.br/wp-content/uploads/2015/07/rucula-1280x720.jpg",
     },
@@ -2310,7 +2336,7 @@ var basedadosingred = {
         propriedades: ['amendoa'],
         quantidade: 5,
         texto: '5 amêndoas',
-
+        preco:0.10,
         nome: 'Amêndoa',
         foto: "https://www.saberviver.pt/wp-content/uploads/2019/04/amendoas.jpg",
     },
@@ -2321,6 +2347,7 @@ var basedadosingred = {
         quantidade: 400,
         texto: '400 gr de peito de frango',
         nome: 'Frango',
+        preco:0.10,
         foto: "https://alimentacaoescolar.files.wordpress.com/2016/11/frango.jpg?w=311&h=179",
     },
     courgette: {
@@ -2329,6 +2356,7 @@ var basedadosingred = {
         quantidade: 4,
         texto: '4 courgettes médias',
         nome: 'Courgette',
+        preco:0.26,
         foto: "https://ecoaldeiajanas.org/wp-content/uploads/2019/05/courgette-1.jpg",
     },
 
@@ -2338,6 +2366,7 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 folha de louro',
         nome: 'Louro',
+        preco:0.10,
         foto: "https://asenhoradomonte.com/wp-content/uploads/2018/07/folhas-de-louro.jpg",
     },
     malaguetas: {
@@ -2346,12 +2375,14 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 malaguetas vermelhas',
         nome: 'Malaguetas',
+        preco:0.10,
         foto: "https://www.bancodasaude.com/cdn/press/malka.jpg",
     },
     caril: {
         tipo: 'condimentos',
         propriedades: ['caril', 'pó'],
         quantidade: 30,
+        preco:0.10,
         texto: '2 colheres de sopa de caril em pó',
         foto: "https://www.aosabordovento.com/wp-content/media_files/2015/10/caril-po-especiarias-receita-1024x682.jpg", nome: 'Caril',
     },
@@ -2361,6 +2392,7 @@ var basedadosingred = {
         tipo: 'legume',
         propriedades: ['couve-flor'],
         quantidade: 1,
+        preco:0.45,
         texto: '1 chávena de chá de couve-flor',
         nome: 'Couve-Flor',
         foto: "https://pt.cat-ret.assets.lidl/catalog4media/pt/article/2018chekw50/gallery/zoom/2018chekw50_20.jpg",
@@ -2369,6 +2401,7 @@ var basedadosingred = {
         tipo: 'condimentos',
         propriedades: ['molho', 'soja'],
         quantidade: 16,
+        preco:0.05,
         texto: '1 colher de sopa de molho de soja',
         nome: 'Molho de Soja',
         foto: "https://comuniti.pt/882-large_default/molho-soja.jpg",
@@ -2379,6 +2412,7 @@ var basedadosingred = {
         quantidade: 16,
         texto: '1 colheres de sopa de azeite virgem',
         nome: 'Azeite',
+        preco:0.05,
         foto: "https://cdn.shopify.com/s/files/1/0002/3976/3470/products/CopiadeAzeitebiologico_1_1200x1200.png?v=1586624053",
     },
     vaca: {
@@ -2387,6 +2421,7 @@ var basedadosingred = {
         quantidade: 600,
         texto: '600 gr de carne de vaca para estufar',
         nome: 'Vaca',
+        preco:0.01,
         foto: "https://talhocastro.com/wp-content/uploads/2018/08/Bovino_f-1187x588.jpg",
     },
     gengibre: {
@@ -2395,6 +2430,9 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 colher de chá de gengibre',
         nome: 'Gengibre',
+        
+        preco:0.01,
+
         foto: "https://www.greenme.com.br/wp-content/uploads/2016/05/gengibre-corpo-1200x600.jpg",
     },
     feijaoverde: {
@@ -2403,6 +2441,8 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 chávena de feijão verde',
         nome: 'Feijão Verde',
+        preco:0.05,
+
         foto: "https://www.sementesvivas.bio/639-large_default/feijao-verde-domino-.jpg",
     },
     piripiri: {
@@ -2411,6 +2451,8 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 colher de café de piripiri',
         nome: 'Piripiri',
+        preco:0.10,
+
         foto: "https://target.scene7.com/is/image/Target/GUEST_02cc746d-6e3b-4344-8855-eaf1fb21d53e?wid=488&hei=488&fmt=pjpeg",
     },
     beringela: {
@@ -2419,6 +2461,8 @@ var basedadosingred = {
         quantidade: 100,
         texto: '100 gr de beringela',
         nome: 'Beringela',
+        preco:0.01,
+
         foto: "https://www.pingodoce.pt/wp-content/uploads/2016/11/beringela-como-cozinha-la.jpg",
     },
     peru: {
@@ -2427,6 +2471,8 @@ var basedadosingred = {
         quantidade: 100,
         texto: '100gr bife de perú',
         nome: 'Perú',
+        preco:0.01,
+
         foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSflEsD_42eFvW9No5yQOSgIheYpOt85Fqbgs0vdq_TauOovdMS&usqp=CAU",
     },
     pimentapreta: {
@@ -2435,6 +2481,8 @@ var basedadosingred = {
         quantidade: 0,
         texto: 'pimenta preta qb',
         nome: 'Pimenta Preta',
+        preco:0.01,
+
         foto: "https://www.dicasdemulher.com.br/wp-content/uploads/2018/02/pimenta-do-reino.jpg",
     },
     espinafres: {
@@ -2443,6 +2491,8 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 embalagem de espinafres',
         nome: 'Espinafres',
+        preco:0.01,
+
         foto: "https://cdn.vidaativa.pt/uploads/2019/11/espinafres-425x318.jpg",
     },
     bechamel: {
@@ -2451,6 +2501,8 @@ var basedadosingred = {
         quantidade: 500,
         texto: '500ml de béchamel',
         nome: 'Molho Bechamel',
+        preco:0.01,
+
         foto: "https://t2.rg.ltmcdn.com/pt/images/8/1/8/img_molho_bechamel_tradicional_3818_orig.jpg",
     },
     massalasanha: {
@@ -2459,7 +2511,8 @@ var basedadosingred = {
         quantidade: 500,
         texto: '500 gr de massa fresca para lasanha',
         nome: 'Massa p/ Lasanha',
-        foto: "https://www.recheio.pt/catalogo/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/4/0/408859_3.png",
+         preco:0.01,foto
+: "https://www.recheio.pt/catalogo/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/4/0/408859_3.png",
     },
     mozzarella: {
         tipo: 'laticinios',
@@ -2467,7 +2520,8 @@ var basedadosingred = {
         quantidade: 100,
         texto: '100 gr queijo mozzarella ralado',
         nome: 'Queijo Mozzarella',
-        foto: "https://www.gourmetfoodstore.com/images/product/large/6421_1_.jpg",
+         preco:0.01,foto
+: "https://www.gourmetfoodstore.com/images/product/large/6421_1_.jpg",
     },
     parmesao: {
         tipo: 'laticinios',
@@ -2475,7 +2529,8 @@ var basedadosingred = {
         quantidade: 100,
         texto: '100 gr queijo parmesão ralado',
         nome: 'Queijo Parmesão',
-        foto: "https://t2.uc.ltmcdn.com/pt/images/5/0/4/img_como_fazer_queijo_parmesao_3405_600_square.jpg",
+         preco:0.01,foto
+: "https://t2.uc.ltmcdn.com/pt/images/5/0/4/img_como_fazer_queijo_parmesao_3405_600_square.jpg",
     },
 
     manjericao: {
@@ -2484,7 +2539,8 @@ var basedadosingred = {
         quantidade: 0,
         texto: 'manjericão qb',
         nome: 'Manjericão',
-        foto: "https://belezaesaude.com/i/f/o/saude/conteudo/manjericao.jpg",
+         preco:0.01,foto
+: "https://belezaesaude.com/i/f/o/saude/conteudo/manjericao.jpg",
     },
     farinhamilho: {
         tipo: 'farinha',
@@ -2492,7 +2548,8 @@ var basedadosingred = {
         quantidade: 130,
         texto: '130 gr de farinha de milho',
         nome: 'Farinha de Milho',
-        foto: "https://lh3.googleusercontent.com/proxy/ngZjicGYmAeMzvWxZMGuj0ATY9PNJ_J-9dH1LKo8wJlm6BzFiTpiKnsTKRaWr9i9HZEZVUlBBfvrEQx9kM6_ebrvGbkYHGsTvnAmMitBqyzCtBhuJdF5JFcB-go9wZYPdirnUwpNDPj5lqqsqYJBmmd08QFsI-PdloQNYiRdiDDt3Xz4GWZt9AYliJAYnRQJfPbJ5QfYj2z6L3l0IrR1",
+         preco:0.01,foto
+: "https://lh3.googleusercontent.com/proxy/ngZjicGYmAeMzvWxZMGuj0ATY9PNJ_J-9dH1LKo8wJlm6BzFiTpiKnsTKRaWr9i9HZEZVUlBBfvrEQx9kM6_ebrvGbkYHGsTvnAmMitBqyzCtBhuJdF5JFcB-go9wZYPdirnUwpNDPj5lqqsqYJBmmd08QFsI-PdloQNYiRdiDDt3Xz4GWZt9AYliJAYnRQJfPbJ5QfYj2z6L3l0IrR1",
     },
     agua: {
         tipo: 'agua',
@@ -2500,7 +2557,8 @@ var basedadosingred = {
         quantidade: 150,
         texto: '150ml de água',
         nome: 'Água',
-        foto: "https://media-manager.noticiasaominuto.com/1920/naom_5baa3f3b180c2.jpg",
+         preco:0.01,foto
+: "https://media-manager.noticiasaominuto.com/1920/naom_5baa3f3b180c2.jpg",
     },
     massapizza: {
         tipo: 'massa',
@@ -2508,7 +2566,8 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 massa de pizza refrigerada',
         nome: 'Massa de Pizza',
-        foto: "https://www.pingodoce.pt/wp-content/uploads/2017/09/massa-de-pizza.jpg",
+         preco:0.01,foto
+: "https://www.pingodoce.pt/wp-content/uploads/2017/09/massa-de-pizza.jpg",
     },
     molhopesto: {
         tipo: 'molho',
@@ -2516,7 +2575,8 @@ var basedadosingred = {
         quantidade: 45,
         texto: '3 colheres de sopa de molho pesto',
         nome: 'Molho Pesto',
-        foto: "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2018/02/16/molho-pesto.jpg",
+         preco:0.01,foto
+: "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2018/02/16/molho-pesto.jpg",
     },
     burrata: {
         tipo: 'laticinios',
@@ -2524,7 +2584,8 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 embalagens de burrata fresca',
         nome: 'Burrata',
-        foto: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Burrata2.jpg",
+         preco:0.01,foto
+: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Burrata2.jpg",
     },
     pinhoes: {
         tipo: 'fruto seco',
@@ -2532,7 +2593,8 @@ var basedadosingred = {
         quantidade: 30,
         texto: '2 colheres de sopa de pinhões torrados',
         nome: 'Pinhões',
-        foto: "https://lh3.googleusercontent.com/proxy/I7HjXby_BONbJiojU5iBZtsiTmqczQaIrjVeWvkSZL7909rWaLmivbLoysOC4yhXTe4TkSYBAkpLNvwme3EpIKdJWkY82Zp3o_qyVy1KRoA3_aNtYzvFCMGMAZ1zUUsppN4a",
+         preco:0.01,foto
+: "https://lh3.googleusercontent.com/proxy/I7HjXby_BONbJiojU5iBZtsiTmqczQaIrjVeWvkSZL7909rWaLmivbLoysOC4yhXTe4TkSYBAkpLNvwme3EpIKdJWkY82Zp3o_qyVy1KRoA3_aNtYzvFCMGMAZ1zUUsppN4a",
     },
     salgrosso: {
         tipo: 'tempero',
@@ -2540,7 +2602,8 @@ var basedadosingred = {
         quantidade: 5,
         texto: '1 colher de chá de sal grosso',
         nome: 'Sal Grosso',
-        foto: "https://s2.glbimg.com/JSApgyyxnKnUIdwtfcB899Tx9QU=/620x480/top/e.glbimg.com/og/ed/f/original/2018/07/06/captura_de_tela_2018-07-06_as_15.26.01.png",
+         preco:0.01,foto
+: "https://s2.glbimg.com/JSApgyyxnKnUIdwtfcB899Tx9QU=/620x480/top/e.glbimg.com/og/ed/f/original/2018/07/06/captura_de_tela_2018-07-06_as_15.26.01.png",
     },
     quinoa: {
         tipo: 'sementes',
@@ -2548,7 +2611,8 @@ var basedadosingred = {
         quantidade: 200,
         texto: '200 gr de quinoa branca',
         nome: 'Quinoa',
-        foto: "https://conteudo.imguol.com.br/c/entretenimento/9b/2018/01/12/quinoa-1515783995564_v2_1920x1280.jpg",
+         preco:0.01,foto
+: "https://conteudo.imguol.com.br/c/entretenimento/9b/2018/01/12/quinoa-1515783995564_v2_1920x1280.jpg",
     },
     legumes: {
         tipo: 'legumes',
@@ -2556,7 +2620,8 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 embalagem de mistura de legumes',
         nome: 'Legumes',
-        foto: "https://www.pingodoce.pt/wp-content/uploads/products/thumbnail/336088-efe28bcabf44c2a5a48ecda62738f835.jpg",
+         preco:0.01,foto
+: "https://www.pingodoce.pt/wp-content/uploads/products/thumbnail/336088-efe28bcabf44c2a5a48ecda62738f835.jpg",
     },
     abacate: {
         tipo: 'fruta',
@@ -2564,7 +2629,8 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 abacates',
         nome: 'Abacate',
-        foto: "https://s2.glbimg.com/ew1z80L80DVKWV8z7XDqQZA4anw=/261x122:4670x3948/924x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2014/11/20/abacate.jpg",
+         preco:0.01,foto
+: "https://s2.glbimg.com/ew1z80L80DVKWV8z7XDqQZA4anw=/261x122:4670x3948/924x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2014/11/20/abacate.jpg",
     },
     coentros: {
         tipo: 'condimentos',
@@ -2572,7 +2638,8 @@ var basedadosingred = {
         quantidade: 0,
         texto: 'coentros qb',
         nome: 'Coentros',
-        foto: "https://www.fitnesshut.pt/assets/img/treinar/nutricao/artigos/1526293156_Coentros.jpg",
+         preco:0.01,foto
+: "https://www.fitnesshut.pt/assets/img/treinar/nutricao/artigos/1526293156_Coentros.jpg",
     },
     ricotaespinafre: {
         tipo: 'mistura',
@@ -2581,7 +2648,8 @@ var basedadosingred = {
         texto: '1 embalagem de tortellini de ricota e espinafres',
 
         nome: 'Ricotta e Espinafres',
-        foto: "https://receitinhas.s3-sa-east-1.amazonaws.com/wp-content/uploads/2017/08/iStock-509483890-848x477.jpg",
+         preco:0.01,foto
+: "https://receitinhas.s3-sa-east-1.amazonaws.com/wp-content/uploads/2017/08/iStock-509483890-848x477.jpg",
     },
     miolonoz: {
         time: 'fruto seco',
@@ -2589,7 +2657,8 @@ var basedadosingred = {
         quantidade: 60,
         texto: '60 gr de miolo de noz',
         nome: 'Miolo de Noz',
-        foto: "https://www.biocabaz.pt/web/wp-conteudos/uploads/2016/04/secos-noz_miolo.jpg",
+         preco:0.01,foto
+: "https://www.biocabaz.pt/web/wp-conteudos/uploads/2016/04/secos-noz_miolo.jpg",
     },
     arroz: {
         tipo: 'arroz',
@@ -2597,7 +2666,8 @@ var basedadosingred = {
         quantidade: 200,
         texto: '200 gr de sobras de arroz de tomate frio',
         nome: 'Arroz',
-        foto: "https://portal-amb-imgs.clubedaana.com.br/2016/11/arroz-de-micro-ondas-768x512.jpg",
+         preco:0.01,foto
+: "https://portal-amb-imgs.clubedaana.com.br/2016/11/arroz-de-micro-ondas-768x512.jpg",
     },
     oleo: {
         tipo: 'oleo',
@@ -2605,7 +2675,8 @@ var basedadosingred = {
         quantidade: 500,
         texto: '500 ml de óleo (para fritar)',
         nome: 'Óleo',
-        foto: "https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2004635(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
+         preco:0.01,foto
+: "https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2004635(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
     },
     farinha: {
         tipo: 'farinha',
@@ -2613,7 +2684,8 @@ var basedadosingred = {
         quantidade: 0,
         texto: 'meia chávena de farinha',
         nome: 'Farinha',
-        foto: "https://cozinhatecnica.com/wp-content/uploads/2018/04/Farinha-de-arroz-e1523395479373.jpg",
+         preco:0.01,foto
+: "https://cozinhatecnica.com/wp-content/uploads/2018/04/Farinha-de-arroz-e1523395479373.jpg",
     },
     paoralado: {
         tipo: 'farinha',
@@ -2621,7 +2693,8 @@ var basedadosingred = {
         quantidade: 200,
         texto: '200 gr de pão ralado',
         nome: 'Pão Ralado',
-        foto: "https://cdn.e-konomista.pt/uploads/2019/07/receitas-com-pao-ralado_1516543618-425x318.jpg",
+         preco:0.01,foto
+: "https://cdn.e-konomista.pt/uploads/2019/07/receitas-com-pao-ralado_1516543618-425x318.jpg",
     },
     lentilhas: {
         tipo: 'legume',
@@ -2629,7 +2702,8 @@ var basedadosingred = {
         quantidade: 200,
         texto: '200 gr de lentilhas verdes',
         nome: 'Lentilhas',
-        foto: "https://thumbs.web.sapo.io/?W=800&H=0&png=1&delay_optim=1&epic=ODEyTMovMv/KMILSD3c/Lkir0RueaRnT463rIPswriU9huvGJotPCZc9Zbl4jnPPhp33sgLEN3YWcELx/Vh6jOFc5yD3niI4jBYRA8ZB0ZT4/kQ=",
+         preco:0.01,foto
+: "https://thumbs.web.sapo.io/?W=800&H=0&png=1&delay_optim=1&epic=ODEyTMovMv/KMILSD3c/Lkir0RueaRnT463rIPswriU9huvGJotPCZc9Zbl4jnPPhp33sgLEN3YWcELx/Vh6jOFc5yD3niI4jBYRA8ZB0ZT4/kQ=",
     },
     oleococo: {
         tipo: 'oleo',
@@ -2637,7 +2711,8 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 colheres de sopa de óleo de coco',
         nome: 'Óleo de Coco',
-        foto: "https://chaecia.vteximg.com.br/arquivos/ids/157348-1000-1000/oleo-de-coco-extra-virgem-500ml.jpg?v=636667373419170000",
+         preco:0.01,foto
+: "https://chaecia.vteximg.com.br/arquivos/ids/157348-1000-1000/oleo-de-coco-extra-virgem-500ml.jpg?v=636667373419170000",
     },
     leitecoco: {
         tipo: 'laticinios',
@@ -2647,7 +2722,8 @@ var basedadosingred = {
         quantidade: 200,
         texto: '200ml de leite de coco',
         nome: 'Leite de Coco',
-        foto: "https://3.bp.blogspot.com/-zE6QCuOUxzI/WzOMJ6XgUpI/AAAAAAABLpU/Nhl5ALeGkEMWCupP0xX5wo4uqukVjQGawCLcBGAs/s1600/receita-leite-de-coco-caseiro.jpg",
+         preco:0.01,foto
+: "https://3.bp.blogspot.com/-zE6QCuOUxzI/WzOMJ6XgUpI/AAAAAAABLpU/Nhl5ALeGkEMWCupP0xX5wo4uqukVjQGawCLcBGAs/s1600/receita-leite-de-coco-caseiro.jpg",
     },
     pimentoverde: {
         tipo: 'vegetal',
@@ -2655,7 +2731,8 @@ var basedadosingred = {
         quantidade: 2,
         texto: 'meio pimento verde em puré',
         nome: 'Pimento Verde',
-        foto: "https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2076823(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
+         preco:0.01,foto
+: "https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2076823(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
     },
     basmati: {
         tipo: 'arroz',
@@ -2663,7 +2740,8 @@ var basedadosingred = {
         quantidade: 350,
         texto: '350 gr de arroz Basmati feito',
         nome: 'Arroz Basmatti',
-        foto: "https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2018/09/25/shutterstock604635731.jpg",
+         preco:0.01,foto
+: "https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2018/09/25/shutterstock604635731.jpg",
     },
     tomatecherryvermelho: {
         tipo: 'vegetal',
@@ -2671,7 +2749,8 @@ var basedadosingred = {
         quantidade: 250,
         texto: '250 gr de tomate cherry vermelho',
         nome: 'Tomate Cherry Vermelho',
-        foto: "https://cdn.pixabay.com/photo/2015/07/08/05/25/tomatoes-835385_960_720.jpg",
+         preco:0.01,foto
+: "https://cdn.pixabay.com/photo/2015/07/08/05/25/tomatoes-835385_960_720.jpg",
     },
     cremedeleite: {
         tipo: 'laticinios',
@@ -2679,14 +2758,16 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 latas de creme de leite',
         nome: 'Creme de Leite',
-        foto: "https://images-americanas.b2w.io/produtos/01/00/oferta/54069/7/54069711_1GG.jpg",
+         preco:0.01,foto
+: "https://images-americanas.b2w.io/produtos/01/00/oferta/54069/7/54069711_1GG.jpg",
     },
     tomatecherryamarelo: {
         tipo: 'vegetal',
         propriedades: ['tomate', 'cherry', 'amarelo'],
         quantidade: 250,
         texto: '250 gr de tomate cherry amarelo',
-        foto: "https://www.joiadocampo.com/wp-content/uploads/2016/10/tomate-cherry-amarelo-kg-importado.jpg",
+         preco:0.01,foto
+: "https://www.joiadocampo.com/wp-content/uploads/2016/10/tomate-cherry-amarelo-kg-importado.jpg",
         nome: 'Tomate Cherry Amarelo',
     },
 
@@ -2696,7 +2777,8 @@ var basedadosingred = {
         quantidade: 0,
         texto: 'meio limão',
         nome: 'Limão',
-        foto: "https://valemais.pt/vlm/wp-content/uploads/2016/01/dieta-do-limao_site.jpg",
+         preco:0.01,foto
+: "https://valemais.pt/vlm/wp-content/uploads/2016/01/dieta-do-limao_site.jpg",
     },
 
     mel: {
@@ -2705,7 +2787,8 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 colher de sopa de mel',
         nome: 'Mel',
-        foto: "https://media-manager.noticiasaominuto.com/1920/1562314810/naom_5d1f02f162859.jpg?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoyNTYwLCJjcm9wSGVpZ2h0IjoxNDM5LCJjcm9wWCI6MCwiY3JvcFkiOjI1MH0sInBvcnRyYWl0Ijp7ImNyb3BXaWR0aCI6MTA3NywiY3JvcEhlaWdodCI6MTkxNCwiY3JvcFgiOjI1MCwiY3JvcFkiOjB9fQ==",
+         preco:0.01,foto
+: "https://media-manager.noticiasaominuto.com/1920/1562314810/naom_5d1f02f162859.jpg?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoyNTYwLCJjcm9wSGVpZ2h0IjoxNDM5LCJjcm9wWCI6MCwiY3JvcFkiOjI1MH0sInBvcnRyYWl0Ijp7ImNyb3BXaWR0aCI6MTA3NywiY3JvcEhlaWdodCI6MTkxNCwiY3JvcFgiOjI1MCwiY3JvcFkiOjB9fQ==",
     },
 
     vinagre: {
@@ -2714,7 +2797,8 @@ var basedadosingred = {
         quantidade: 33,
         texto: '2 colheres de sobremesa de vinagre balsâmico',
         nome: 'Vinagre',
-        foto: "https://p2.trrsf.com/image/fget/cf/1200/1200/filters:quality(85)/images.terra.com/2018/02/20/vinagre-balsc3a2mico.jpg",
+         preco:0.01,foto
+: "https://p2.trrsf.com/image/fget/cf/1200/1200/filters:quality(85)/images.terra.com/2018/02/20/vinagre-balsc3a2mico.jpg",
     },
     bacalhau: {
         tipo: "peixe",
@@ -2722,7 +2806,8 @@ var basedadosingred = {
         quantidade: 2,
         texto: "2 postas de bacalhau",
         nome: 'Bacalhau',
-        foto: "https://lh3.googleusercontent.com/proxy/2vZ2UpQ8IkTAUaMCSTiTORWSZipu81EIHVf00kta3FbPRTBC8kyaFc6fuoKd5svKfBgKW2PyhDJhGV0c3huG1_cMx2UwXk5UZ2ERcs0Ff5USDcLwjqaXCtVOrOI",
+         preco:0.01,foto
+: "https://lh3.googleusercontent.com/proxy/2vZ2UpQ8IkTAUaMCSTiTORWSZipu81EIHVf00kta3FbPRTBC8kyaFc6fuoKd5svKfBgKW2PyhDJhGV0c3huG1_cMx2UwXk5UZ2ERcs0Ff5USDcLwjqaXCtVOrOI",
     },
     batata: {
         tipo: "batata",
@@ -2730,7 +2815,8 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 batata grande',
         nome: 'Batatas',
-        foto: "https://media-manager.noticiasaominuto.com/1920/1582634326/naom_5e5514ead7999.jpg?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoyNDU1LCJjcm9wSGVpZ2h0IjoxMzgxLCJjcm9wWCI6MCwiY3JvcFkiOjU4fX0=",
+         preco:0.01,foto
+: "https://media-manager.noticiasaominuto.com/1920/1582634326/naom_5e5514ead7999.jpg?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoyNDU1LCJjcm9wSGVpZ2h0IjoxMzgxLCJjcm9wWCI6MCwiY3JvcFkiOjU4fX0=",
 
     },
     pimentovermelho: {
@@ -2739,7 +2825,8 @@ var basedadosingred = {
         quantidade: 20,
         texto: '20 gr pimentos vermelhos',
         nome: 'Pimento Vermelho',
-        foto: "https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2076826(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
+         preco:0.01,foto
+: "https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2076826(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
     },
     chocolate: {
         tipo: 'chocolate',
@@ -2747,7 +2834,8 @@ var basedadosingred = {
         quantidade: 11,
         texto: '11 colheres de sopa de chocolate em pó',
         nome: 'Chocolate em pó',
-        foto: "https://4.bp.blogspot.com/-TGPJVrZUiOM/V3EOGwYdopI/AAAAAAAABYU/__h6qsMhGaUobgqEC8BycXyEK0CCwYR3ACLcB/s1600/Cacau%2Bem%2Bp%25C3%25B3.jpg",
+         preco:0.01,foto
+: "https://4.bp.blogspot.com/-TGPJVrZUiOM/V3EOGwYdopI/AAAAAAAABYU/__h6qsMhGaUobgqEC8BycXyEK0CCwYR3ACLcB/s1600/Cacau%2Bem%2Bp%25C3%25B3.jpg",
     },
     manteiga: {
         tipo: 'laticinios',
@@ -2755,7 +2843,8 @@ var basedadosingred = {
         quantidade: 4,
         texto: '4 colheres de sopa de manteiga',
         nome: 'Manteiga',
-        foto: "https://t1.rg.ltmcdn.com/pt/images/2/3/2/manteiga_caseira_com_nata_7232_600.jpg",
+         preco:0.01,foto
+: "https://t1.rg.ltmcdn.com/pt/images/2/3/2/manteiga_caseira_com_nata_7232_600.jpg",
     },
     polpatomate: {
         tipo: 'molho',
@@ -2763,7 +2852,8 @@ var basedadosingred = {
         quantidade: 1,
         texto: '1 colher de polpa de tomate',
         nome: 'Polpa de Tomate',
-        foto: "https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=4092713(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
+         preco:0.01,foto
+: "https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=4092713(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
     },
     ervilhas: {
         tipo: 'legumes',
@@ -2771,7 +2861,8 @@ var basedadosingred = {
         quantidade: 150,
         texto: '150 gr de ervilhas',
         nome: 'Ervilhas',
-        foto: "https://www.greenme.com.br/wp-content/uploads/2017/06/ervilha-beneficios-1200x600.jpg",
+         preco:0.01,foto
+: "https://www.greenme.com.br/wp-content/uploads/2017/06/ervilha-beneficios-1200x600.jpg",
     },
     maionese: {
         tipo: 'molho',
@@ -2779,7 +2870,8 @@ var basedadosingred = {
         quantidade: 2,
         texto: '2 colheres de sopa de maionese',
         nome: 'Maionese',
-        foto: "https://static.carrefour.com.br/medias/sys_master/images/images/h8b/h31/h00/h00/11606263791646.jpg",
+         preco:0.01,foto
+: "https://static.carrefour.com.br/medias/sys_master/images/images/h8b/h31/h00/h00/11606263791646.jpg",
     },
     ketchup: {
         tipo: 'molho',
@@ -2787,7 +2879,8 @@ var basedadosingred = {
         quantidade: 100,
         texto: 'meio copo de ketchup',
         nome: 'Ketchup',
-        foto: "https://savegnago.vteximg.com.br/arquivos/ids/287973-1000-1000/CATCHUP-HEINZ-397G-PET.jpg?v=636592447588900000",
+         preco:0.01,foto
+: "https://savegnago.vteximg.com.br/arquivos/ids/287973-1000-1000/CATCHUP-HEINZ-397G-PET.jpg?v=636592447588900000",
     },
     mostarda: {
         tipo: 'molho',
@@ -2795,6 +2888,8 @@ var basedadosingred = {
         quantidade: 67,
         texto: 'um terço de um copo de mostarda',
         nome: 'Mostarda',
+        preco:0.01,
+
         foto: "https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=4970162(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
     },
 
@@ -2802,7 +2897,6 @@ var basedadosingred = {
 
 
 }
-
 
 
 //console.log(receitas); test stuff
@@ -2995,7 +3089,16 @@ $('#theModal').on('hide.bs.modal', function (event) {
 var mode = false;
 $("#evitarAdd").click(function () {
     $("#evitarDiv").removeClass("d-none");
+    $("#addItem").removeClass("d-none");
+
     $("#tags").attr("placeholder", "O que deseja adicionar?");
+
+});
+$("#evitarRem").click(function () {
+    $("#addItem").addClass("d-none");
+    $("#deleteItem").removeClass("d-none");
+    $("#evitarItem").removeClass("d-none");
+    $("#tags").attr("placeholder", "O que deseja remover?");
 
 });
 $('input:radio[name="diet"]').change(function () {
@@ -3034,44 +3137,14 @@ var toAdd = "";
 
 function refreshItems() {
     $("#itemsToAvoid").empty();
-    console.log(avoidItems);
+    
     avoidItems = JSON.parse(localStorage.avoidItems);
+    console.log(avoidItems);
     for (var i = 0; i < avoidItems.length; i++) {
         console.log(avoidItems[i]);
         $("#itemsToAvoid").append("<li>" + avoidItems[i] + "</li>");
     }
 };
-
-
-
-$("#addItem").click(function () {
-    toAdd = $("#tags").val();
-    avoidItems = JSON.parse(localStorage.avoidItems);
-    //  console.log("beep")
-    if (acIng.includes(toAdd)) {
-        avoidItems.push(toAdd);
-        // console.log(toAdd);
-        localStorage.avoidItems = JSON.stringify(avoidItems);
-
-        refreshItems();
-        $("#tags").val("");
-    }
-    else {
-        $("#tags").val("");
-        $("#erro").removeClass("d-none").val("Este ingrediente não está na base de dados!");
-        alert("Este ingrediente não se encontra na base de dados!");
-    }
-});
-
-$(document).ready(function () {
-    var tmpInv = JSON.parse(localStorage.inventario);
-
-    for (var item in tmpInv) {
-        //console.log(item);
-        $("#ingList").append("<li>" + tmpInv[item]['nome'] + "  [" + tmpInv[item]['quantidade'] + "]</li>");
-    }
-})
-var qnt;
 
 
 function refreshItemsINV() {
@@ -3084,6 +3157,62 @@ function refreshItemsINV() {
         $("#ingList").append("<li>" + tmpInv[item]['nome'] + "  [" + tmpInv[item]['quantidade'] + "]</li>");
     }
 };
+
+$("#addItem").click(function () {
+    toAdd = $("#tags").val();
+    avoidItems = JSON.parse(localStorage.avoidItems);
+
+    if (acIng.includes(toAdd)) {
+        if(avoidItems.includes(toAdd)){
+            alert("Este ingrediente já foi adicionado!");
+            $("#tags").val("");
+        }
+        else{
+        avoidItems.push(toAdd);
+        console.log(toAdd);
+        localStorage.avoidItems = JSON.stringify(avoidItems);
+        refreshItems();
+        $("#tags").val("");
+    }}
+    else {
+        $("#tags").val("");
+        $("#erro").removeClass("d-none").val("Este ingrediente não está na base de dados!");
+        alert("Este ingrediente não se encontra na base de dados!");
+    }
+});
+
+$("#deleteItem").click(function () {
+    toDel = $("#tags").val();
+    avoidItems = JSON.parse(localStorage.avoidItems);
+
+    if (acIng.includes(toDel)) {
+        if(avoidItems.includes(toDel)){
+            avoidItems.splice( $.inArray(toDel, avoidItems), 1 );
+            console.log(toDel);
+        localStorage.avoidItems = JSON.stringify(avoidItems);
+        refreshItems();
+        $("#tags").val("");
+           
+        }
+        else{ alert("Este ingrediente não está na lista!");
+        $("#tags").val("");
+    }}
+    else {
+        $("#tags").val("");
+        $("#erro").removeClass("d-none").val("Este ingrediente não está na base de dados!");
+        alert("Este ingrediente não se encontra na base de dados!");
+    }
+});
+$(document).ready(function () {
+    var tmpInv = JSON.parse(localStorage.inventario);
+
+    for (var item in tmpInv) {
+        //console.log(item);
+        $("#ingList").append("<li>" + tmpInv[item]['nome'] + "  [" + tmpInv[item]['quantidade'] + "]</li>");
+    }
+})
+var qnt;
+
 
 $("#addInvent").click(function () {
 
@@ -3309,7 +3438,24 @@ function loadInfo() {
     }
 
 }
-
+function loadDiet(){
+    if(localStorage.sugar!="" || localStorage.cal!=""){
+         $("#acucar").val(localStorage.sugar);
+         $("#simdiet").prop( "checked", true );
+    $("#cal").val(localStorage.cal);
+    $("#evitarform").removeClass("d-none");
+    }
+    else{
+        $("#naodiet").prop( "checked", true );
+    }
+    if(localStorage.vegetariano=="true"){
+        $("#simveg").prop("checked",true);
+    }
+    else{$("#naoveg").prop("checked",true);}
+   
+  
+   
+}
 $("cart.html").ready(function () {
     console.log("WELCOME TO THE WORST DAMN PAGE")
     var listaTmp = JSON.parse(localStorage.compras);
@@ -3332,7 +3478,7 @@ $("cart.html").ready(function () {
 
 
 
-    $("#concluir").click(function () {
+    $("#acabar").click(function () {
         var listaTmp = JSON.parse(localStorage.compras);
         console.log("concluindo");
         var inventario = JSON.parse(localStorage.inventario);
