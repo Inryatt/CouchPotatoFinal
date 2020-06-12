@@ -4,34 +4,42 @@
 
 <head>
   <style>
-      tr:nth-child(even) {
-  background-color:white;
-}
-tr:nth-child(odd) {
-  background-color:rgb(224, 224, 224) ;
-}
-table {
-  width: 100%;
-  border-radius: 50px;
-}
-.nome{
-    text-align: left;
-    width: 540px;
-    
-}
-th {
-    
-    padding:15px;
+    tr:nth-child(even) {
+      background-color: white;
+    }
 
-    background-color: rgb(255, 123, 83);
-    color: white;
-}
-input{text-align:center;
-width: 100px;}
-td {
-  padding: 15px;
-  text-align: center;
-}
+    tr:nth-child(odd) {
+      background-color: rgb(224, 224, 224);
+    }
+
+    table {
+      width: 100%;
+      border-radius: 50px;
+    }
+
+    .nome {
+      text-align: left;
+      width: 540px;
+
+    }
+
+    th {
+
+      padding: 15px;
+
+      background-color: rgb(255, 123, 83);
+      color: white;
+    }
+
+    input {
+      text-align: center;
+      width: 100px;
+    }
+
+    td {
+      padding: 15px;
+      text-align: center;
+    }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/global.css">
@@ -51,8 +59,9 @@ td {
       <div style="border-radius: 50px" class="card">
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
-            <button  onclick="location.href='Perfil.html';" style="color:black" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button onclick="location.href='Perfil.html';" style="color:black" class="btn btn-link btn-block text-left"
+              type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
               Tua Conta
             </button>
           </h2>
@@ -74,26 +83,28 @@ td {
       <div style="border-radius: 50px" class="card">
         <div class="card-header" id="headingTwo">
           <h2 class="mb-0">
-            <button onclick="location.href='suggestions.html';" style="color:black" class="btn btn-link btn-block text-left collapsed" type="button"
-              data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button onclick="location.href='suggestions.html';" style="color:black"
+              class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Sugestões
             </button>
           </h2>
         </div>
-       
+
       </div>
 
 
       <div style="border-radius: 50px" class="card">
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
-            <button onclick="location.href='login.html';" style="color:black" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+            <button onclick="location.href='login.html';" style="color:black"
+              class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
               data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Logout
             </button>
           </h2>
         </div>
-       
+
       </div>
 
     </div>
@@ -106,28 +117,31 @@ td {
   <div id="main">
     <div class="container">
       <h2 style="text-align: center;background: transparent;">Carrinho de compras</h2>
-        <table id="shopingcart">
-            <tr >
-                <th style="border-top-left-radius: 25px;text-align: center;width: 540px;">Ingrediente</th>
-                <th style="    text-align: center;">Quantidade</th>
-                <th style="border-top-right-radius: 25px;text-align: center;">Preço</th>
-            </tr>
-            <tr>
-                <td class="nome"></td>
-                <td ><input type="number"></td>
-                <td ></td>
-            </tr>
-            <tr>
-                <td class="nome"></td>
-                <td><input type="number"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td style="border-bottom-left-radius: 25px; font-weight: bold;" >Total:   <span id="total"></span>€</td>
-                <td></td>
-                <td style="border-bottom-right-radius: 25px;"><button style="padding:10px;font-weight: bold;color:white;background-color:lightsalmon;border-radius: 50px; border:transparent " id="acabar">Prosseguir</button> </td>
-            </tr>
-        </table>
+      <table id="shopingcart">
+        <tr>
+          <th style="border-top-left-radius: 25px;text-align: center;width: 540px;">Ingrediente</th>
+          <th style="    text-align: center;">Quantidade</th>
+          <th style="border-top-right-radius: 25px;text-align: center;">Preço</th>
+        </tr>
+        <tr>
+          <td class="nome"></td>
+          <td><input type="number"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="nome"></td>
+          <td><input type="number"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="border-bottom-left-radius: 25px; font-weight: bold;">Total: <span id="total"></span>€</td>
+          <td></td>
+
+          <td style="border-bottom-right-radius: 25px;"><button
+              style="padding:10px;font-weight: bold;color:white;background-color:lightsalmon;border-radius: 50px; border:transparent "
+              id="acabar">Prosseguir</button> </td>
+        </tr>
+      </table>
     </div>
 
 
@@ -138,10 +152,10 @@ td {
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="js/index.js" type="text/javascript"></script>
   <script src="js/recipes.json" type="text/javascript"></script>
- 
+
 </body>
 
 </html>
